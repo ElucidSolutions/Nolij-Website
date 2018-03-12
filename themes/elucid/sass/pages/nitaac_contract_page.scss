@@ -1,0 +1,90 @@
+/*
+  This stylesheet defines styles applied
+  specifically to the NITAAC contract page.
+*/
+[data-elucid-page-path-alias="/contract-vehicles/ciosp3"] {
+  @include styleguide;
+
+  .elucid-page-content {
+    padding-bottom: 80px;
+    .nitaac {
+      a {
+        @include a;
+      }
+      h2 {
+        color: $red;
+        font-size: 22px;
+        font-weight: 400;
+      }
+      ul {
+        @include strip-margins;
+        li {
+          list-style: none;
+        }
+      }
+      .nitaac-intro {
+        margin-bottom: 30px;
+      }
+      .nitaac-summary {
+        margin-bottom: 30px;
+      }
+      .nitaac-areas {
+        margin-bottom: 20px;
+      }
+      .nitaac-manager {
+        margin-bottom: 30px;
+      }
+      .nitaac-contracts {
+        line-height: $margin-large;
+        margin-bottom: 30px;
+        ul {
+          margin-bottom: $margin-large;
+          a {
+            @include mobile(line-height, 1.4);
+            display: inline-block;
+            padding-left: 25px;
+            position: relative;
+            &:before {
+              @include mobile(top, 0);
+              @include icon("../images/download-icon.svg", 14px, 17px, inline-block);
+              position: absolute;
+              left: 0;
+              top: 12px;
+            }
+          }
+          a:hover {
+            color: $blue-dark;
+            text-decoration: none;
+            &:before {
+              @include icon("../images/download-icon-active.svg", 14px, 17px, inline-block);
+            }
+          }
+        }
+      }
+      .nitaac-categories {
+        margin-bottom: $margin-large;
+        ul {
+          line-height: $margin-large;
+          a {
+            display: inline-block;
+            padding-left: 30px;
+            position: relative;
+            &:before {
+              @include icon("../images/download-icon.svg", 14px, 17px, inline-block);
+              position: absolute;
+              left: 0;
+              top: 12px;
+            }
+          }
+          a:hover {
+            color: $blue-dark;
+            text-decoration: none;
+            &:before {
+              @include icon("../images/download-icon-active.svg", 14px, 17px, inline-block);
+            }
+          }
+        }
+      }
+    }
+  }
+}

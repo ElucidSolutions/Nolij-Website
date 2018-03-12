@@ -1,0 +1,32 @@
+/*
+  This stylesheet defines custom styling for
+  the homepage banner block.
+*/
+#block-homepage-banner-block {
+  $banner_block_height: 416px;
+  $banner_block_mobile_height: 300px;
+  .banner_block_banner {
+    @include mobile(height, $banner_block_mobile_height);
+    height: $banner_block_height;
+    .banner_block_banner_overlay {
+      @include mobile(min-width, 300px);
+      margin-top: 100px;
+      min-width: 500px; // fine-tuned to prevent line wrapping.
+      .elucid_banner_header {
+        @include mobile(font-size, 34px);
+        @include mobile(padding, 0 10px 0 5px);
+        @include mobile(max-width, 295px);
+        font-weight: 600;
+        font-size: 58px;
+        height: 62px;
+        line-height: 62px;
+        max-width: 515px;
+        padding: 0 10px 0 10px;
+      }
+      .elucid_banner_subheader {
+        @include mobile(font-size, 38px);
+        font-size: 58px;
+      }
+    }
+  }
+}

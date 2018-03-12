@@ -1,0 +1,347 @@
+/*
+  Defines the default styles for the header.
+*/
+
+// Note: this variable must equal the breakpoint used in the Header Menu module's stylesheet.
+$header-mobile-breakpoint: 950px;
+
+header {
+  @include styleguide();
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);
+  position: relative; // needed for the shadow effect to cast over subsequent elements.
+  width: 100%;
+  z-index: 10; // needed to cast shadow over the subsequent element.
+  .layout-content {
+    display: table;
+    width: 100%;
+    .region-header-content {
+      display: table-row;
+      .region-header-left {
+        display: table-cell;
+        padding: 0 12px 0 0;
+        position: relative;
+        vertical-align: middle;
+        width: 100px;
+        &:before {
+          @include mask-right(100%, 26px, "../images/logo-mask.svg", 100);
+        }
+        [data-elucid-plugin-id="system_branding_block"] {
+          @include at-breakpoint($header-mobile-breakpoint, padding-left, 0);
+          padding: $margin-small 0;
+          text-align: center;
+          a {
+            @include at-breakpoint($header-mobile-breakpoint, display, inline);
+            display: block;
+            img {
+              line-height: 0;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .region-header-right {
+        color: $gray-dark;
+        display: table-cell;
+        @include at-breakpoint($header-mobile-breakpoint, display, none);
+        padding: 0px;
+        position: relative;
+        #region-header-right-background {
+          background-color: $gray-header;
+          height: 100%;
+          position: absolute;
+          width: 100vw;
+          z-index: -2;
+        }
+        #region-header-right-top-background {
+          background-color: $blue-lightest;
+          height: 50px;
+          position: absolute;
+          width: 100vw;
+          z-index: -1;
+        }
+        .region-header-right-top {
+          background-color: transparent;
+          height: 49px;
+          .elucid-sign-in {
+            float: right;
+            margin: $margin-small 0;
+            .elucid-sign-in-link {
+              color: #1c7294;
+              font-size: 12px;
+              padding-left: $margin-med;
+              position: relative;
+              text-transform: uppercase;
+              .elucid-sign-in-icon {
+                color: #1c7294;
+                display: inline-block;
+                left: 0;
+                line-height: 0px;
+                margin-right: $margin-xsmall;
+                top: $margin-xsmall;
+                vertical-align: middle;
+              }
+              &:hover {
+                color: $blue;
+                text-decoration: none;
+                path {
+                  fill: $blue;
+                }
+              }
+            }
+          }
+          &:after {
+            clear: both;
+            content: "";
+            display: block;
+          }
+        }
+        .region-header-right-bottom {
+          background-color: transparent;
+          font-size: 14px;
+          padding-left: $margin-xlarge;
+          .header_menu_widescreen_view { 
+            .header_menu_widescreen_view_menu_component {
+              .header_menu_menu_list[data-menu-level="0"] {
+                padding-top: 30px;
+                text-transform: uppercase;
+                .header_menu_menu_item {
+                  // Note: Chrome overrides link coloring and text decoration for links that do not have hrefs. This statement enforces these styles.
+                  a {
+                    color: $gray-dark;
+                    cursor: pointer;
+                    &:hover {
+                      color: $blue;
+                      text-decoration: none;
+                    }
+                  }
+                  &.elucid_active {
+                    a {
+                      color: $blue;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #header_search_toggle_button {
+    $header_search_toggle_button_height: 14px;
+    background: url("../images/search-icon.svg") no-repeat 50% 50%;
+    background-size: $header_search_toggle_button_height;
+    cursor: pointer;
+    display: table-cell;
+    height: $header_search_toggle_button_height;
+    margin-top: $margin-xsmall;
+    transition: background-image 0.25s;
+    width: $header_search_toggle_button_height;
+    &:hover {
+      background: url("../images/search-icon-selected.svg") no-repeat 50% 50%;
+    }
+    &.search_dropdown_active {
+      background: url("../images/search-white-icon.svg") no-repeat 50% 50%;
+    }
+  }
+}
+.header_menu_widescreen_view_dropdown_component {
+  position: relative;
+  .header_menu_menu_list {
+    border-top: solid 6px $blue;
+    box-shadow: 0px 1px 2px 0px; 
+    padding: $margin-small 0;
+    .header_menu_widescreen_view_dropdown_arrow {
+      border: 10px solid $blue;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: $blue;
+      border-left-color: transparent;
+      top: -23px;
+      left: 95px;
+      content: '';
+      position: absolute;
+    }
+    .header_menu_menu_item {
+      padding: $margin-small;
+      a {
+        color: $gray-dark;
+        text-transform: uppercase;
+        &:hover {
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+#header_search_region {
+  @include at-breakpoint($header-mobile-breakpoint, display, none !important);
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 3; // otherwise, doesn't appear in Chrome on windows.
+  #block-elucid-search {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+#block-elucid-search {
+  display: table;
+  background-color: rgb(245,245,245);
+  height: 64px; // needed by FF to properly size the submit button.
+  padding: 15px;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  z-index: 9; // fine-tuned to place under shadow cast by header.
+  @media (min-width: 951px) {
+    width: 50%;
+    margin-left: 50%;
+  }
+
+  #search-block-form {
+    background-color: transparent;
+    display: table-row;
+
+    .form-item {
+      background-color: white;
+      border-bottom-left-radius: 2px;
+      border-bottom: solid 1px #d0d0d0;
+      border-left: solid 1px #d0d0d0;
+      border-top-left-radius: 2px;
+      border-top: solid 1px #d0d0d0;
+      display: table-cell;
+      height: 100%;
+
+      input.form-search {
+        border: none;
+        font-size: rem(12px);
+        outline: none;
+        width: 95%;
+        margin: 3px 0 3px 10px;
+      }
+    }
+    .form-actions {
+      border-bottom-right-radius: 2px;
+      border-top-right-radius: 2px;
+      display: table-cell;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      vertical-align: top;
+      width: 25px;
+
+      input.form-submit {
+        background: url('../images/search-white-icon.svg') no-repeat 50% 50%;
+        background-color: $blue;
+        border-bottom-right-radius: 2px;
+        border: none;
+        border-top-right-radius: 2px;
+        color: transparent;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        width: 32px;
+      }
+    }
+  }
+}
+.subheader {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);
+  position: relative; // set to allow shadow to cast.
+  z-index: 2; // fine-tuned so that this element will cast a shadow of the following elements.
+
+  .header_menu_mobile_view {
+    .header_menu_mobile_view_header {
+      padding: 13px 0;
+      .header_menu_mobile_view_title {
+        @include strip-margins;
+        &:before {
+          @include icon("../images/menu-icon.svg", 21px, 21px, inline-block);
+          margin-right: $margin-small;
+          position: relative;
+          top: 7px;
+        }
+        font-size: $default-body-font-size !important;
+        font-weight: 400;
+      }
+    }
+    .header_menu_mobile_view_collapsible {
+      .header_menu_mobile_view_body {
+        padding: 0 0 $margin-xsmall;
+
+        .header_menu_mobile_view_slide_back_button {
+          padding-left: $margin-xsmall;
+          &:before {
+            @include icon("../images/left-arrow-icon.svg", 12px, 12px, inline-block);
+            margin-right: $margin-xsmall;
+          }
+        }
+        .header_menu_mobile_view_slide_back_button:hover {
+          color: $blue;
+          &:before {
+            @include icon("../images/left-arrow-icon-selected.svg", 12px, 12px, inline-block);
+          }
+        }
+        .header_menu_mobile_view_slide_item,
+        .menu_slide_extra_item {
+          border-bottom: 1px solid $gray-lightest;
+          color: $gray-dark;
+          padding: $margin-xsmall $margin-small;
+          text-transform: uppercase;
+          a {
+            color: $gray-dark;
+            display: block;
+            text-decoration: none;
+            width: 100%;
+          }
+        }
+        .header_menu_mobile_view_slide_item:hover,
+        .menu_slide_extra_item:hover {
+          color: $blue;
+          a {
+            color: $blue;
+          }
+        }
+        .header_menu_sign_in_link {
+          padding-left: $margin-med;
+          position: relative;
+          &:before {
+            @include icon("../images/sign-in-icon-gray.svg", 12px, 12px, inline-block);
+            left: 0;
+            top: $margin-xsmall;
+          }
+        }
+        .header_menu_sign_in_link:hover {
+          &:before {
+            @include icon("../images/sign-in-icon-hover.svg", 12px, 12px, inline-block);
+          }
+        }
+        .header_menu_sign_out_link {
+          padding-left: $margin-med;
+          position: relative;
+          &:before {
+            @include icon("../images/sign-in-icon-gray.svg", 12px, 12px, inline-block);
+            left: 0;
+            top: $margin-xsmall;
+          }
+        }
+        .header_menu_sign_out_link:hover {
+          &:before {
+            @include icon("../images/sign-in-icon-hover.svg", 12px, 12px, inline-block);
+          }
+        }
+      }
+      .header_menu_mobile_view_close_button {
+        color: $blue;
+        margin-bottom: $margin-xsmall;
+        &:hover {
+          color: $blue-dark;
+        }
+      }
+    }
+  }
+}
