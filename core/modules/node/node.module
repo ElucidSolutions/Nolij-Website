@@ -630,13 +630,15 @@ function template_preprocess_node(&$variables) {
   $node_type = $node->type->entity;
   // Used by RDF to add attributes around the author and date submitted.
   $variables['author_attributes'] = new Attribute();
-  $variables['display_submitted'] = $node_type->displaySubmitted();
-  if ($variables['display_submitted']) {
-    if (theme_get_setting('features.node_user_picture')) {
-      // To change user picture settings (e.g. image style), edit the 'compact'
-      // view mode on the User entity. Note that the 'compact' view mode might
-      // not be configured, so remember to always check the theme setting first.
-      $variables['author_picture'] = user_view($node->getOwner(), 'compact');
+  if ($node_type) {
+    $variables['display_submitted'] = $node_type->displaySubmitted();
+    if ($variables['display_submitted']) {
+      if (theme_get_setting('features.node_user_picture')) {
+        // To change user picture settings (e.g. image style), edit the 'compact'
+        // view mode on the User entity. Note that the 'compact' view mode might
+        // not be configured, so remember to always check the theme setting first.
+        $variables['author_picture'] = user_view($node->getOwner(), 'compact');
+      }
     }
   }
 
