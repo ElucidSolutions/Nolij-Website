@@ -1,0 +1,40 @@
+/*
+  This module defines the Apply block which is
+  displayed on the homepage. This block is a
+  simple text block containing a link to the
+  application website.
+*/
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  Apply block.
+*/
+function ApplyBlockComponent () {
+  return <div class="nolij-apply-container">
+      <div class="nolij-apply-component">
+        <div class="nolij-apply-component-header">
+          <h2 class="nolij-apply-component-title">Join the <strong>Team</strong></h2>
+        </div>
+        <div class="nolij-apply-component-body">
+          <div class="nolij-apply-component-lead">
+            <p>Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation’s government and other clients?</p>
+          </div>
+          <div class="nolij-apply-component-card">
+            <div class="nolij-apply-component-card-left">
+            </div>
+            <div class="nolij-apply-component-card-right">
+              <div class="nolij-apply-component-card-header">
+                <h3 class="nolij-apply-component-card-title">Accelerate Your <strong>Career</strong></h3>
+              </div>
+              <div class="nolij-apply-component-card-body">
+                <p>Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation’s government and other clients?</p>
+                <p>If so, we want to hear from you.</p>
+                <div><a class="nolij-apply-component-card-link">View jobs and apply</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>;
+}

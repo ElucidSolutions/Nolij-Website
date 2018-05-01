@@ -1,0 +1,77 @@
+/*
+  This stylesheet defines the default styles
+  for the Apply Block component.
+*/
+.nolij-apply-container {
+  @include styleguide;
+
+  .nolij-apply-component {
+    padding: 40px;
+
+    .nolij-apply-component-header {
+      @include short-hrule-after;
+
+      .nolij-apply-component-title {
+        @include strip-margins;
+        color: $blue-dark;
+        font-family: $second-font-family;
+        font-size: 55px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    .nolij-apply-component-body {
+      .nolij-apply-component-lead {
+        color: $gray-text;
+        line-height: 28px;
+        margin-bottom: 30px;
+      }
+      .nolij-apply-component-card {
+        @include card;
+        display: flex;
+
+        .nolij-apply-component-card-left {
+          background-image: url("../components/apply_block/images/apply.jpg");
+          background-position: center;
+          background-size: cover;
+          display: inline-block;
+          vertical-align: top;
+          width: 379px;
+        }
+        .nolij-apply-component-card-right {
+          display: inline-block;
+          padding: 25px 40px;
+          vertical-align: top;
+
+          .nolij-apply-component-card-header {
+            .nolij-apply-component-card-title {
+              @include strip-margins;
+              color: $red;
+              font-family: $second-font-family;
+              font-size: 26px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+          }
+          .nolij-apply-component-card-body {
+            color: $gray-text;
+            line-height: 28px;
+
+            .nolij-apply-component-card-link {
+              color: $red;
+              padding-right: 30px;
+              position: relative;
+              text-transform: none;
+
+              &:after {
+                @include icon("../images/read-more-icon.svg", 11px, 19px, span);
+                top: 5px;
+                right: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

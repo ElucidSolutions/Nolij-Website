@@ -36,6 +36,7 @@
   function App (props) {
     return <div class="nolij-react-app">
         <VehiclesComponent/>
+        <ApplyBlockComponent/>
       </div>;
   }
 }) (jQuery);

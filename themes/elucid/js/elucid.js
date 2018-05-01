@@ -35,7 +35,8 @@
     return React.createElement(
       'div',
       { 'class': 'nolij-react-app' },
-      React.createElement(VehiclesComponent, null)
+      React.createElement(VehiclesComponent, null),
+      React.createElement(ApplyBlockComponent, null)
     );
   }
 })(jQuery);

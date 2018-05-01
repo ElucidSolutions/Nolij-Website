@@ -5,7 +5,7 @@
 */
 
 /*
-  A react component that accepts no properties
+  A React component that accepts no properties
   and returns a JSX element that represents the
   contract vehicles block.
 */
