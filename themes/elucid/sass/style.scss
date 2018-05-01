@@ -30,16 +30,16 @@ $tablet-breakpoint: 768px;
 
 // II. Colors.
 
-$blue-dark: rgb(26, 116, 157);
+$blue-dark: #043b62;
 $blue: #03A9F3;
 $blue-light: rgb(185, 228, 239);
 $blue-lightest: rgb(235, 252, 255);
 
 $gray-dark: rgb(83, 82, 83);
 $gray: rgb(124, 124, 124);
-$gray-light: rgb(229, 227, 228);
-$gray-lightest: rgb(244, 244, 244);
-$gray-text: rgb(30, 30, 30);
+$gray-light: #92a1ac;
+$gray-lightest: #d0d0d0;
+$gray-text: #7c7c7c;
 $gray-header: rgb(252, 252, 252);
 
 $green-dark: rgb(34, 139, 57);
@@ -62,7 +62,8 @@ $purple-light: rgb(199, 184, 237);
 
 // III.A. Font Family
 
-$default-font-family: "Open Sans";
+$default-font-family: "Roboto";
+$second-font-family: "Raleway";
 
 // III.B. Font Size
 
@@ -215,6 +216,49 @@ $max-padded-content-width: 940px;
 @mixin widescreen-mobile-font-size($widescreen-font-size, $mobile-font-size){
   font-size: $widescreen-font-size;
   @include mobile-font-size($mobile-font-size);
+}
+
+/*
+  Accepts no arguments and styles the element
+  that this mixin is applied to as a card.
+*/
+@mixin card {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15); 
+}
+
+/*
+  Accepts three arguments:
+
+  * height, a CSS dimension
+  * width, a CSS dimension
+  * and color, a CSS color
+
+  and styles the element that this mixin is
+  applied to as a short horizontal rule element.
+*/
+@mixin short-hrule($height: null, $width: null, $color: null) {
+  background-color: if($color, $color, $red);
+  display: block;
+  height: if($height, $height, 5px);
+  width: if($width, $width, 80px);
+}
+
+/*
+  Accepts three arguments:
+
+  * height, a CSS dimension
+  * width, a CSS dimension
+  * and color, a CSS color
+
+  and inserts a short horizontal rule after the
+  element that this mixin is applied to.
+*/
+@mixin short-hrule-after($height: null, $width: null, $color: null) {
+  &:after {
+    @include short-hrule($height, $width, $color);
+    content: "";
+  }
 }
 
 /*
@@ -581,18 +625,6 @@ $default-ribbon-tablet-height: ($default-ribbon-height - $default-ribbon-mobile-
   font-size: $default-body-font-size;
   @include mobile(font-size, 14px);
 
-  h1 {
-    @include h1;
-  }
-  h2 {
-    @include h2;
-  }
-  h3 {
-    @include h3;
-  }
-  h4 {
-    @include h4;
-  }
   select {
     @include select;
   }
@@ -643,15 +675,10 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     padding-top: $margin-med;
     margin-bottom: 100px;
   }
-  .elucid_banner_ribbon {
-    @include ribbon('../images/svg-divider-below-banner.svg');
-  }
-  .elucid_contact_ribbon {
-    @include ribbon('../images/svg-divider-above-contact-us-cta.svg');
-  }
 }
 
 // VII. Import Extensions.
 
 @import "pages";
 @import "features";
+@import "../components";

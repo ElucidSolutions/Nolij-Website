@@ -2,10 +2,7 @@
 # EcmaScript 5 source files into browser compatible
 # JavaScript.
 
-all: elucid.js components
+all: elucid.js
 
 elucid.js: elucid.babel
 	babel elucid.babel -o elucid.js
-
-components:
-	$(MAKE) -C components

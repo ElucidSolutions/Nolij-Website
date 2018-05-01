@@ -5,7 +5,7 @@ base:
     node_modules/material-components-web/dist/material-components-web.min.js: {}
     libs/react/react.production.min.js: {}
     libs/react/react-dom.production.min.js: {}
-    js/components/vehicles.js: {}
+    components/vehicles/js/vehicles.js: {}
     js/elucid.js: {}
     js/accordion.js: {}
     js/notifications.js: {}

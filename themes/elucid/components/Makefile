@@ -2,7 +2,7 @@
 # extension) to translate the EcmaScript 5 source
 # files into browser compatible JavaScript.
 
-all: vehicles.js
+all: vehicles
 
-vehicles.js: vehicles.babel
-	babel vehicles.babel -o vehicles.js
+vehicles:
+	$(MAKE) -C vehicles

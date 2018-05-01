@@ -1,0 +1,73 @@
+/*
+  This module defines the React component that
+  represents the contract vehicles block on
+  the homepage.
+*/
+
+/*
+  A react component that accepts no properties
+  and returns a JSX element that represents the
+  contract vehicles block.
+*/
+function VehiclesComponent () {
+  return <div class="nolij-vehicles-container">
+      <div class="nolij-vehicles-component">
+        <div class="nolij-vehicles-component-header">
+          <h2 class="nolij-vehicles-component-title">Let&apos;s Work <strong>Together</strong></h2>
+        </div>
+        <div class="nolij-vehicles-component-body">
+          <div class="nolij-vehicles-component-lead">
+            <p>Our contract vehicles allow our clients and teaming partners to access our services easily. Read our sole source guide to see how to get to us directly.</p>
+          </div>
+          <div class="nolij-vehicles-component-details">
+            <div class="nolij-vehicles-component-left-card">
+              <div class="nolij-vehicles-component-left-card-header">
+                <h3 class="nolij-vehicles-component-left-card-title nolij-vehicles-component-card-title">Contract <strong>Vehicles</strong></h3>
+              </div>
+              <div class="nolij-vehicles-component-left-card-body">
+                <ul class="nolij-vehicles-component-vehicles-list">
+                  <li class="nolij-vehicles-component-vehicles-list-item">GSA <strong>IT70</strong></li>
+                  <li class="nolij-vehicles-component-vehicles-list-item">GSA <strong>Alliant Small Business</strong> <span class="nolij-light">(ASB)</span></li>
+                  <li class="nolij-vehicles-component-vehicles-list-item">GSA <strong>Professional Services Schedule</strong> <span class="nolij-light">(PSS)</span></li>
+                  <li class="nolij-vehicles-component-vehicles-list-item">
+                    <div>CIOSP3 <strong>Small Business</strong></div>
+                    <div><a class="nolij-vehicles-component-vehicles-link">Learn more about our CIOSP3 contract vehicles</a></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="nolij-vehicles-component-left-card-footer">
+                <span class="nolij-vehicles-component-duns"><strong>DUNS</strong> 020264787</span>
+                <span class="nolij-vehicles-component-cage"><strong>CAGE</strong> 6VTS1</span>
+              </div>
+            </div>
+            <div class="nolij-vehicles-component-right-card">
+              <div class="nolij-vehicles-component-right-card-header">
+                <h3 class="nolij-vehicles-component-right-card-title nolij-vehicles-component-card-title">Certificates</h3>
+              </div>
+              <div class="nolij-vehicles-component-right-card-body">
+                <div class="nolij-vehicles-component-cert">
+                  <div class="nolij-vehicles-component-cert-logo">
+                    <img class="nolij-vehicles-component-cert-logo-img nolij-cmmi-logo" alt="CMMI Logo" src="/themes/elucid/components/vehicles/images/cmmi-dev-icon.png"/>
+                  </div>
+                  <div class="nolij-vehicles-component-cert-desc">CMMI Level 3<br/>(Services)</div>
+                </div>
+                <div class="nolij-vehicles-component-cert">
+                  <div class="nolij-vehicles-component-cert-logo">
+                    <img class="nolij-vehicles-component-cert-logo-img nolij-cmmi-logo" alt="CMMI Logo" src="/themes/elucid/components/vehicles/images/cmmi-dev-icon.png"/>
+                  </div>
+                  <div class="nolij-vehicles-component-cert-desc">CMMI Level 3<br/>(Development)</div>
+                </div>
+                <div class="nolij-vehicles-component-cert">
+                  <div class="nolij-vehicles-component-cert-logo">
+                    <img class="nolij-vehicles-component-cert-logo-img nolij-iso-logo" alt="ISO Logo" src="/themes/elucid/components/vehicles/images/iso-logo.png"/>
+                  </div>
+                  <div class="nolij-vehicles-component-cert-desc">ISO 9001:2015</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>;
+}
+

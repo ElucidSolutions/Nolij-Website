@@ -78,6 +78,30 @@ html {
   for the element that this mixin is applied to.
 */
 /*
+  Accepts no arguments and styles the element
+  that this mixin is applied to as a card.
+*/
+/*
+  Accepts three arguments:
+
+  * height, a CSS dimension
+  * width, a CSS dimension
+  * and color, a CSS color
+
+  and styles the element that this mixin is
+  applied to as a short horizontal rule element.
+*/
+/*
+  Accepts three arguments:
+
+  * height, a CSS dimension
+  * width, a CSS dimension
+  * and color, a CSS color
+
+  and inserts a short horizontal rule after the
+  element that this mixin is applied to.
+*/
+/*
   Accepts one argument: height, a CSS dimension;
   and styles the element that this mixin is
   applied to as a gradient bar
@@ -252,36 +276,6 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 .elucid-page .elucid-page-content {
   padding-top: 20px;
   margin-bottom: 100px; }
-.elucid-page .elucid_banner_ribbon {
-  height: 80px;
-  background-image: url("../images/svg-divider-below-banner.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  -webkit-transform: translateY(-99%);
-  transform: translateY(-99%);
-  width: 100%; }
-  @media screen and (max-width: 768px) {
-    .elucid-page .elucid_banner_ribbon {
-      height: 58.5px; } }
-  @media screen and (max-width: 650px) {
-    .elucid-page .elucid_banner_ribbon {
-      height: 37px; } }
-.elucid-page .elucid_contact_ribbon {
-  height: 80px;
-  background-image: url("../images/svg-divider-above-contact-us-cta.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  -webkit-transform: translateY(-99%);
-  transform: translateY(-99%);
-  width: 100%; }
-  @media screen and (max-width: 768px) {
-    .elucid-page .elucid_contact_ribbon {
-      height: 58.5px; } }
-  @media screen and (max-width: 650px) {
-    .elucid-page .elucid_contact_ribbon {
-      height: 37px; } }
 
 /*
   Defines the default styles for the Benefits
@@ -290,57 +284,13 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 [data-elucid-page-path-alias="/benefits"],
 [data-elucid-page-path-alias="/careers/benefits"],
 [data-elucid-page-path-alias="/careers/employee-benefits"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/benefits"],
     [data-elucid-page-path-alias="/careers/benefits"],
     [data-elucid-page-path-alias="/careers/employee-benefits"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/benefits"] h1,
-  [data-elucid-page-path-alias="/careers/benefits"] h1,
-  [data-elucid-page-path-alias="/careers/employee-benefits"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/benefits"] h1,
-      [data-elucid-page-path-alias="/careers/benefits"] h1,
-      [data-elucid-page-path-alias="/careers/employee-benefits"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/benefits"] h2,
-  [data-elucid-page-path-alias="/careers/benefits"] h2,
-  [data-elucid-page-path-alias="/careers/employee-benefits"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/benefits"] h2,
-      [data-elucid-page-path-alias="/careers/benefits"] h2,
-      [data-elucid-page-path-alias="/careers/employee-benefits"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/benefits"] h3,
-  [data-elucid-page-path-alias="/careers/benefits"] h3,
-  [data-elucid-page-path-alias="/careers/employee-benefits"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/benefits"] h3,
-      [data-elucid-page-path-alias="/careers/benefits"] h3,
-      [data-elucid-page-path-alias="/careers/employee-benefits"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/benefits"] h4,
-  [data-elucid-page-path-alias="/careers/benefits"] h4,
-  [data-elucid-page-path-alias="/careers/employee-benefits"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/benefits"] h4,
-      [data-elucid-page-path-alias="/careers/benefits"] h4,
-      [data-elucid-page-path-alias="/careers/employee-benefits"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/benefits"] select,
   [data-elucid-page-path-alias="/careers/benefits"] select,
   [data-elucid-page-path-alias="/careers/employee-benefits"] select {
@@ -405,7 +355,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     [data-elucid-page-path-alias="/careers/benefits"] article .apply_button:hover,
     [data-elucid-page-path-alias="/careers/employee-benefits"] article .apply_button:hover {
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-      color: #1a749d;
+      color: #043b62;
       top: -1px; }
     [data-elucid-page-path-alias="/benefits"] article .apply_button:hover,
     [data-elucid-page-path-alias="/careers/benefits"] article .apply_button:hover,
@@ -421,48 +371,12 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 */
 [data-elucid-page-node-id="20475"],
 [data-elucid-page-path-alias="/capabilities"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-node-id="20475"],
     [data-elucid-page-path-alias="/capabilities"] {
       font-size: 14px; } }
-  [data-elucid-page-node-id="20475"] h1,
-  [data-elucid-page-path-alias="/capabilities"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-node-id="20475"] h1,
-      [data-elucid-page-path-alias="/capabilities"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-node-id="20475"] h2,
-  [data-elucid-page-path-alias="/capabilities"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-node-id="20475"] h2,
-      [data-elucid-page-path-alias="/capabilities"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-node-id="20475"] h3,
-  [data-elucid-page-path-alias="/capabilities"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-node-id="20475"] h3,
-      [data-elucid-page-path-alias="/capabilities"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-node-id="20475"] h4,
-  [data-elucid-page-path-alias="/capabilities"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-node-id="20475"] h4,
-      [data-elucid-page-path-alias="/capabilities"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-node-id="20475"] select,
   [data-elucid-page-path-alias="/capabilities"] select {
     appearance: none;
@@ -572,39 +486,11 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   specifically to the Careers page.
 */
 [data-elucid-page-path-alias="/careers"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/careers"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/careers"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/careers"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/careers"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/careers"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/careers"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/careers"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/careers"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/careers"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/careers"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -640,7 +526,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
         font-style: underline; }
     [data-elucid-page-path-alias="/careers"] article h2 {
       color: #e74131;
-      font-family: "Open Sans";
+      font-family: "Roboto";
       font-size: 32px;
       font-weight: 400;
       margin-bottom: 20px; }
@@ -651,7 +537,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       color: white;
       cursor: pointer;
       display: inline-block;
-      font-family: "Open Sans";
+      font-family: "Roboto";
       font-size: 16px;
       font-weight: bold;
       height: 41px;
@@ -670,48 +556,12 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 */
 [data-elucid-page-path-alias="/feedback"],
 [data-elucid-page-path-alias="/contact/feedback"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/feedback"],
     [data-elucid-page-path-alias="/contact/feedback"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/feedback"] h1,
-  [data-elucid-page-path-alias="/contact/feedback"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/feedback"] h1,
-      [data-elucid-page-path-alias="/contact/feedback"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/feedback"] h2,
-  [data-elucid-page-path-alias="/contact/feedback"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/feedback"] h2,
-      [data-elucid-page-path-alias="/contact/feedback"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/feedback"] h3,
-  [data-elucid-page-path-alias="/contact/feedback"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/feedback"] h3,
-      [data-elucid-page-path-alias="/contact/feedback"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/feedback"] h4,
-  [data-elucid-page-path-alias="/contact/feedback"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/feedback"] h4,
-      [data-elucid-page-path-alias="/contact/feedback"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/feedback"] select,
   [data-elucid-page-path-alias="/contact/feedback"] select {
     appearance: none;
@@ -804,7 +654,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
               [data-elucid-page-path-alias="/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form input.js-form-submit:hover,
               [data-elucid-page-path-alias="/contact/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form input.js-form-submit:hover {
                 box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-                color: #1a749d;
+                color: #043b62;
                 top: -1px; }
               [data-elucid-page-path-alias="/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form input.js-form-submit:hover,
               [data-elucid-page-path-alias="/contact/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form input.js-form-submit:hover {
@@ -901,40 +751,12 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   Defines the Contract Vehicles page specific styles.
 */
 [data-elucid-page-path-alias="/contract-vehicles"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px;
   color: #1e1e1e; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/contract-vehicles"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/contract-vehicles"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/contract-vehicles"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/contract-vehicles"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -974,7 +796,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       border-top-right-radius: 4px; }
     [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule {
       padding: 20px 40px;
-      border-bottom: solid 1px #e5e3e4; }
+      border-bottom: solid 1px #92a1ac; }
       [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule:last-of-type {
         border-bottom: none; }
       [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule .contract-vehicles-schedule-logo {
@@ -1017,7 +839,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
           right: 0;
           top: 5px; }
       [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule .contract-vehicles-schedule-footer:hover {
-        color: #1a749d;
+        color: #043b62;
         text-decoration: none; }
         [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule .contract-vehicles-schedule-footer:hover:after {
           background-image: url("../images/read-more-icon-active.svg");
@@ -1034,48 +856,12 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 */
 [data-elucid-page-view-id="frontpage"],
 [data-elucid-page-path-alias="/capabilities"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-view-id="frontpage"],
     [data-elucid-page-path-alias="/capabilities"] {
       font-size: 14px; } }
-  [data-elucid-page-view-id="frontpage"] h1,
-  [data-elucid-page-path-alias="/capabilities"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-view-id="frontpage"] h1,
-      [data-elucid-page-path-alias="/capabilities"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-view-id="frontpage"] h2,
-  [data-elucid-page-path-alias="/capabilities"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-view-id="frontpage"] h2,
-      [data-elucid-page-path-alias="/capabilities"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-view-id="frontpage"] h3,
-  [data-elucid-page-path-alias="/capabilities"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-view-id="frontpage"] h3,
-      [data-elucid-page-path-alias="/capabilities"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-view-id="frontpage"] h4,
-  [data-elucid-page-path-alias="/capabilities"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-view-id="frontpage"] h4,
-      [data-elucid-page-path-alias="/capabilities"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-view-id="frontpage"] select,
   [data-elucid-page-path-alias="/capabilities"] select {
     appearance: none;
@@ -1165,39 +951,11 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   page.
 */
 [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1276,39 +1034,11 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   page.
 */
 [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1362,7 +1092,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
           left: 0;
           top: 1px; }
       [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule .schedule-contracts a:hover {
-        color: #1a749d;
+        color: #043b62;
         text-decoration: none; }
         [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule .schedule-contracts a:hover:before {
           background-image: url("../images/download-icon-active.svg");
@@ -1409,7 +1139,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
             right: 0;
             top: 5px; }
         [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule .schedule-gwac .schedule-gwac-content a:hover {
-          color: #1a749d;
+          color: #043b62;
           text-decoration: none; }
           [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule .schedule-gwac .schedule-gwac-content a:hover:after {
             background-image: url("../images/read-more-icon-active.svg");
@@ -1426,39 +1156,11 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   to the Leadership Team page.
 */
 [data-elucid-page-path-alias="/leadership"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/leadership"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/leadership"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/leadership"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/leadership"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/leadership"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/leadership"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/leadership"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/leadership"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/leadership"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/leadership"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1481,7 +1183,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
         color: #03A9F3;
         font-size: 12px; }
   [data-elucid-page-path-alias="/leadership"] [data-elucid-derivative-plugin-id="leadership_team-block_1"] [data-elucid-view-id="leadership_team"] .views-row {
-    border-bottom: 1px solid #e5e3e4;
+    border-bottom: 1px solid #92a1ac;
     padding-bottom: 40px;
     margin-bottom: 40px; }
     [data-elucid-page-path-alias="/leadership"] [data-elucid-derivative-plugin-id="leadership_team-block_1"] [data-elucid-view-id="leadership_team"] .views-row:last-of-type {
@@ -1523,39 +1225,11 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   specifically to the NITAAC contract page.
 */
 [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] {
       font-size: 14px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h1 {
-        font-size: 26px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h2 {
-        font-size: 22px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h3 {
-        font-size: 20px; } }
-  [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] h4 {
-        font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1628,7 +1302,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
               [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac .nitaac-contracts ul a:before {
                 top: 0; } }
         [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac .nitaac-contracts ul a:hover {
-          color: #1a749d;
+          color: #043b62;
           text-decoration: none; }
           [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac .nitaac-contracts ul a:hover:before {
             background-image: url("../images/download-icon-active.svg");
@@ -1660,7 +1334,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
             left: 0;
             top: 12px; }
         [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac .nitaac-categories ul a:hover {
-          color: #1a749d;
+          color: #043b62;
           text-decoration: none; }
           [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac .nitaac-categories ul a:hover:before {
             background-image: url("../images/download-icon-active.svg");
@@ -1677,10 +1351,10 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   the Job Opening pages.
 */
 [data-elucid-page-node-type="opening"] {
-  font-family: "Open Sans"; }
+  font-family: "Roboto"; }
   [data-elucid-page-node-type="opening"] .elucid-page-content h2 {
     color: #e74131;
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-size: 32px;
     font-weight: 400; }
   [data-elucid-page-node-type="opening"] .elucid-page-content h3 {
@@ -1701,7 +1375,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
         font-style: underline; }
     [data-elucid-page-node-type="opening"] .elucid-page-content #block-readytojointheteam h2 {
       color: #e74131;
-      font-family: "Open Sans";
+      font-family: "Roboto";
       font-size: 32px;
       font-weight: 400;
       margin-bottom: 20px; }
@@ -1740,7 +1414,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   [data-elucid-page-path-alias="/openings"] #block-readytojointheteam h2,
   [data-elucid-page-path-alias="/careers/openings"] #block-readytojointheteam h2 {
     color: #e74131;
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 20px; }
@@ -1766,7 +1440,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       [data-elucid-page-path-alias="/openings"] [data-elucid-view-id="careers"] .elucid-view-filter-rows-container .elucid-filters-container .elucid-filters-container-header h3,
       [data-elucid-page-path-alias="/careers/openings"] [data-elucid-view-id="careers"] .elucid-view-filter-rows-container .elucid-filters-container .elucid-filters-container-header h3 {
         color: #e74131;
-        font-family: "Open Sans";
+        font-family: "Roboto";
         font-size: 18px;
         line-height: 1.71;
         margin: 0;
@@ -1982,7 +1656,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     display: table;
     clear: both; }
   [data-elucid-page-path-alias="/portfolio"] a {
-    color: #1e1e1e;
+    color: #7c7c7c;
     font-family: "Open Sans";
     text-decoration: none; }
   [data-elucid-page-path-alias="/portfolio"] h1, [data-elucid-page-path-alias="/portfolio"] h2, [data-elucid-page-path-alias="/portfolio"] h3, [data-elucid-page-path-alias="/portfolio"] h4, [data-elucid-page-path-alias="/portfolio"] h5 {
@@ -2148,7 +1822,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
               [data-elucid-page-path-alias="/portfolio"] .case_study .case_study_content_section .case_study_content_section_body .case_study_content_section_body_links_section .case_study_content_section_body_links_section_column .case_study_content_section_body_links_section_list_item a {
                 color: #03A9F3; }
                 [data-elucid-page-path-alias="/portfolio"] .case_study .case_study_content_section .case_study_content_section_body .case_study_content_section_body_links_section .case_study_content_section_body_links_section_column .case_study_content_section_body_links_section_list_item a:hover {
-                  color: #1a749d; }
+                  color: #043b62; }
       [data-elucid-page-path-alias="/portfolio"] .case_study .case_study_content_section .case_study_content_section_footer {
         display: block;
         margin: 0px auto 20px;
@@ -2177,7 +1851,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
           display: inline-block; }
           [data-elucid-page-path-alias="/portfolio"] .case_study .case_study_content_section .case_study_content_section_footer .case_study_content_section_footer_link_button:hover {
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-            color: #1a749d;
+            color: #043b62;
             top: -1px; }
           [data-elucid-page-path-alias="/portfolio"] .case_study .case_study_content_section .case_study_content_section_footer .case_study_content_section_footer_link_button:hover {
             background-color: #b9e4ef; }
@@ -2221,7 +1895,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 [data-elucid-page-path-alias="/search/node"] .search-help-link {
   display: none; }
 [data-elucid-page-path-alias="/search/node"] .elucid-page-content h1 {
-  color: #1a749d;
+  color: #043b62;
   font-size: 36px;
   font-weight: bold; }
   @media screen and (max-width: 650px) {
@@ -2325,9 +1999,9 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       width: 30px; }
   .accordion .accordion_item .accordion_item_header:hover {
     background-color: #edfcff;
-    color: #1a749d; }
+    color: #043b62; }
     .accordion .accordion_item .accordion_item_header:hover .accordion_item_header_right svg path {
-      fill: #1a749d; }
+      fill: #043b62; }
   .accordion .accordion_item .accordion_item_body {
     border-bottom: 1px solid #d2d2d2;
     padding: 10px 20px 30px 20px;
@@ -2344,13 +2018,13 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   Application form.
 */
 .contact-message-job-application-form {
-  font-family: "Open Sans"; }
+  font-family: "Roboto"; }
   .contact-message-job-application-form .ajax-new-content {
     display: none !important; }
   .contact-message-job-application-form a {
     color: #03A9F3; }
     .contact-message-job-application-form a:hover {
-      color: #1a749d; }
+      color: #043b62; }
   .contact-message-job-application-form h3 {
     color: #e74131 !important;
     font-size: 22px !important;
@@ -2381,7 +2055,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     background-color: #03A9F3; }
     .contact-message-job-application-form .js-form-submit:hover {
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-      color: #1a749d;
+      color: #043b62;
       top: -1px; }
     .contact-message-job-application-form .js-form-submit:hover {
       background-color: #b9e4ef; }
@@ -2393,7 +2067,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     color: #03A9F3;
     cursor: pointer; }
     .contact-message-job-application-form .elucid-input-file-link:hover {
-      color: #1a749d; }
+      color: #043b62; }
 
 /*
   This stylesheet defines styles shared by all banner blocks.
@@ -2471,7 +2145,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   [data-elucid-plugin-id="system_breadcrumb_block"] a {
     color: #03A9F3; }
     [data-elucid-plugin-id="system_breadcrumb_block"] a:hover {
-      color: #1a749d; }
+      color: #043b62; }
   [data-elucid-plugin-id="system_breadcrumb_block"] nav {
     font-size: 12px; }
     [data-elucid-plugin-id="system_breadcrumb_block"] nav ol {
@@ -2583,7 +2257,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       padding: 5px 35px; }
       #block-contactusblock .contact-us .contact-us-content .contact-us-link:hover {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-        color: #1a749d;
+        color: #043b62;
         top: -1px; }
       @media screen and (max-width: 650px) {
         #block-contactusblock .contact-us .contact-us-content .contact-us-link {
@@ -2592,7 +2266,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
         #block-contactusblock .contact-us .contact-us-content .contact-us-link {
           margin-left: 0; } }
       #block-contactusblock .contact-us .contact-us-content .contact-us-link:hover {
-        color: #1a749d;
+        color: #043b62;
         text-decoration: none; }
 
 /*
@@ -2788,7 +2462,7 @@ footer {
   Defines the default styles for the header.
 */
 header {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px;
   background-color: white;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
@@ -2798,34 +2472,6 @@ header {
   @media screen and (max-width: 650px) {
     header {
       font-size: 14px; } }
-  header h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      header h1 {
-        font-size: 26px; } }
-  header h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      header h2 {
-        font-size: 22px; } }
-  header h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      header h3 {
-        font-size: 20px; } }
-  header h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      header h4 {
-        font-size: 18px; } }
   header select {
     appearance: none;
     -webkit-appearance: none;
@@ -3103,7 +2749,7 @@ header {
         width: 12px; }
     .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_body .header_menu_mobile_view_slide_item,
     .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_body .menu_slide_extra_item {
-      border-bottom: 1px solid #f4f4f4;
+      border-bottom: 1px solid #d0d0d0;
       color: #535253;
       padding: 5px 10px;
       text-transform: uppercase; }
@@ -3169,7 +2815,7 @@ header {
     color: #03A9F3;
     margin-bottom: 5px; }
     .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_close_button:hover {
-      color: #1a749d; }
+      color: #043b62; }
 
 /*
   This stylesheet defines custom styling for
@@ -3213,7 +2859,7 @@ header {
   for the System Notifications (Messages) block.
 */
 .elucid-message {
-  background-color: #f4f4f4;
+  background-color: #d0d0d0;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   padding: 20px 40px;
   position: relative;
@@ -3237,7 +2883,7 @@ header {
     background-color: #f0fff6;
     border-left: 7px solid #18865f;
     color: #18865f;
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-size: 14px;
     margin: 0 auto;
     max-width: 940px;
@@ -3245,12 +2891,12 @@ header {
     .elucid-message [aria-label="Status message"] a {
       color: #03A9F3; }
       .elucid-message [aria-label="Status message"] a:hover {
-        color: #1a749d; }
+        color: #043b62; }
   .elucid-message [aria-label="Warning message"] {
     background-color: #fffdf7;
     border-left: 7px solid #d4a329;
     color: #d4a329;
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-size: 14px;
     margin: 0 auto;
     max-width: 940px;
@@ -3258,12 +2904,12 @@ header {
     .elucid-message [aria-label="Warning message"] a {
       color: #03A9F3; }
       .elucid-message [aria-label="Warning message"] a:hover {
-        color: #1a749d; }
+        color: #043b62; }
   .elucid-message [aria-label="Error message"] {
     background-color: #fefbfb;
     border-left: 7px solid #e34233;
     color: #e34233;
-    font-family: "Open Sans";
+    font-family: "Roboto";
     font-size: 14px;
     margin: 0 auto;
     max-width: 940px;
@@ -3271,7 +2917,7 @@ header {
     .elucid-message [aria-label="Error message"] a {
       color: #03A9F3; }
       .elucid-message [aria-label="Error message"] a:hover {
-        color: #1a749d; }
+        color: #043b62; }
 
 /*
   Defines the styles applied to the Rate Table
@@ -3279,41 +2925,13 @@ header {
   Table module.
 */
 .rate_table {
-  font-family: "Open Sans";
+  font-family: "Roboto";
   font-size: 16px;
   font-size: 12px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15); }
   @media screen and (max-width: 650px) {
     .rate_table {
       font-size: 14px; } }
-  .rate_table h1 {
-    font-size: 36px;
-    font-family: "Open Sans";
-    font-weight: 700; }
-    @media screen and (max-width: 650px) {
-      .rate_table h1 {
-        font-size: 26px; } }
-  .rate_table h2 {
-    font-size: 32px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      .rate_table h2 {
-        font-size: 22px; } }
-  .rate_table h3 {
-    font-size: 28px;
-    font-family: "Open Sans";
-    font-weight: 600; }
-    @media screen and (max-width: 650px) {
-      .rate_table h3 {
-        font-size: 20px; } }
-  .rate_table h4 {
-    font-size: 22px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-    @media screen and (max-width: 650px) {
-      .rate_table h4 {
-        font-size: 18px; } }
   .rate_table select {
     appearance: none;
     -webkit-appearance: none;
@@ -3344,7 +2962,7 @@ header {
     height: 8px;
     width: 100%; }
   .rate_table .rate_table_header {
-    border-bottom: 1px solid #e5e3e4;
+    border-bottom: 1px solid #92a1ac;
     padding: 20px 40px 0; }
     @media screen and (max-width: 650px) {
       .rate_table .rate_table_header {
@@ -3352,7 +2970,7 @@ header {
     .rate_table .rate_table_header .mdc-tab-bar {
       margin: 0 !important; }
       .rate_table .rate_table_header .mdc-tab-bar .mdc-tab {
-        font-family: "Open Sans"; }
+        font-family: "Roboto"; }
         .rate_table .rate_table_header .mdc-tab-bar .mdc-tab:after {
           background-color: white;
           display: none; }
@@ -3423,7 +3041,7 @@ header {
           padding: 0;
           border: none;
           border-bottom: 1px solid #979797;
-          color: #1e1e1e;
+          color: #7c7c7c;
           outline: none;
           box-shadow: none;
           width: 100%; }
@@ -3462,7 +3080,7 @@ header {
           display: block;
           font-size: 10px; }
         .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_num .rate_table_num_select {
-          border-bottom: 1px solid #e5e3e4;
+          border-bottom: 1px solid #92a1ac;
           display: block;
           padding-bottom: 7px;
           position: relative;
@@ -3569,13 +3187,13 @@ header {
       .rate_table .rate_table_footer {
         text-align: center; } }
     .rate_table .rate_table_footer .rate_table_pagination {
-      border: 1px solid #e5e3e4;
+      border: 1px solid #92a1ac;
       display: inline-block; }
       .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_first {
         cursor: pointer;
         display: inline-block;
         padding: 8px;
-        border-right: 1px solid #e5e3e4; }
+        border-right: 1px solid #92a1ac; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_first:hover {
           background: #03A9F3;
           color: white; }
@@ -3583,16 +3201,16 @@ header {
           background: #03A9F3;
           color: white; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_first.rate_table_disabled {
-          color: #e5e3e4;
+          color: #92a1ac;
           cursor: not-allowed; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_first.rate_table_disabled:hover {
             background: transparent;
-            color: #e5e3e4; }
+            color: #92a1ac; }
       .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_prev {
         cursor: pointer;
         display: inline-block;
         padding: 8px;
-        border-right: 1px solid #e5e3e4; }
+        border-right: 1px solid #92a1ac; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_prev:hover {
           background: #03A9F3;
           color: white; }
@@ -3600,18 +3218,18 @@ header {
           background: #03A9F3;
           color: white; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_prev.rate_table_disabled {
-          color: #e5e3e4;
+          color: #92a1ac;
           cursor: not-allowed; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_prev.rate_table_disabled:hover {
             background: transparent;
-            color: #e5e3e4; }
+            color: #92a1ac; }
       .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_links {
         display: inline-block; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_links .rate_table_pagination_link {
           cursor: pointer;
           display: inline-block;
           padding: 8px;
-          border-right: 1px solid #e5e3e4; }
+          border-right: 1px solid #92a1ac; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_links .rate_table_pagination_link:hover {
             background: #03A9F3;
             color: white; }
@@ -3619,11 +3237,11 @@ header {
             background: #03A9F3;
             color: white; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_links .rate_table_pagination_link.rate_table_disabled {
-            color: #e5e3e4;
+            color: #92a1ac;
             cursor: not-allowed; }
             .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_links .rate_table_pagination_link.rate_table_disabled:hover {
               background: transparent;
-              color: #e5e3e4; }
+              color: #92a1ac; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_links .rate_table_pagination_link.rate_table_pagination_link_radius_3 {
             display: none; }
           @media screen and (max-width: 768px) {
@@ -3633,7 +3251,7 @@ header {
         cursor: pointer;
         display: inline-block;
         padding: 8px;
-        border-right: 1px solid #e5e3e4; }
+        border-right: 1px solid #92a1ac; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_next:hover {
           background: #03A9F3;
           color: white; }
@@ -3641,11 +3259,11 @@ header {
           background: #03A9F3;
           color: white; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_next.rate_table_disabled {
-          color: #e5e3e4;
+          color: #92a1ac;
           cursor: not-allowed; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_next.rate_table_disabled:hover {
             background: transparent;
-            color: #e5e3e4; }
+            color: #92a1ac; }
       .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_last {
         cursor: pointer;
         display: inline-block;
@@ -3657,11 +3275,11 @@ header {
           background: #03A9F3;
           color: white; }
         .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_last.rate_table_disabled {
-          color: #e5e3e4;
+          color: #92a1ac;
           cursor: not-allowed; }
           .rate_table .rate_table_footer .rate_table_pagination .rate_table_pagination_last.rate_table_disabled:hover {
             background: transparent;
-            color: #e5e3e4; }
+            color: #92a1ac; }
     .rate_table .rate_table_footer .rate_table_index {
       display: inline-block;
       margin: 20px; }
@@ -3744,7 +3362,7 @@ header {
     padding: 0;
     border: none;
     border-bottom: 1px solid #979797;
-    color: #1e1e1e;
+    color: #7c7c7c;
     outline: none;
     box-shadow: none; }
     .elucid_textfield input:-moz-ui-invalid, .elucid_textfield textarea:-moz-ui-invalid {
@@ -3766,3 +3384,151 @@ header {
     color: #a00405; }
     .elucid_textfield.elucid_invalid:not(.elucid_active) label:after {
       color: #a00405; }
+
+/*
+  This stylesheet defines the default styles
+  for the Contract Vehicles component.
+*/
+.nolij-vehicles-container {
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: #437ca5;
+  padding: 22px; }
+  @media screen and (max-width: 650px) {
+    .nolij-vehicles-container {
+      font-size: 14px; } }
+  .nolij-vehicles-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none; }
+    .nolij-vehicles-container select::-ms-expand {
+      display: none; }
+  .nolij-vehicles-container .elucid-select {
+    border-bottom: 1px solid #7c7c7c;
+    display: inline-block; }
+    .nolij-vehicles-container .elucid-select .elucid-select-select {
+      display: inline-block; }
+    .nolij-vehicles-container .elucid-select .elucid-select-icon {
+      display: inline-block; }
+    .nolij-vehicles-container .elucid-select:hover {
+      border-bottom: 2px solid #03A9F3;
+      font-size: 14px; }
+      .nolij-vehicles-container .elucid-select:hover .elucid-select-label {
+        color: #03A9F3;
+        font-size: 12px; }
+  .nolij-vehicles-container .nolij-vehicles-component {
+    background-color: white;
+    padding: 25px; }
+    .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header:after {
+      background-color: #a00405;
+      display: block;
+      height: 5px;
+      width: 80px;
+      content: ""; }
+    .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header h2.nolij-vehicles-component-title {
+      margin: 0;
+      padding: 0;
+      color: #043b62;
+      font-family: "Raleway";
+      font-size: 55px;
+      font-weight: 300;
+      text-transform: uppercase; }
+    .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body {
+      padding-bottom: 92px; }
+      @media screen and (max-width: 768px) {
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body {
+          padding-bottom: 0; } }
+      .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-lead {
+        color: #7c7c7c; }
+      .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-card-title {
+        margin: 0;
+        padding: 0;
+        color: #a00405;
+        font-family: "Raleway";
+        font-size: 26px;
+        text-transform: uppercase; }
+      .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
+        border-radius: 2px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+        display: inline-block;
+        margin-right: 25px;
+        vertical-align: top;
+        width: 602px; }
+        @media screen and (max-width: 768px) {
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
+            margin-bottom: 20px; } }
+        @media screen and (max-width: 768px) {
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
+            margin-right: 0; } }
+        @media screen and (max-width: 768px) {
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
+            width: 100%; } }
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-header {
+          padding: 25px; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-header .nolij-vehicles-component-left-card-title {
+            font-weight: 300; }
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body {
+          padding: 0 25px 0; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list {
+            margin: 0;
+            padding: 0;
+            margin-left: 20px; }
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item {
+              color: #043b62;
+              font-family: "Raleway";
+              line-height: 1.7;
+              margin-bottom: 30px;
+              text-transform: uppercase; }
+              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item a.nolij-vehicles-component-vehicles-link {
+                color: #a00405;
+                padding-right: 30px;
+                position: relative;
+                text-transform: none; }
+                .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item a.nolij-vehicles-component-vehicles-link:after {
+                  background-image: url("../images/read-more-icon.svg");
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  content: "";
+                  display: span;
+                  height: 11px;
+                  position: absolute;
+                  width: 19px;
+                  top: 5px;
+                  right: 0px; }
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer {
+          border-top: solid 1px #d0d0d0;
+          color: #7c7c7c;
+          font-size: 16px;
+          padding: 15px 25px; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer .nolij-vehicles-component-duns {
+            margin-right: 50px; }
+      .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card {
+        border-radius: 2px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+        display: inline-block;
+        padding: 25px 15px 20px;
+        vertical-align: top;
+        width: 219px; }
+        @media screen and (max-width: 768px) {
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card {
+            width: 100%; } }
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-header {
+          margin-bottom: 30px; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-header .nolij-vehicles-component-right-card-title {
+            font-weight: bold; }
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert {
+          margin-bottom: 20px;
+          text-align: center; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert .nolij-vehicles-component-cert-logo img {
+            height: 100%;
+            width: auto; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert .nolij-cmmi-logo {
+            height: 80px; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert .nolij-iso-logo {
+            height: 36px; }
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert .nolij-vehicles-component-cert-desc {
+            color: #92a1ac;
+            font-size: 12px;
+            font-weight: bold; }

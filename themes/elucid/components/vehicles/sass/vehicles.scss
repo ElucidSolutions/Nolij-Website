@@ -1,0 +1,141 @@
+/*
+  This stylesheet defines the default styles
+  for the Contract Vehicles component.
+*/
+.nolij-vehicles-container {
+  @include styleguide;
+  background-color: #437ca5;
+  padding: 22px;
+
+  .nolij-vehicles-component {
+    background-color: white;
+    padding: 25px;
+
+    .nolij-vehicles-component-header {
+      @include short-hrule-after;
+
+      h2.nolij-vehicles-component-title {
+        @include strip-margins;
+        color: $blue-dark;
+        font-family: $second-font-family;
+        font-size: 55px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    .nolij-vehicles-component-body {
+      padding-bottom: 92px;
+      @include tablet(padding-bottom, 0);
+
+      .nolij-vehicles-component-lead {
+        color: $gray-text;
+      }
+      .nolij-vehicles-component-details {
+        .nolij-vehicles-component-card-title {
+          @include strip-margins;
+          color: $red;
+          font-family: $second-font-family;
+          font-size: 26px;
+          text-transform: uppercase;
+        }
+        .nolij-vehicles-component-left-card {
+          @include card;
+          display: inline-block;
+          @include tablet(margin-bottom, 20px);
+          margin-right: 25px;
+          @include tablet(margin-right, 0);
+          vertical-align: top;
+          width: 602px;
+          @include tablet(width, 100%);
+
+          .nolij-vehicles-component-left-card-header {
+            padding: 25px;
+
+            .nolij-vehicles-component-left-card-title {
+              font-weight: 300;
+            }
+          }
+          .nolij-vehicles-component-left-card-body {
+            padding: 0 25px 0;
+
+            .nolij-vehicles-component-vehicles-list {
+              @include strip-margins;
+              margin-left: 20px;
+
+              .nolij-vehicles-component-vehicles-list-item {
+                color: $blue-dark;
+                font-family: $second-font-family;
+                line-height: 1.7;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+
+                a.nolij-vehicles-component-vehicles-link {
+                  color: $red;
+                  padding-right: 30px;
+                  position: relative;
+                  text-transform: none;
+
+                  &:after {
+                    @include icon("../images/read-more-icon.svg", 11px, 19px, span);
+                    top: 5px;
+                    right: 0px;
+                  }
+                }
+              }
+            }
+          }
+          .nolij-vehicles-component-left-card-footer {
+            border-top: solid 1px $gray-lightest;
+            color: $gray-text;
+            font-size: 16px;
+            padding: 15px 25px;
+
+            .nolij-vehicles-component-duns {
+              margin-right: 50px;
+            }
+          }
+        }
+        .nolij-vehicles-component-right-card {
+          @include card;
+          display: inline-block;
+          padding: 25px 15px 20px;
+          vertical-align: top;
+          width: 219px;
+          @include tablet(width, 100%);
+
+          .nolij-vehicles-component-right-card-header {
+            margin-bottom: 30px;
+
+            .nolij-vehicles-component-right-card-title {
+              font-weight: bold;
+            }
+          }
+          .nolij-vehicles-component-right-card-body {
+            .nolij-vehicles-component-cert {
+              margin-bottom: 20px;
+              text-align: center;
+
+              .nolij-vehicles-component-cert-logo {
+                img {
+                  height: 100%;
+                  width: auto;
+                }
+              }
+              .nolij-cmmi-logo {
+                height: 80px;
+              }
+              .nolij-iso-logo {
+                height: 36px;
+              }
+              .nolij-vehicles-component-cert-desc {
+                color: $gray-light;
+                font-size: 12px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

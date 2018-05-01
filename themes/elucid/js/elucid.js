@@ -23,7 +23,7 @@
   function loadFonts() {
     WebFont.load({
       google: {
-        families: ['Open+Sans:300,400,600']
+        families: ['Roboto:300,400,600,700', 'Raleway:300,400,600,700']
       }
     });
   }
@@ -35,11 +35,6 @@
     return React.createElement(
       'div',
       { 'class': 'nolij-react-app' },
-      React.createElement(
-        'h1',
-        null,
-        'React Loaded'
-      ),
       React.createElement(VehiclesComponent, null)
     );
   }
