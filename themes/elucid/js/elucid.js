@@ -1,30 +1,46 @@
+'use strict';
+
 /*
   Defines the default behavior.
 */
 (function ($) {
-  $(document).ready (function () {
-    init ();
+  $(document).ready(function () {
+    init();
   });
 
-  function init () {
-    loadFonts ();
+  function init() {
+    loadFonts();
 
-    // Initialize the material design component elements.
-    // Note: this roundabout method is forced on us by IE9.
-    // typeof mdc === "undefined" || mdc.autoInit ();
+    // Render the Nolij website app.
+    ReactDOM.render(React.createElement(App, null), document.getElementById('nolij-react-app-container'));
   }
 
   /*
     Loads the fonts used by this theme.
-
-    Note: this function relies on the theme library including
+     Note: this function relies on the theme library including
     https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js
   */
-  function loadFonts () {
+  function loadFonts() {
     WebFont.load({
       google: {
         families: ['Open+Sans:300,400,600']
       }
     });
   }
-}) (jQuery);
+
+  /*
+    Represents the Nolij website app.
+  */
+  function App(props) {
+    return React.createElement(
+      'div',
+      { 'class': 'nolij-react-app' },
+      React.createElement(
+        'h1',
+        null,
+        'React Loaded'
+      ),
+      React.createElement(VehiclesComponent, null)
+    );
+  }
+})(jQuery);

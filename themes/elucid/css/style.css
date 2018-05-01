@@ -245,8 +245,8 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   display: block;
   width: 100%;
   height: 3px;
-  background-image: linear-gradient(to left, #72caf2, #03A9F3);
-  background-image: linear-gradient(to left, #72caf2, #03A9F3);
+  background-image: linear-gradient(to left, #a00405, #a00405);
+  background-image: linear-gradient(to left, #a00405, #a00405);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px; }
 .elucid-page .elucid-page-content {
@@ -775,8 +775,8 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
             display: block;
             width: 100%;
             height: 8px;
-            background-image: linear-gradient(to left, #72caf2, #03A9F3);
-            background-image: linear-gradient(to left, #72caf2, #03A9F3);
+            background-image: linear-gradient(to left, #a00405, #a00405);
+            background-image: linear-gradient(to left, #a00405, #a00405);
             border-top-left-radius: 0px;
             border-top-right-radius: 0px;
             border-top-left-radius: 4px;
@@ -786,7 +786,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
             padding: 40px; }
             [data-elucid-page-path-alias="/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form h2,
             [data-elucid-page-path-alias="/contact/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form h2 {
-              color: #ff5131;
+              color: #a00405;
               font-size: 22px;
               font-weight: 500; }
             [data-elucid-page-path-alias="/feedback"] .elucid-page-content .elucid-page-content-wrapper-outer .elucid-page-content-wrapper .elucid-page-content-left [data-elucid-plugin-id="system_main_block"] #contact-message-feedback-form input.js-form-submit,
@@ -966,8 +966,8 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       display: block;
       width: 100%;
       height: 8px;
-      background-image: linear-gradient(to left, #72caf2, #03A9F3);
-      background-image: linear-gradient(to left, #72caf2, #03A9F3);
+      background-image: linear-gradient(to left, #a00405, #a00405);
+      background-image: linear-gradient(to left, #a00405, #a00405);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-top-left-radius: 4px;
@@ -993,7 +993,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
           font-weight: 400;
           line-height: 1.4;
           text-align: left;
-          color: #ff5131; }
+          color: #a00405; }
       [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule .contract-vehicles-schedule-body {
         margin-bottom: 20px; }
         [data-elucid-page-path-alias="/contract-vehicles"] .contract-vehicles .contract-vehicles-schedules .contract-vehicles-schedule .contract-vehicles-schedule-body p {
@@ -1226,7 +1226,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] .elucid-page-content .page-content a:hover {
         text-decoration: underline; }
     [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] .elucid-page-content .page-content h2 {
-      color: #ff5131;
+      color: #a00405;
       font-size: 22px;
       font-weight: 400;
       margin-bottom: 20px; }
@@ -1337,7 +1337,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule a:hover {
         text-decoration: underline; }
     [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule h2 {
-      color: #ff5131;
+      color: #a00405;
       font-size: 22px;
       font-weight: 400; }
     [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] .elucid-page-content .schedule .schedule-intro {
@@ -1382,8 +1382,8 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
         display: block;
         width: 100%;
         height: 8px;
-        background-image: linear-gradient(to left, #72caf2, #03A9F3);
-        background-image: linear-gradient(to left, #72caf2, #03A9F3);
+        background-image: linear-gradient(to left, #a00405, #a00405);
+        background-image: linear-gradient(to left, #a00405, #a00405);
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
         border-top-left-radius: 4px;
@@ -1584,7 +1584,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac a:hover {
         text-decoration: underline; }
     [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac h2 {
-      color: #ff5131;
+      color: #a00405;
       font-size: 22px;
       font-weight: 400; }
     [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] .elucid-page-content .nitaac ul {
@@ -1715,8 +1715,8 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       display: block;
       width: 100%;
       height: 8px;
-      background-image: linear-gradient(to left, #72caf2, #03A9F3);
-      background-image: linear-gradient(to left, #72caf2, #03A9F3);
+      background-image: linear-gradient(to left, #a00405, #a00405);
+      background-image: linear-gradient(to left, #a00405, #a00405);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px; }
     [data-elucid-page-node-type="opening"] .elucid-page-content .elucid-application-container .contact-message-job-application-form {
@@ -2228,7 +2228,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     [data-elucid-page-path-alias="/search/node"] .elucid-page-content h1 {
       font-size: 24px; } }
 [data-elucid-page-path-alias="/search/node"] .elucid-page-content [data-elucid-plugin-id="system_main_block"] h2, [data-elucid-page-path-alias="/search/node"] .elucid-page-content [data-elucid-plugin-id="system_main_block"] h3 {
-  color: #ff5131;
+  color: #a00405;
   font-size: 22px;
   font-weight: 400;
   margin: 30px 0 20px;
@@ -2255,7 +2255,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
       line-height: 1;
       font-weight: bold;
       text-align: right;
-      color: #ff5131;
+      color: #a00405;
       content: counter(search_interface);
       counter-increment: search_interface; }
     [data-elucid-page-path-alias="/search/node"] .elucid-page-content [data-elucid-plugin-id="system_main_block"] ol li h3 a {
@@ -3360,7 +3360,7 @@ header {
           border-bottom: 3px solid #03A9F3;
           color: #03A9F3; }
     .rate_table .rate_table_header .rate_table_title {
-      color: #ff5131;
+      color: #a00405;
       font-size: 22px;
       font-weight: normal;
       margin-bottom: 40px; }
@@ -3428,7 +3428,7 @@ header {
           box-shadow: none;
           width: 100%; }
           .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_filter input:-moz-ui-invalid {
-            border-bottom-color: #ff5131;
+            border-bottom-color: #a00405;
             border-bottom-width: 2px;
             box-shadow: none; }
         .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_filter.rate_table_focus label {
@@ -3445,9 +3445,9 @@ header {
         .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_filter.rate_table_active input {
           border-bottom-width: 2px; }
         .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_filter.elucid_invalid:not(.rate_table_active) label {
-          color: #ff5131; }
+          color: #a00405; }
           .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_filter.elucid_invalid:not(.rate_table_active) label:after {
-            color: #ff5131; }
+            color: #a00405; }
       .rate_table .rate_table_body .rate_table_body_filter_section .rate_table_num {
         color: #7c7c7c;
         margin-left: 20px;
@@ -3748,7 +3748,7 @@ header {
     outline: none;
     box-shadow: none; }
     .elucid_textfield input:-moz-ui-invalid, .elucid_textfield textarea:-moz-ui-invalid {
-      border-bottom-color: #ff5131;
+      border-bottom-color: #a00405;
       border-bottom-width: 2px;
       box-shadow: none; }
   .elucid_textfield.elucid_focus label {
@@ -3763,6 +3763,6 @@ header {
   .elucid_textfield.elucid_active input, .elucid_textfield.elucid_active textarea {
     border-bottom-width: 2px; }
   .elucid_textfield.elucid_invalid:not(.elucid_active) label {
-    color: #ff5131; }
+    color: #a00405; }
     .elucid_textfield.elucid_invalid:not(.elucid_active) label:after {
-      color: #ff5131; }
+      color: #a00405; }

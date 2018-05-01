@@ -1,0 +1,43 @@
+/*
+  This module defines the React component that
+  represents the contract vehicles block on
+  the homepage.
+*/
+
+/*
+  A react component that accepts no properties
+  and returns a JSX element that represents the
+  contract vehicles block.
+*/
+function VehiclesComponent () {
+  return <div class="nolij-vehicles-container">
+      <div class="nolij-vehicles-component">
+        <div class="nolij-vehicles-component-header">
+          <h2 class="nolij-vehicles-component-title">Let&apos;s Work <strong>Together</strong></h2>
+        </div>
+        <div class="nolij-vehicles-component-body">
+          <div class="nolij-vehicles-component-lead">
+            <p>Our contract vehicles allow our clients and teaming partners to access our services easily. Read our sole source guide to see how to get to us directly.</p>
+          </div>
+          <div class="nolij-vehicles-component-details">
+            <div class="nolij-vehicles-component-left-card">
+              <div class="nolij-vehicles-component-left-card-header">
+                <h3 class="nolij-vehicles-component-left-card-title">Contract Vehicles</h3>
+              </div>
+              <div class="nolij-vehicles-component-left-card-body">
+              </div>
+              <div class="nolij-vehicles-component-left-card-footer">
+                <span class="nolij-vehicles-component-duns">DUNS 020264787</span>
+                <span class="nolij-vehicles-component-cage">6VTS1</span>
+              </div>
+            </div>
+            <div class="nolij-vehicles-component-right-card">
+              <div class="nolij-vehicles-component-right-card-header">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>;
+}
+

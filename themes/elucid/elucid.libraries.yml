@@ -3,8 +3,9 @@ base:
   js:
     https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js: { type: external }
     node_modules/material-components-web/dist/material-components-web.min.js: {}
-    libs/react/react-dom.production.min.js: {}
     libs/react/react.production.min.js: {}
+    libs/react/react-dom.production.min.js: {}
+    js/components/vehicles.js: {}
     js/elucid.js: {}
     js/accordion.js: {}
     js/notifications.js: {}
