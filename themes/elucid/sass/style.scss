@@ -382,6 +382,16 @@ $default-ribbon-tablet-height: ($default-ribbon-height - $default-ribbon-mobile-
   }
 }
 
+@mixin content-block() {
+  margin: 0 auto;
+  max-width: $max-content-width;
+}
+
+@mixin padded-content-block($padding: null) {
+  @include content-block;
+  padding: if($padding, $padding, 0 42px);
+}
+
 /*
   Accepts three arguments:
 
@@ -651,12 +661,10 @@ $default-ribbon-tablet-height: ($default-ribbon-height - $default-ribbon-mobile-
 }
 
 .layout-content {
-  margin: 0 auto;
-  max-width: $max-content-width;
+  @include content-block;
 }
 .layout-padded-content {
-  @extend .layout-content;
-  padding: 0 42px; // tuned to ensure that the content area is 940px.
+  @include padded-content-block;
   @include mobile(padding, 0 $margin-small);
 }
 

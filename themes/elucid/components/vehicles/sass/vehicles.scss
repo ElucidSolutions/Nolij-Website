@@ -4,12 +4,11 @@
 */
 .nolij-vehicles-container {
   @include styleguide;
-  background-color: #437ca5;
-  padding: 22px;
 
   .nolij-vehicles-component {
+    @include padded-content-block(45px 25px 30px);
     background-color: white;
-    padding: 25px;
+    border: solid 18px #437ca5;
 
     .nolij-vehicles-component-header {
       @include short-hrule-after;

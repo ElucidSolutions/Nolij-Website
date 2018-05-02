@@ -35,6 +35,9 @@
     return React.createElement(
       'div',
       { 'class': 'nolij-react-app' },
+      React.createElement(HomepageHeroComponent, {
+        target: '.nolij-vehicles-container'
+      }),
       React.createElement(VehiclesComponent, null),
       React.createElement(ApplyBlockComponent, null)
     );

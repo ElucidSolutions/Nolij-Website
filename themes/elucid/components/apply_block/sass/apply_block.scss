@@ -6,7 +6,7 @@
   @include styleguide;
 
   .nolij-apply-component {
-    padding: 40px;
+    @include padded-content-block(40px 42px);
 
     .nolij-apply-component-header {
       @include short-hrule-after;

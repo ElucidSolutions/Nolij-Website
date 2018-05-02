@@ -1,0 +1,75 @@
+/*
+  This stylesheet defines the default styles
+  for the homepage hero block.
+*/
+.nolij-hero-container {
+  @include styleguide;
+  background: no-repeat url('../images/homepage_hero.jpg');
+  background-size: cover;
+  height: 80vh;
+  padding: 0 70px;
+  width: 100%;
+
+  .nolij-hero-component {
+    @extend .layout-content;
+    height: 100%;
+    position: relative;
+
+    .nolij-hero-component-overlay {
+      color: white;
+      top: 122px;
+      position: absolute;
+      width: 645px;
+
+      .nolij-hero-component-overlay-header {
+        h2.nolij-hero-component-overlay-title {
+          font-family: $second-font-family;
+          font-size: 44px;
+          font-weight: 600;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+      }
+      .nolij-hero-component-overlay-body {
+        .nolij-hero-component-overlay-lead {
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+      }
+      .nolij-hero-component-overlay-footer {
+        .nolij-hero-component-overlay-button {
+          background-color: $red;
+          border-color: $red;
+          display: inline-block;
+          font-family: $second-font-family;
+          font-weight: bold;
+          margin-right: 15px;
+          padding: 15px 30px;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: transparent;
+            border: white solid 1px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .nolij-hero-component-scroll-overlay {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+
+      .nolij-hero-component-scroll-overlay-tab {
+        background: no-repeat url('../images/scroll-down-icon.svg');
+        background-position: bottom 10px center;
+        color: white;
+        cursor: pointer;
+        font-family: $second-font-family;
+        font-size: 12px;
+        margin: 0 auto;
+        padding-bottom: 37px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
