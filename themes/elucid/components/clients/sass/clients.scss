@@ -1,0 +1,60 @@
+/*
+  This stylesheet defines the default styles
+  for the homepage clients block.
+*/
+.nolij-clients-container {
+  @include styleguide;
+  background-color: #fcfbf7;
+
+  .nolij-clients-component {
+    @include padded-content-block(40px 42px);
+
+    .nolij-clients-header {
+      @include short-hrule-after;
+
+      h2.nolij-clients-title {
+        @include strip-margins;
+        color: $blue-dark;
+        font-family: $second-font-family;
+        font-size: 55px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    .nolij-clients-body {
+      p.nolij-clients-lead {
+        color: $gray-text;
+        line-height: 28px;
+        margin-bottom: 60px;
+      }
+      .nolij-clients-card {
+        @include card;
+        background-color: white;
+        border-top: solid 4px $red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 20px;
+
+        .nolij-clients-client {
+          flex-shrink: 0;
+          margin: 10px 20px;
+          text-align: center;
+          width: 170px;
+
+          .nolij-clients-client-logo {
+            .nolij-clients-client-logo-img {
+            }
+          }
+          .nolij-clients-client-label {
+            color: #525152;
+
+            .nolij-clients-client-acronym {
+              color: #7c7c7c;
+            }
+          }
+        }
+      }
+    }
+  }
+}

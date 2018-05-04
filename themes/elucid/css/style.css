@@ -3485,6 +3485,79 @@ header {
 
 /*
   This stylesheet defines the default styles
+  for the homepage clients block.
+*/
+.nolij-clients-container {
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: #fcfbf7; }
+  @media screen and (max-width: 650px) {
+    .nolij-clients-container {
+      font-size: 14px; } }
+  .nolij-clients-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none; }
+    .nolij-clients-container select::-ms-expand {
+      display: none; }
+  .nolij-clients-container .elucid-select {
+    border-bottom: 1px solid #7c7c7c;
+    display: inline-block; }
+    .nolij-clients-container .elucid-select .elucid-select-select {
+      display: inline-block; }
+    .nolij-clients-container .elucid-select .elucid-select-icon {
+      display: inline-block; }
+    .nolij-clients-container .elucid-select:hover {
+      border-bottom: 2px solid #03A9F3;
+      font-size: 14px; }
+      .nolij-clients-container .elucid-select:hover .elucid-select-label {
+        color: #03A9F3;
+        font-size: 12px; }
+  .nolij-clients-container .nolij-clients-component {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 40px 42px; }
+    .nolij-clients-container .nolij-clients-component .nolij-clients-header:after {
+      background-color: #a00405;
+      display: block;
+      height: 5px;
+      width: 80px;
+      content: ""; }
+    .nolij-clients-container .nolij-clients-component .nolij-clients-header h2.nolij-clients-title {
+      margin: 0;
+      padding: 0;
+      color: #043b62;
+      font-family: "Raleway";
+      font-size: 55px;
+      font-weight: 300;
+      text-transform: uppercase; }
+    .nolij-clients-container .nolij-clients-component .nolij-clients-body p.nolij-clients-lead {
+      color: #7c7c7c;
+      line-height: 28px;
+      margin-bottom: 60px; }
+    .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card {
+      border-radius: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+      background-color: white;
+      border-top: solid 4px #a00405;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 20px; }
+      .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client {
+        flex-shrink: 0;
+        margin: 10px 20px;
+        text-align: center;
+        width: 170px; }
+        .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-label {
+          color: #525152; }
+          .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-label .nolij-clients-client-acronym {
+            color: #7c7c7c; }
+
+/*
+  This stylesheet defines the default styles
   for the homepage hero block.
 */
 .nolij-hero-container {

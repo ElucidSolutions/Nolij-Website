@@ -1,0 +1,95 @@
+/*
+  This module defines the React component that
+  represents the homepage clients block.
+*/
+
+/*
+  A React component that accepts three
+  properties:
+
+  * image, a URL string that reference an
+    image file
+  * label, a string
+  * acronym, a string
+
+  and returns a JSX element that represents a
+  client entry.
+*/
+function ClientComponent (props) {
+  return <div class="nolij-clients-client">
+      <div class="nolij-clients-client-logo">
+        <img class="nolij-clients-client-logo-img" src={props.image}/>
+      </div>
+      <div class="nolij-clients-client-label">{props.label}<br/><span class="nolij-clients-client-acronym">({props.acronym})</span></div>
+    </div>;
+}
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  Clients block.
+*/
+function ClientsBlockComponent () {
+  const clients = [
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Military Health System',
+      'acronym': 'MHS'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Department of Defense',
+      'acronym': 'DOD'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Defense Health Agency',
+      'acronym': 'DHA'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Veterans Affairs',
+      'acronym': 'VA'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Department of Energy',
+      'acronym': 'DOE'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'General Services Administration',
+      'acronym': 'GSA'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Bureau of Land Management',
+      'acronym': 'BLM'
+    },
+    {
+      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'label': 'Center for Disease Control and Prevention',
+      'acronym': 'CDC'
+    }
+  ];
+  return <div class="nolij-clients-container">
+      <div class="nolij-clients-component">
+        <div class="nolij-clients-header">
+          <h2 class="nolij-clients-title">Our <strong>Clients</strong></h2>
+        </div>
+        <div class="nolij-clients-body">
+          <p class="nolij-clients-lead">Our mission is to understand the challenges and goals of our clients, address them with innovative business solutions, and work closely together to achieve project success.</p>
+          <div class="nolij-clients-card">
+            {
+              clients.map (client => {
+                  return <ClientComponent
+                    image={client.image}
+                    label={client.label}
+                    acronym={client.acronym}/>;
+                })
+            }
+          </div>
+        </div>
+      </div>
+    </div>;
+}

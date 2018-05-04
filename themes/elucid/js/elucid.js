@@ -40,6 +40,7 @@
       }),
       React.createElement(ServicesComponent, null),
       React.createElement(VehiclesComponent, null),
+      React.createElement(ClientsBlockComponent, null),
       React.createElement(ApplyBlockComponent, null)
     );
   }
