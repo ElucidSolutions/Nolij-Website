@@ -1,0 +1,247 @@
+/*
+  This module defines the React component that
+  represents the homepage services block.
+*/
+
+/*
+  A React component that accepts four
+  properties:
+
+  * selected, a service ID string
+  * serviceId, a service ID string
+  * label, a string
+  * activeIcon, a URL string that references
+    an SVG file
+  * inactiveIcon, a URL string that references
+    an SVG file
+  * onSelect, a function that accepts a
+    service ID
+
+  and returns a JSX element that represents a
+  service named label having ID serviceId.
+*/
+class ServicesMenuItemComponent extends React.Component {
+  constructor (props) {
+    super (props);
+    this.select = this.select.bind (this);
+  }
+
+  select () {
+    this.props.onSelect (this.props.serviceId);
+  }
+
+  render () {
+    return <div
+        class={'nolij-services-menu-item' + (this.props.selected === this.props.serviceId ? ' nolij-services-menu-item-selected' : '')}
+        data-service-id={this.props.serviceId}
+        onClick={this.select}
+      >
+        <div class="nolij-services-menu-item-icon">
+          <img
+            class="nolij-services-menu-item-icon-img"
+            alt="Service icon"
+            src={this.props.selected === this.props.serviceId ? this.props.activeIcon : this.props.inactiveIcon}
+          />
+        </div>
+        <div class="nolij-services-menu-item-label">
+          {this.props.label}
+        </div>
+      </div>;
+  }
+}
+
+/*
+  A React component that accepts two properties:
+
+    * selected, a service ID string
+    * onSelect, a callback function that accepts
+      a service ID; 
+
+  and returns a JSX element that represents the
+  services menu component.
+*/
+class ServicesMenuComponent extends React.Component {
+  constructor (props) {
+    super (props);
+  }
+
+  render () {
+    return <div class="nolij-services-menu-component">
+        <ServicesMenuItemComponent
+          selected={this.props.selected}
+          serviceId="it-operations"
+          label="IT Operations"
+          activeIcon="/themes/elucid/components/services/images/it-operations-icon-active.svg"
+          inactiveIcon="/themes/elucid/components/services/images/it-operations-icon-inactive.svg"
+          onSelect={this.props.onSelect}
+        />
+        <ServicesMenuItemComponent
+          selected={this.props.selected}
+          serviceId="software-development"
+          label="Software Development"
+          activeIcon="/themes/elucid/components/services/images/software-development-icon-active.svg"
+          inactiveIcon="/themes/elucid/components/services/images/software-development-icon-inactive.svg"
+          onSelect={this.props.onSelect}
+        />
+        <ServicesMenuItemComponent
+          selected={this.props.selected}
+          serviceId="program-management"
+          label="Program Management"
+          activeIcon="/themes/elucid/components/services/images/program-management-icon-active.svg"
+          inactiveIcon="/themes/elucid/components/services/images/program-management-icon-inactive.svg"
+          onSelect={this.props.onSelect}
+        />
+        <ServicesMenuItemComponent
+          selected={this.props.selected}
+          serviceId="acquisition-support"
+          label="Acquisition Support"
+          activeIcon="/themes/elucid/components/services/images/acquisition-support-icon-active.svg"
+          inactiveIcon="/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg"
+          onSelect={this.props.onSelect}
+        />
+        <ServicesMenuItemComponent
+          selected={this.props.selected}
+          serviceId="training"
+          label="Training"
+          activeIcon="/themes/elucid/components/services/images/training-icon-active.svg"
+          inactiveIcon="/themes/elucid/components/services/images/training-icon-inactive.svg"
+          onSelect={this.props.onSelect}
+        />
+        <ServicesMenuItemComponent
+          selected={this.props.selected}
+          serviceId="human-resources"
+          label="Human Capital and Human Resources"
+          activeIcon="/themes/elucid/components/services/images/human-capital-icon-active.svg"
+          inactiveIcon="/themes/elucid/components/services/images/human-capital-icon-inactive.svg"
+          onSelect={this.props.onSelect}
+        />
+      </div>;
+  }
+}
+
+/*
+  A React component accepts three properties:
+
+  * selected, a service ID string
+  * serviceId, a service ID string
+  * label, a service title string
+
+  and returns a JSX element that represents
+  a service that contains the content.
+*/
+function ServicesDetailComponent (props) {
+  return <div
+      class={'nolij-services-detail' + (props.selected === props.serviceId ? ' nolij-services-detail-selected' : '')}
+      data-service-id={props.serviceId}
+    >
+      <div class="nolij-services-detail-header">
+        <h2 class="nolij-services-detail-title">{props.label}</h2>
+      </div>
+      <div class="nolij-services-detail-body">
+        {props.children}
+      </div>
+    </div>;
+}
+
+/*
+  A React component accepts one property:
+  selected, a service ID string; and returns
+  a JSX element that represents the services
+  details component.
+*/
+function ServicesDetailsComponent (props) {
+  return <div class="nolij-services-details">
+      <ServicesDetailComponent
+        selected={props.selected}
+        serviceId="it-operations"
+        label="IT Operations"
+      >
+        <p class="nolij-services-detail-lead">This is a placeholder for IT operations.</p>
+        <ul class="nolij-services-detail-list">
+          <li class="nolij-services-detail-list-item">IV&amp;V</li>
+        </ul>
+      </ServicesDetailComponent>
+      <ServicesDetailComponent
+        selected={props.selected}
+        serviceId="software-development"
+        label="Software Development"
+      >
+        <p class="nolij-services-detail-lead">This is a placeholder for Software Development.</p>
+      </ServicesDetailComponent>
+      <ServicesDetailComponent
+        selected={props.selected}
+        serviceId="program-management"
+        label="Program Management"
+      >
+        <p class="nolij-services-detail-lead">This is a placeholder for Program Management.</p>
+      </ServicesDetailComponent>
+      <ServicesDetailComponent
+        selected={props.selected}
+        serviceId="acquisition-support"
+        label="Acquisition Support"
+      >
+        <p class="nolij-services-detail-lead">This is a placeholder for Acquisition Support.</p>
+      </ServicesDetailComponent>
+      <ServicesDetailComponent
+        selected={props.selected}
+        serviceId="training"
+        label="Training"
+      >
+        <p class="nolij-services-detail-lead">This is a placeholder for Training.</p>
+      </ServicesDetailComponent>
+      <ServicesDetailComponent
+        selected={props.selected}
+        serviceId="human-resources"
+        label="Human Capital and Human Resources"
+      >
+        <p class="nolij-services-detail-lead">This is a placeholder for Human Capital and Human Resources.</p>
+      </ServicesDetailComponent>
+    </div>;
+}
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  homepage services block.
+*/
+class ServicesComponent extends React.Component {
+  constructor (props) {
+    super (props);
+    this.state = {
+      'selected': 'it-operations'
+    };
+    this.select = this.select.bind (this);
+  }
+
+  select (serviceId) {
+    this.setState ({
+      'selected': serviceId
+    });
+  }
+
+  render () {
+    return <div class="nolij-services-container">
+        <div class="nolij-services-component">
+          <div class="nolij-services-header">
+            <h2 class="nolij-services-title">Our Services</h2>
+          </div>
+          <div class="nolij-services-body">
+            <p class="nolij-services-lead">Nolij Consulting LLC is an <strong>Economically Disadvantaged Woman Owned Small Business (EDWOSB)</strong> with a focus on health care, technology, training, and marketing. We work closely with our clients to achieve project success.</p>
+            <div class="nolij-services-table">
+              <div class="nolij-services-table-left">
+                <ServicesMenuComponent
+                  selected={this.state.selected}
+                  onSelect={this.select}
+                />
+              </div>
+              <div class="nolij-services-table-right">
+                <ServicesDetailsComponent
+                  selected={this.state.selected}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>;
+  }
+}

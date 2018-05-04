@@ -36,8 +36,9 @@
   function App (props) {
     return <div class="nolij-react-app">
         <HomepageHeroComponent
-          target=".nolij-vehicles-container"
+          target=".nolij-services-container"
         />
+        <ServicesComponent/>
         <VehiclesComponent/>
         <ApplyBlockComponent/>
       </div>;

@@ -3565,6 +3565,107 @@ header {
 
 /*
   This stylesheet defines the default styles
+  for the homepage services block.
+*/
+.nolij-services-container {
+  font-family: "Roboto";
+  font-size: 16px; }
+  @media screen and (max-width: 650px) {
+    .nolij-services-container {
+      font-size: 14px; } }
+  .nolij-services-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none; }
+    .nolij-services-container select::-ms-expand {
+      display: none; }
+  .nolij-services-container .elucid-select {
+    border-bottom: 1px solid #7c7c7c;
+    display: inline-block; }
+    .nolij-services-container .elucid-select .elucid-select-select {
+      display: inline-block; }
+    .nolij-services-container .elucid-select .elucid-select-icon {
+      display: inline-block; }
+    .nolij-services-container .elucid-select:hover {
+      border-bottom: 2px solid #03A9F3;
+      font-size: 14px; }
+      .nolij-services-container .elucid-select:hover .elucid-select-label {
+        color: #03A9F3;
+        font-size: 12px; }
+  .nolij-services-container .nolij-services-component {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 40px 42px; }
+    .nolij-services-container .nolij-services-component .nolij-services-header:after {
+      background-color: #a00405;
+      display: block;
+      height: 5px;
+      width: 80px;
+      content: ""; }
+    .nolij-services-container .nolij-services-component .nolij-services-header h2.nolij-services-title {
+      margin: 0;
+      padding: 0;
+      color: #043b62;
+      font-family: "Raleway";
+      font-size: 55px;
+      font-weight: 300;
+      text-transform: uppercase; }
+    .nolij-services-container .nolij-services-component .nolij-services-body p.nolij-services-lead {
+      color: #7c7c7c;
+      line-height: 28px; }
+    .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table {
+      border-radius: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+      display: flex; }
+      .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left {
+        background-color: #FFF7F7;
+        color: #313131;
+        flex-shrink: 0;
+        width: 300px; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item {
+          border-left: 4px solid transparent;
+          color: #313131;
+          font-family: "Raleway";
+          font-size: 12px;
+          font-weight: bold;
+          padding: 10px; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item:hover {
+            cursor: pointer; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item:first-of-type {
+            border-top-left-radius: 2px; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item:last-of-type {
+            border-bottom-left-radius: 2px; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item.nolij-services-menu-item-selected {
+            background-color: white;
+            border-left: 4px solid #a00405;
+            color: #a00405; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item .nolij-services-menu-item-icon {
+            display: inline-block;
+            height: 100%;
+            width: 30px; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item .nolij-services-menu-item-label {
+            display: inline-block; }
+      .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right {
+        background-color: white;
+        padding: 10px 30px; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail {
+          display: none; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail .nolij-services-detail-header h2.nolij-services-detail-title {
+            margin: 0;
+            padding: 0;
+            color: #a00405;
+            font-family: "Raleway";
+            font-size: 26px;
+            text-transform: uppercase; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail .nolij-services-detail-body {
+            color: #424242; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail.nolij-services-detail-selected {
+            display: block; }
+
+/*
+  This stylesheet defines the default styles
   for the Contract Vehicles component.
 */
 .nolij-vehicles-container {

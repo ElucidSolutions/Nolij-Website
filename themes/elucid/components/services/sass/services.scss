@@ -1,0 +1,104 @@
+/*
+  This stylesheet defines the default styles
+  for the homepage services block.
+*/
+.nolij-services-container {
+  @include styleguide;
+
+  .nolij-services-component {
+    @include padded-content-block(40px 42px);
+
+    .nolij-services-header {
+      @include short-hrule-after;
+
+      h2.nolij-services-title {
+        @include strip-margins;
+        color: $blue-dark;
+        font-family: $second-font-family;
+        font-size: 55px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+    .nolij-services-body {
+      p.nolij-services-lead {
+        color: $gray-text;
+        line-height: 28px;
+      }
+      .nolij-services-table {
+        @include card;
+        display: flex;
+
+        .nolij-services-table-left {
+          background-color: #FFF7F7;
+          color: #313131;
+          flex-shrink: 0;
+          width: 300px;
+
+          .nolij-services-menu-component {
+            .nolij-services-menu-item {
+              border-left: 4px solid transparent;
+              color: #313131;
+              font-family: $second-font-family;
+              font-size: 12px;
+              font-weight: bold;
+              padding: 10px;
+
+              &:hover {
+                cursor: pointer;
+              }
+              &:first-of-type {
+                border-top-left-radius: 2px;
+              }
+              &:last-of-type {
+                border-bottom-left-radius: 2px;
+              }
+              &.nolij-services-menu-item-selected {
+                background-color: white;
+                border-left: 4px solid $red;
+                color: $red;
+              }
+              .nolij-services-menu-item-icon {
+                display: inline-block;
+                height: 100%;
+                width: 30px;
+
+                .nolij-services-menu-item-icon-img {
+                }
+              }
+              .nolij-services-menu-item-label {
+                display: inline-block;
+              }
+            }
+          }
+        }
+        .nolij-services-table-right {
+          background-color: white;
+          padding: 10px 30px;
+
+          .nolij-services-details {
+            .nolij-services-detail {
+              display: none;
+
+              .nolij-services-detail-header {
+                h2.nolij-services-detail-title {
+                  @include strip-margins;
+                  color: $red;
+                  font-family: $second-font-family;
+                  font-size: 26px;
+                  text-transform: uppercase;
+                }
+              }
+              .nolij-services-detail-body {
+                color: #424242;
+              }
+              &.nolij-services-detail-selected {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

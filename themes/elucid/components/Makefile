@@ -2,13 +2,16 @@
 # extension) to translate the EcmaScript 5 source
 # files into browser compatible JavaScript.
 
-all: apply_block hero vehicles
+all: apply_block hero services vehicles
 
 apply_block:
 	$(MAKE) -C apply_block
 
 hero:
 	$(MAKE) -C hero
+
+services:
+	$(MAKE) -C services
 
 vehicles:
 	$(MAKE) -C vehicles
