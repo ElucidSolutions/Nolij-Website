@@ -52,17 +52,17 @@ function ClientsBlockComponent () {
       'acronym': 'VA'
     },
     {
-      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'image': '/themes/elucid/components/clients/images/client-logo-doe.png',
       'label': 'Department of Energy',
       'acronym': 'DOE'
     },
     {
-      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'image': '/themes/elucid/components/clients/images/client-logo-gsa.png',
       'label': 'General Services Administration',
       'acronym': 'GSA'
     },
     {
-      'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+      'image': '/themes/elucid/components/clients/images/client-logo-blm.png',
       'label': 'Bureau of Land Management',
       'acronym': 'BLM'
     },

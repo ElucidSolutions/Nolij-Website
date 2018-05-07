@@ -11,6 +11,14 @@
   Apply block.
 */
 function ApplyBlockComponent () {
+  jQuery.ajax ({
+    url: Drupal.url ('/entity/block/elucid_search?_format=json'),
+    dataType: 'json',
+    success: function (data) {
+      console.log ('ajax called.');
+    }
+  });  
+
   return <div class="nolij-apply-container">
       <div class="nolij-apply-component">
         <div class="nolij-apply-component-header">

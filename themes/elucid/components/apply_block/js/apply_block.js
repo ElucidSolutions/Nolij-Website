@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
   This module defines the Apply block which is
@@ -13,79 +13,87 @@
   Apply block.
 */
 function ApplyBlockComponent() {
+  jQuery.ajax({
+    url: Drupal.url('/entity/block/elucid_search?_format=json'),
+    dataType: 'json',
+    success: function success(data) {
+      console.log('ajax called.');
+    }
+  });
+
   return React.createElement(
-    "div",
-    { "class": "nolij-apply-container" },
+    'div',
+    { 'class': 'nolij-apply-container' },
     React.createElement(
-      "div",
-      { "class": "nolij-apply-component" },
+      'div',
+      { 'class': 'nolij-apply-component' },
       React.createElement(
-        "div",
-        { "class": "nolij-apply-component-header" },
+        'div',
+        { 'class': 'nolij-apply-component-header' },
         React.createElement(
-          "h2",
-          { "class": "nolij-apply-component-title" },
-          "Join the ",
+          'h2',
+          { 'class': 'nolij-apply-component-title' },
+          'Join the ',
           React.createElement(
-            "strong",
+            'strong',
             null,
-            "Team"
+            'Team'
           )
         )
       ),
       React.createElement(
-        "div",
-        { "class": "nolij-apply-component-body" },
+        'div',
+        { 'class': 'nolij-apply-component-body' },
         React.createElement(
-          "div",
-          { "class": "nolij-apply-component-lead" },
+          'div',
+          { 'class': 'nolij-apply-component-lead' },
           React.createElement(
-            "p",
+            'p',
             null,
-            "Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation\u2019s government and other clients?"
+            'Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation\u2019s government and other clients?'
           )
         ),
         React.createElement(
-          "div",
-          { "class": "nolij-apply-component-card" },
-          React.createElement("div", { "class": "nolij-apply-component-card-left" }),
+          'div',
+          { 'class': 'nolij-apply-component-card' },
+          React.createElement('div', { 'class': 'nolij-apply-component-card-left' }),
           React.createElement(
-            "div",
-            { "class": "nolij-apply-component-card-right" },
+            'div',
+            { 'class': 'nolij-apply-component-card-right' },
             React.createElement(
-              "div",
-              { "class": "nolij-apply-component-card-header" },
+              'div',
+              { 'class': 'nolij-apply-component-card-header' },
               React.createElement(
-                "h3",
-                { "class": "nolij-apply-component-card-title" },
-                "Accelerate Your ",
+                'h3',
+                { 'class': 'nolij-apply-component-card-title' },
+                'Accelerate Your ',
                 React.createElement(
-                  "strong",
+                  'strong',
                   null,
-                  "Career"
+                  'Career'
                 )
               )
             ),
             React.createElement(
-              "div",
-              { "class": "nolij-apply-component-card-body" },
+              'div',
+              { 'class': 'nolij-apply-component-card-body' },
               React.createElement(
-                "p",
+                'p',
                 null,
-                "Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation\u2019s government and other clients?"
+                'Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation\u2019s government and other clients?'
               ),
               React.createElement(
-                "p",
+                'p',
                 null,
-                "If so, we want to hear from you."
+                'If so, we want to hear from you.'
               ),
               React.createElement(
-                "div",
+                'div',
                 null,
                 React.createElement(
-                  "a",
-                  { "class": "nolij-apply-component-card-link" },
-                  "View jobs and apply"
+                  'a',
+                  { 'class': 'nolij-apply-component-card-link' },
+                  'View jobs and apply'
                 )
               )
             )
