@@ -1,0 +1,81 @@
+/*
+  This stylesheet defines the default styles
+  for the homepage connect block.
+*/
+.nolij-connect-container {
+  @include styleguide;
+
+  .nolij-connect-component {
+    display: flex;
+    height: 400px;
+    @include padded-content-block(40px 42px);
+
+    .nolij-connect-left {
+      margin-top: 73px;
+      width: 300px;
+
+      .nolij-connect-left-header {
+        h2.nolij-connect-left-title {
+          @include strip-margins;
+          color: $blue-dark;
+          font-family: $second-font-family;
+          font-size: 40px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+      }
+      .nolij-connect-left-body {
+        p.nolij-connect-left-lead {
+          @include strip-margins;
+          color: $red;
+          font-size: 40px;
+          font-weight: 300;
+        }
+      }
+    }
+    .nolij-connect-right {
+      flex-grow: 1;
+      position: relative;
+
+      .nolij-connect-form-container {
+        @include card;
+        background-color: white;
+        border-top: solid 4px $red;
+        padding: 40px;
+        position: absolute;
+        width: 100%;
+
+        input,
+        textarea {
+          max-width: 100%;
+        }
+        .nolij-connect-right-header {
+          .nolij-connect-right-title {
+            color: $red;
+            font-family: $second-font-family;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+        }
+        .form-textarea {
+          height: 126px;
+        }
+        .js-form-submit {
+          background-color: $red;
+          border: none;
+          border-color: $red;
+          border-radius: 2px;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+          color: white;
+          display: inline-block;
+          font-family: $second-font-family;
+          font-weight: bold;
+          margin-right: 15px;
+          padding: 15px 30px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

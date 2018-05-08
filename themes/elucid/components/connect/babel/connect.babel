@@ -1,0 +1,132 @@
+/*
+  This module defines the React component that
+  represents the homepage Connect block.
+
+  Note: this module relies on the Contact
+  Message REST module.
+*/
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  Connect Form component.
+
+  Note: the following HTML is copied from the
+  HTML feedback from directly.
+
+  <!-- <input class="js-text-full text-full form-text required" data-drupal-selector="edit-subject-0-value" id="edit-subject-0-value" name="subject[0][value]" value="" size="60" maxlength="100" placeholder="" required="required" aria-required="true" type="text"/> -->
+*/
+class ConnectFormComponent extends React.Component {
+  constructor (props) {
+    super (props);
+    this.nameFieldElement = React.createRef ();
+    this.emailFieldElement = React.createRef ();
+    this.organizationFieldElement = React.createRef ();
+    this.subjectFieldElement = React.createRef ();
+    this.messageFieldElement = React.createRef ();
+    this.submit = this.submit.bind (this);
+  }
+
+  /*
+    Accepts no arguments and uses the Contact
+    Message REST module to submit the Connect
+    form.
+  */
+  submit () {
+/*
+    jQuery.post (
+      '/entity/contact_message',
+      {
+        'field_connect_name[0][value]': [{'value': this.nameFieldElement.current.value}],
+        'field_connect_email[0][value]': [{'value': this.emailFieldElement.current.value}],
+        'field_connect_organization[0][value]': [{'value': this.organizationFieldElement.current.value}],
+        'subject[0][value]': [{'value': this.subjectFieldElement.current.value}],
+        'message[0][value]': [{'value': this.messageFieldElement.current.value}]
+      },
+      function (data, status) {
+        console.log ('message sent');
+    });
+*/
+  }
+
+  render () {
+    return <div class="nolij-connect-form-container">
+        <div class="nolij-connect-right-header">
+          <h2 class="nolij-connect-right-title">Your Message to <strong>Nolij Consulting</strong></h2>
+        </div>
+        <div class="nolij-connect-right-body">
+          <form onSubmit={this.submit} class="contact-message-feedback-form contact-message-form contact-form" data-drupal-selector="contact-message-feedback-form" action="/contact/feedback" method="post" id="contact-message-feedback-form" accept-charset="UTF-8" data-drupal-form-fields="edit-field-connect-name-0-value,edit-field-connect-organization-0-value,edit-field-connect-email-0-value,edit-subject-0-value,edit-message-0-value,edit-submit,edit-preview">
+            <div class="field--type-string field--name-field-connect-name field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-field-connect-name-wrapper" id="edit-field-connect-name-wrapper">
+              <div class="js-form-item form-item js-form-type-textfield form-item-field-connect-name-0-value js-form-item-field-connect-name-0-value elucid_textfield">
+                <label for="edit-field-connect-name-0-value" class="js-form-required form-required">Your Name</label>
+                <input ref={this.nameFieldElement} class="js-text-full text-full form-text required" data-drupal-selector="edit-field-connect-name-0-value" id="edit-field-connect-name-0-value" name="field_connect_name[0][value]" size="60" maxlength="255" placeholder="" required="required" aria-required="true" type="text"/>
+                <div class="elucid-error-messages"/>
+              </div>
+            </div>
+            <input autocomplete="off" data-drupal-selector="form-7dchn-5i07xosrd2wqwsexvgbl8ioxkrsruxarqin9e" name="form_build_id" value="form-7dchn_5i07xOSrD2WqWseXvgBl8iOxkrSrUxARQIn9E" type="hidden"/>
+            <input data-drupal-selector="edit-contact-message-feedback-form-form-token" name="form_token" value="ZfwzZG_-74dxiskL60HXMxTE0yq2LVpMwTq5_b2Ugo8" type="hidden"/>
+            <input data-drupal-selector="edit-contact-message-feedback-form" name="form_id" value="contact_message_feedback_form" type="hidden"/>
+            <div class="field--type-string field--name-field-connect-organization field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-field-connect-organization-wrapper" id="edit-field-connect-organization-wrapper">
+              <div class="js-form-item form-item js-form-type-textfield form-item-field-connect-organization-0-value js-form-item-field-connect-organization-0-value elucid_textfield">
+                <label for="edit-field-connect-organization-0-value" class="js-form-required form-required">Your Organization</label>
+                <input ref={this.orgnizationFieldElement} class="js-text-full text-full form-text required" data-drupal-selector="edit-field-connect-organization-0-value" id="edit-field-connect-organization-0-value" name="field_connect_organization[0][value]" size="60" maxlength="255" placeholder="" required="required" aria-required="true" type="text"/>
+                <div class="elucid-error-messages"/>
+              </div>
+            </div>
+            <div class="field--type-email field--name-field-connect-email field--widget-email-default js-form-wrapper form-wrapper" data-drupal-selector="edit-field-connect-email-wrapper" id="edit-field-connect-email-wrapper">
+              <div class="js-form-item form-item js-form-type-email form-item-field-connect-email-0-value js-form-item-field-connect-email-0-value elucid_textfield">
+                <label for="edit-field-connect-email-0-value" class="js-form-required form-required">Email Address</label>
+                <input ref={this.emailFieldElement} data-drupal-selector="edit-field-connect-email-0-value" id="edit-field-connect-email-0-value" name="field_connect_email[0][value]" size="60" maxlength="254" placeholder="" class="form-email required" required="required" aria-required="true" type="email"/>
+                <div class="elucid-error-messages"/>
+              </div>
+            </div>
+            <div class="field--type-language field--name-langcode field--widget-language-select js-form-wrapper form-wrapper" data-drupal-selector="edit-langcode-wrapper" id="edit-langcode-wrapper"></div>
+            <div class="field--type-string field--name-subject field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-subject-wrapper" id="edit-subject-wrapper">
+              <div class="js-form-item form-item js-form-type-textfield form-item-subject-0-value js-form-item-subject-0-value elucid_textfield">
+                <label for="edit-subject-0-value" class="js-form-required form-required">Subject</label>
+                <input ref={this.subjectFieldElement} class="js-text-full text-full form-text required" data-drupal-selector="edit-subject-0-value" id="edit-subject-0-value" name="subject[0][value]" size="60" maxlength="100" placeholder="" required="required" aria-required="true" type="text"/>
+                <div class="elucid-error-messages"/>
+              </div>
+            </div>
+            <div class="field--type-string-long field--name-message field--widget-string-textarea js-form-wrapper form-wrapper" data-drupal-selector="edit-message-wrapper" id="edit-message-wrapper">
+              <div class="js-form-item form-item js-form-type-textarea form-item-message-0-value js-form-item-message-0-value elucid_textfield">
+                <label for="edit-message-0-value">Please send us a brief message and we will get back to you soon.</label>
+                <div>
+                  <textarea ref={this.messageFieldElement} class="js-text-full text-full form-textarea" data-drupal-selector="edit-message-0-value" id="edit-message-0-value" name="message[0][value]" rows="12" cols="60" placeholder=""/>
+                </div>
+                <div class="elucid-error-messages"/>
+              </div>
+            </div>
+            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+              <input data-drupal-selector="edit-submit" id="edit-submit" name="op" value="Send" class="button button--primary js-form-submit form-submit" type="submit"/>
+            </div>
+          </form>
+        </div>
+      </div>;
+  }
+}
+
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  Connect block.
+*/
+function ConnectBlockComponent () {
+  return <div class="nolij-connect-container">
+      <div class="nolij-connect-component">
+        <div class="nolij-connect-left">
+          <div class="nolij-connect-left-header">
+            <h2 class="nolij-connect-left-title">Ready to Get <strong>Started?</strong></h2>
+          </div>
+          <div class="nolij-connect-left-body">
+            <p class="nolij-connect-left-lead">Let&apos;s connect.</p>
+          </div>
+        </div>
+        <div class="nolij-connect-right">
+          <ConnectFormComponent/>
+        </div>
+      </div>
+    </div>;
+  
+}

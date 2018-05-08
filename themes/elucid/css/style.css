@@ -247,7 +247,7 @@ html {
   Applies the default styles to elements
   according to the styleguide.
 */
-.layout-content, .nolij-hero-container .nolij-hero-component {
+.layout-content {
   margin: 0 auto;
   max-width: 1024px; }
 
@@ -2495,18 +2495,18 @@ header {
       header .elucid-select:hover .elucid-select-label {
         color: #03A9F3;
         font-size: 12px; }
-  header .layout-content, header .nolij-hero-container .nolij-hero-component, .nolij-hero-container header .nolij-hero-component {
+  header .layout-content {
     display: table;
     width: 100%; }
-    header .layout-content .region-header-content, header .nolij-hero-container .nolij-hero-component .region-header-content, .nolij-hero-container header .nolij-hero-component .region-header-content {
+    header .layout-content .region-header-content {
       display: table-row; }
-      header .layout-content .region-header-content .region-header-left, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left {
+      header .layout-content .region-header-content .region-header-left {
         display: table-cell;
         padding: 0 12px 0 0;
         position: relative;
         vertical-align: middle;
         width: 100px; }
-        header .layout-content .region-header-content .region-header-left:before, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left:before, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left:before {
+        header .layout-content .region-header-content .region-header-left:before {
           clear: both;
           content: "";
           background-image: url("../images/logo-mask.svg");
@@ -2519,53 +2519,53 @@ header {
           top: 0;
           width: 26px;
           z-index: 100; }
-        header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
+        header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
           padding: 10px 0;
           text-align: center; }
           @media screen and (max-width: 950px) {
-            header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
+            header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
               padding-left: 0; } }
-          header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
+          header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
             display: block; }
             @media screen and (max-width: 950px) {
-              header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
+              header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
                 display: inline; } }
-            header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img {
+            header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img {
               line-height: 0;
               vertical-align: middle; }
-      header .layout-content .region-header-content .region-header-right, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right {
+      header .layout-content .region-header-content .region-header-right {
         color: #535253;
         display: table-cell;
         padding: 0px;
         position: relative; }
         @media screen and (max-width: 950px) {
-          header .layout-content .region-header-content .region-header-right, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right {
+          header .layout-content .region-header-content .region-header-right {
             display: none; } }
-        header .layout-content .region-header-content .region-header-right #region-header-right-background, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right #region-header-right-background, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right #region-header-right-background {
+        header .layout-content .region-header-content .region-header-right #region-header-right-background {
           background-color: #fcfcfc;
           height: 100%;
           position: absolute;
           width: 100vw;
           z-index: -2; }
-        header .layout-content .region-header-content .region-header-right #region-header-right-top-background, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right #region-header-right-top-background, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right #region-header-right-top-background {
+        header .layout-content .region-header-content .region-header-right #region-header-right-top-background {
           background-color: #ebfcff;
           height: 50px;
           position: absolute;
           width: 100vw;
           z-index: -1; }
-        header .layout-content .region-header-content .region-header-right .region-header-right-top, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top {
+        header .layout-content .region-header-content .region-header-right .region-header-right-top {
           background-color: transparent;
           height: 49px; }
-          header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in {
+          header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in {
             float: right;
             margin: 10px 0; }
-            header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link {
+            header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link {
               color: #1c7294;
               font-size: 12px;
               padding-left: 20px;
               position: relative;
               text-transform: uppercase; }
-              header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon {
+              header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon {
                 color: #1c7294;
                 display: inline-block;
                 left: 0;
@@ -2573,29 +2573,29 @@ header {
                 margin-right: 5px;
                 top: 5px;
                 vertical-align: middle; }
-              header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover {
+              header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover {
                 color: #03A9F3;
                 text-decoration: none; }
-                header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path {
+                header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path {
                   fill: #03A9F3; }
-          header .layout-content .region-header-content .region-header-right .region-header-right-top:after, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-top:after, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-top:after {
+          header .layout-content .region-header-content .region-header-right .region-header-right-top:after {
             clear: both;
             content: "";
             display: block; }
-        header .layout-content .region-header-content .region-header-right .region-header-right-bottom, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom {
+        header .layout-content .region-header-content .region-header-right .region-header-right-bottom {
           background-color: transparent;
           font-size: 14px;
           padding-left: 60px; }
-          header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] {
+          header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] {
             padding-top: 30px;
             text-transform: uppercase; }
-            header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a {
+            header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a {
               color: #535253;
               cursor: pointer; }
-              header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover {
+              header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover {
                 color: #03A9F3;
                 text-decoration: none; }
-            header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header .nolij-hero-container .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, .nolij-hero-container header .nolij-hero-component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a {
+            header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a {
               color: #03A9F3; }
   header #header_search_toggle_button {
     background: url("../images/search-icon.svg") no-repeat 50% 50%;
@@ -3551,10 +3551,102 @@ header {
         margin: 10px 20px;
         text-align: center;
         width: 170px; }
+        .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-logo .nolij-clients-client-logo-img {
+          max-width: 140px; }
         .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-label {
           color: #525152; }
           .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-label .nolij-clients-client-acronym {
             color: #7c7c7c; }
+
+/*
+  This stylesheet defines the default styles
+  for the homepage connect block.
+*/
+.nolij-connect-container {
+  font-family: "Roboto";
+  font-size: 16px; }
+  @media screen and (max-width: 650px) {
+    .nolij-connect-container {
+      font-size: 14px; } }
+  .nolij-connect-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none; }
+    .nolij-connect-container select::-ms-expand {
+      display: none; }
+  .nolij-connect-container .elucid-select {
+    border-bottom: 1px solid #7c7c7c;
+    display: inline-block; }
+    .nolij-connect-container .elucid-select .elucid-select-select {
+      display: inline-block; }
+    .nolij-connect-container .elucid-select .elucid-select-icon {
+      display: inline-block; }
+    .nolij-connect-container .elucid-select:hover {
+      border-bottom: 2px solid #03A9F3;
+      font-size: 14px; }
+      .nolij-connect-container .elucid-select:hover .elucid-select-label {
+        color: #03A9F3;
+        font-size: 12px; }
+  .nolij-connect-container .nolij-connect-component {
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 40px 42px; }
+    .nolij-connect-container .nolij-connect-component .nolij-connect-left {
+      margin-top: 73px;
+      width: 300px; }
+      .nolij-connect-container .nolij-connect-component .nolij-connect-left .nolij-connect-left-header h2.nolij-connect-left-title {
+        margin: 0;
+        padding: 0;
+        color: #043b62;
+        font-family: "Raleway";
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase; }
+      .nolij-connect-container .nolij-connect-component .nolij-connect-left .nolij-connect-left-body p.nolij-connect-left-lead {
+        margin: 0;
+        padding: 0;
+        color: #a00405;
+        font-size: 40px;
+        font-weight: 300; }
+    .nolij-connect-container .nolij-connect-component .nolij-connect-right {
+      flex-grow: 1;
+      position: relative; }
+      .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container {
+        border-radius: 2px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+        background-color: white;
+        border-top: solid 4px #a00405;
+        padding: 40px;
+        position: absolute;
+        width: 100%; }
+        .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container input,
+        .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container textarea {
+          max-width: 100%; }
+        .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .nolij-connect-right-header .nolij-connect-right-title {
+          color: #a00405;
+          font-family: "Raleway";
+          font-size: 20px;
+          font-weight: 300;
+          text-transform: uppercase; }
+        .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .form-textarea {
+          height: 126px; }
+        .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .js-form-submit {
+          background-color: #a00405;
+          border: none;
+          border-color: #a00405;
+          border-radius: 2px;
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+          color: white;
+          display: inline-block;
+          font-family: "Raleway";
+          font-weight: bold;
+          margin-right: 15px;
+          padding: 15px 30px;
+          text-transform: uppercase; }
 
 /*
   This stylesheet defines the default styles
@@ -3563,10 +3655,8 @@ header {
 .nolij-hero-container {
   font-family: "Roboto";
   font-size: 16px;
-  background: no-repeat url("../images/homepage_hero.jpg");
-  background-size: cover;
   height: 80vh;
-  padding: 0 70px;
+  overflow: hidden;
   width: 100%; }
   @media screen and (max-width: 650px) {
     .nolij-hero-container {
@@ -3592,34 +3682,43 @@ header {
       .nolij-hero-container .elucid-select:hover .elucid-select-label {
         color: #03A9F3;
         font-size: 12px; }
+  .nolij-hero-container video#bgvideo {
+    background: url(/themes/elucid/components/hero/images/video-placeholder.jpg) no-repeat;
+    background-size: cover;
+    width: 100%; }
   .nolij-hero-container .nolij-hero-component {
-    height: 100%;
-    position: relative; }
-    .nolij-hero-container .nolij-hero-component .nolij-hero-component-overlay {
-      color: white;
-      top: 122px;
-      position: absolute;
-      width: 645px; }
-      .nolij-hero-container .nolij-hero-component .nolij-hero-component-overlay .nolij-hero-component-overlay-header h2.nolij-hero-component-overlay-title {
-        font-family: "Raleway";
-        font-size: 44px;
-        font-weight: 600;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
-      .nolij-hero-container .nolij-hero-component .nolij-hero-component-overlay .nolij-hero-component-overlay-body .nolij-hero-component-overlay-lead {
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
-      .nolij-hero-container .nolij-hero-component .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button {
-        background-color: #a00405;
-        border-color: #a00405;
-        display: inline-block;
-        font-family: "Raleway";
-        font-weight: bold;
-        margin-right: 15px;
-        padding: 15px 30px;
-        text-transform: uppercase; }
-        .nolij-hero-container .nolij-hero-component .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button:hover {
-          background-color: transparent;
-          border: white solid 1px;
-          cursor: pointer; }
+    height: 80vh;
+    position: absolute;
+    width: 100%; }
+    .nolij-hero-container .nolij-hero-component .nolij-hero-component-content {
+      margin: 0 auto;
+      max-width: 1024px;
+      padding: 122px 42px 0;
+      height: 100%;
+      position: relative; }
+      .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay {
+        color: white;
+        width: 645px; }
+        .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-header h2.nolij-hero-component-overlay-title {
+          font-family: "Raleway";
+          font-size: 44px;
+          font-weight: 600;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+        .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-body .nolij-hero-component-overlay-lead {
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+        .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button {
+          background-color: #a00405;
+          border-color: #a00405;
+          display: inline-block;
+          font-family: "Raleway";
+          font-weight: bold;
+          margin-right: 15px;
+          padding: 15px 30px;
+          text-transform: uppercase; }
+          .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button:hover {
+            background-color: transparent;
+            border: white solid 1px;
+            cursor: pointer; }
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay {
       position: absolute;
       bottom: 0px;

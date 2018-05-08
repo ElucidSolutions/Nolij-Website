@@ -49,51 +49,60 @@ var HomepageHeroComponent = function (_React$Component) {
           { "class": "nolij-hero-component" },
           React.createElement(
             "div",
-            { "class": "nolij-hero-component-overlay" },
+            { "class": "nolij-hero-component-content" },
             React.createElement(
               "div",
-              { "class": "nolij-hero-component-overlay-header" },
+              { "class": "nolij-hero-component-overlay" },
               React.createElement(
-                "h2",
-                { "class": "nolij-hero-component-overlay-title" },
-                "We connect your people, processes, and technology."
+                "div",
+                { "class": "nolij-hero-component-overlay-header" },
+                React.createElement(
+                  "h2",
+                  { "class": "nolij-hero-component-overlay-title" },
+                  "We connect your people, processes, and technology."
+                )
+              ),
+              React.createElement(
+                "div",
+                { "class": "nolij-hero-component-overlay-body" },
+                React.createElement(
+                  "p",
+                  { "class": "nolij-hero-component-overlay-lead" },
+                  "This is a placeholder statement that supports the placeholder statement above. This ultimately should be supported by the placeholder imagine behind. What doe Nolij do for clients?"
+                )
+              ),
+              React.createElement(
+                "div",
+                { "class": "nolij-hero-component-overlay-footer" },
+                React.createElement(
+                  "div",
+                  {
+                    "class": "nolij-hero-component-overlay-button"
+                  },
+                  "Let's Connect"
+                )
               )
             ),
             React.createElement(
               "div",
-              { "class": "nolij-hero-component-overlay-body" },
-              React.createElement(
-                "p",
-                { "class": "nolij-hero-component-overlay-lead" },
-                "This is a placeholder statement that supports the placeholder statement above. This ultimately should be supported by the placeholder imagine behind. What doe Nolij do for clients?"
-              )
-            ),
-            React.createElement(
-              "div",
-              { "class": "nolij-hero-component-overlay-footer" },
+              { "class": "nolij-hero-component-scroll-overlay" },
               React.createElement(
                 "div",
                 {
-                  "class": "nolij-hero-component-overlay-button"
+                  "class": "nolij-hero-component-scroll-overlay-tab",
+                  onClick: this.scroll
                 },
-                "Let's Connect"
+                "Scroll",
+                React.createElement("br", null),
+                "Down"
               )
             )
-          ),
-          React.createElement(
-            "div",
-            { "class": "nolij-hero-component-scroll-overlay" },
-            React.createElement(
-              "div",
-              {
-                "class": "nolij-hero-component-scroll-overlay-tab",
-                onClick: this.scroll
-              },
-              "Scroll",
-              React.createElement("br", null),
-              "Down"
-            )
           )
+        ),
+        React.createElement(
+          "video",
+          { playsinline: "true", autoplay: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
+          React.createElement("source", { src: "/themes/elucid/components/hero/video/banner-video.mp4", type: "video/mp4" })
         )
       );
     }

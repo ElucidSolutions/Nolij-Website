@@ -49,7 +49,7 @@ function ClientComponent(props) {
 */
 function ClientsBlockComponent() {
   var clients = [{
-    'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+    'image': '/themes/elucid/components/clients/images/client-logo-mhs.png',
     'label': 'Military Health System',
     'acronym': 'MHS'
   }, {
@@ -57,11 +57,11 @@ function ClientsBlockComponent() {
     'label': 'Department of Defense',
     'acronym': 'DOD'
   }, {
-    'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+    'image': '/themes/elucid/components/clients/images/client-logo-dha.png',
     'label': 'Defense Health Agency',
     'acronym': 'DHA'
   }, {
-    'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+    'image': '/themes/elucid/components/clients/images/client-logo-va.png',
     'label': 'Veterans Affairs',
     'acronym': 'VA'
   }, {
@@ -77,7 +77,7 @@ function ClientsBlockComponent() {
     'label': 'Bureau of Land Management',
     'acronym': 'BLM'
   }, {
-    'image': '/themes/elucid/components/clients/images/client-logo-dod.png',
+    'image': '/themes/elucid/components/clients/images/client-logo-cdc.png',
     'label': 'Center for Disease Control and Prevention',
     'acronym': 'CDC'
   }];

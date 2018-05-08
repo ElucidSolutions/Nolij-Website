@@ -25,26 +25,31 @@ class HomepageHeroComponent extends React.Component {
   render () {
     return <div class="nolij-hero-container">
         <div class="nolij-hero-component">
-          <div class="nolij-hero-component-overlay">
-            <div class="nolij-hero-component-overlay-header">
-              <h2 class="nolij-hero-component-overlay-title">We connect your people, processes, and technology.</h2>
+          <div class="nolij-hero-component-content">
+            <div class="nolij-hero-component-overlay">
+              <div class="nolij-hero-component-overlay-header">
+                <h2 class="nolij-hero-component-overlay-title">We connect your people, processes, and technology.</h2>
+              </div>
+              <div class="nolij-hero-component-overlay-body">
+                <p class="nolij-hero-component-overlay-lead">This is a placeholder statement that supports the placeholder statement above. This ultimately should be supported by the placeholder imagine behind. What doe Nolij do for clients?</p>
+              </div>
+              <div class="nolij-hero-component-overlay-footer">
+                <div
+                  class="nolij-hero-component-overlay-button"
+                >Let's Connect</div>
+              </div>
             </div>
-            <div class="nolij-hero-component-overlay-body">
-              <p class="nolij-hero-component-overlay-lead">This is a placeholder statement that supports the placeholder statement above. This ultimately should be supported by the placeholder imagine behind. What doe Nolij do for clients?</p>
-            </div>
-            <div class="nolij-hero-component-overlay-footer">
+            <div class="nolij-hero-component-scroll-overlay">
               <div
-                class="nolij-hero-component-overlay-button"
-              >Let's Connect</div>
+                class="nolij-hero-component-scroll-overlay-tab"
+                onClick={this.scroll}
+              >Scroll<br/>Down</div>
             </div>
-          </div>
-          <div class="nolij-hero-component-scroll-overlay">
-            <div
-              class="nolij-hero-component-scroll-overlay-tab"
-              onClick={this.scroll}
-            >Scroll<br/>Down</div>
           </div>
         </div>
+        <video playsinline="true" autoplay="true" muted="true" loop="true" poster="/themes/elucid/components/hero/images/video-placeholder.jpg" id="bgvideo" width="x" height="y">
+          <source src="/themes/elucid/components/hero/video/banner-video.mp4" type="video/mp4"/>
+        </video>
       </div>;
   }
 }

@@ -3,52 +3,61 @@
   for the homepage hero block.
 */
 .nolij-hero-container {
+  $hero-height: 80vh;
+
   @include styleguide;
-  background: no-repeat url('../images/homepage_hero.jpg');
-  background-size: cover;
-  height: 80vh;
-  padding: 0 70px;
+  height: $hero-height;
+  overflow: hidden;
   width: 100%;
 
+  video#bgvideo {
+    background: url(/themes/elucid/components/hero/images/video-placeholder.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
   .nolij-hero-component {
-    @extend .layout-content;
-    height: 100%;
-    position: relative;
+    height: $hero-height;
+    position: absolute;
+    width: 100%;
 
-    .nolij-hero-component-overlay {
-      color: white;
-      top: 122px;
-      position: absolute;
-      width: 645px;
+    .nolij-hero-component-content {
+      @include padded-content-block(122px 42px 0);
+      height: 100%;
+      position: relative;
 
-      .nolij-hero-component-overlay-header {
-        h2.nolij-hero-component-overlay-title {
-          font-family: $second-font-family;
-          font-size: 44px;
-          font-weight: 600;
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      .nolij-hero-component-overlay {
+        color: white;
+        width: 645px;
+
+        .nolij-hero-component-overlay-header {
+          h2.nolij-hero-component-overlay-title {
+            font-family: $second-font-family;
+            font-size: 44px;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          }
         }
-      }
-      .nolij-hero-component-overlay-body {
-        .nolij-hero-component-overlay-lead {
-          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        .nolij-hero-component-overlay-body {
+          .nolij-hero-component-overlay-lead {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          }
         }
-      }
-      .nolij-hero-component-overlay-footer {
-        .nolij-hero-component-overlay-button {
-          background-color: $red;
-          border-color: $red;
-          display: inline-block;
-          font-family: $second-font-family;
-          font-weight: bold;
-          margin-right: 15px;
-          padding: 15px 30px;
-          text-transform: uppercase;
+        .nolij-hero-component-overlay-footer {
+          .nolij-hero-component-overlay-button {
+            background-color: $red;
+            border-color: $red;
+            display: inline-block;
+            font-family: $second-font-family;
+            font-weight: bold;
+            margin-right: 15px;
+            padding: 15px 30px;
+            text-transform: uppercase;
 
-          &:hover {
-            background-color: transparent;
-            border: white solid 1px;
-            cursor: pointer;
+            &:hover {
+              background-color: transparent;
+              border: white solid 1px;
+              cursor: pointer;
+            }
           }
         }
       }

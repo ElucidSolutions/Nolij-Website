@@ -7,6 +7,7 @@ base:
     libs/react/react-dom.production.min.js: {}
     components/apply_block/js/apply_block.js: {}
     components/clients/js/clients.js: {}
+    components/connect/js/connect.js: {}
     components/hero/js/hero.js: {}
     components/services/js/services.js: {}
     components/vehicles/js/vehicles.js: {}

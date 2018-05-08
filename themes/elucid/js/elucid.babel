@@ -42,6 +42,7 @@
         <VehiclesComponent/>
         <ClientsBlockComponent/>
         <ApplyBlockComponent/>
+        <ConnectBlockComponent/>
       </div>;
   }
 }) (jQuery);
