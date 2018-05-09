@@ -75,11 +75,15 @@ var HomepageHeroComponent = function (_React$Component) {
                 "div",
                 { "class": "nolij-hero-component-overlay-footer" },
                 React.createElement(
-                  "div",
-                  {
-                    "class": "nolij-hero-component-overlay-button"
-                  },
-                  "Let's Connect"
+                  "a",
+                  { href: "#connect" },
+                  React.createElement(
+                    "div",
+                    {
+                      "class": "nolij-hero-component-overlay-button"
+                    },
+                    "Let's Connect"
+                  )
                 )
               )
             ),
@@ -101,7 +105,7 @@ var HomepageHeroComponent = function (_React$Component) {
         ),
         React.createElement(
           "video",
-          { playsinline: "true", autoplay: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
+          { playsinline: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
           React.createElement("source", { src: "/themes/elucid/components/hero/video/banner-video.mp4", type: "video/mp4" })
         )
       );

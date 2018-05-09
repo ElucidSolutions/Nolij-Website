@@ -3655,7 +3655,8 @@ header {
 .nolij-hero-container {
   font-family: "Roboto";
   font-size: 16px;
-  height: 70vh;
+  background-color: black;
+  height: calc(100vh - 80px);
   overflow: hidden;
   width: 100%; }
   @media screen and (max-width: 650px) {
@@ -3682,41 +3683,53 @@ header {
       .nolij-hero-container .elucid-select:hover .elucid-select-label {
         color: #03A9F3;
         font-size: 12px; }
+  @media screen and (max-width: 950px) {
+    .nolij-hero-container {
+      height: calc(100vh - 131px); } }
   .nolij-hero-container video#bgvideo {
-    background: url(/themes/elucid/components/hero/images/video-placeholder.jpg) no-repeat;
-    background-size: cover;
-    width: 100%; }
+    min-height: 105%;
+    min-width: 105%; }
   .nolij-hero-container .nolij-hero-component {
-    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: calc(100vh - 80px);
     position: absolute;
     width: 100%; }
+    @media screen and (max-width: 950px) {
+      .nolij-hero-container .nolij-hero-component {
+        height: calc(100vh - 131px); } }
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-content {
       margin: 0 auto;
       max-width: 1024px;
-      padding: 42px 42px 0;
+      padding: 0 42px;
       height: 100%;
       position: relative; }
       .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay {
         color: white;
+        position: relative;
+        top: 20%;
         width: 645px; }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-header h2.nolij-hero-component-overlay-title {
+          margin: 0;
+          padding: 0;
           font-family: "Raleway";
           font-size: 44px;
           font-weight: 600;
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-body .nolij-hero-component-overlay-lead {
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
-        .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button {
-          background-color: #e30a0c;
-          display: inline-block;
-          font-family: "Raleway";
-          font-weight: bold;
-          margin-right: 15px;
-          padding: 15px 30px;
-          text-transform: uppercase; }
-          .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button:hover {
-            background-color: #a00405;
-            cursor: pointer; }
+        .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a {
+          color: white; }
+          .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a .nolij-hero-component-overlay-button {
+            background-color: #e30a0c;
+            display: inline-block;
+            font-family: "Raleway";
+            font-weight: bold;
+            margin-right: 15px;
+            padding: 15px 30px;
+            text-transform: uppercase; }
+            .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a .nolij-hero-component-overlay-button:hover {
+              background-color: #a00405;
+              cursor: pointer; }
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay {
       position: absolute;
       bottom: 0px;

@@ -34,9 +34,11 @@ class HomepageHeroComponent extends React.Component {
                 <p class="nolij-hero-component-overlay-lead">This is a placeholder statement that supports the placeholder statement above. This ultimately should be supported by the placeholder imagine behind. What doe Nolij do for clients?</p>
               </div>
               <div class="nolij-hero-component-overlay-footer">
-                <div
-                  class="nolij-hero-component-overlay-button"
-                >Let's Connect</div>
+                <a href="#connect">
+                  <div
+                    class="nolij-hero-component-overlay-button"
+                  >Let's Connect</div>
+                </a>
               </div>
             </div>
             <div class="nolij-hero-component-scroll-overlay">
@@ -47,7 +49,7 @@ class HomepageHeroComponent extends React.Component {
             </div>
           </div>
         </div>
-        <video playsinline="true" autoplay="true" muted="true" loop="true" poster="/themes/elucid/components/hero/images/video-placeholder.jpg" id="bgvideo" width="x" height="y">
+        <video playsinline="true" muted="true" loop="true" poster="/themes/elucid/components/hero/images/video-placeholder.jpg" id="bgvideo" width="x" height="y">
           <source src="/themes/elucid/components/hero/video/banner-video.mp4" type="video/mp4"/>
         </video>
       </div>;

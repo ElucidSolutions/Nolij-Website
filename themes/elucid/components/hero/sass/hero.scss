@@ -3,34 +3,41 @@
   for the homepage hero block.
 */
 .nolij-hero-container {
-  $hero-height: 70vh;
+  $hero-height: calc(100vh - 80px);
+  $hero-tablet-height: calc(100vh - 131px);
 
   @include styleguide;
+  background-color: black;
   height: $hero-height;
+  @include at-breakpoint($header-menu-breakpoint, height, $hero-tablet-height);
   overflow: hidden;
   width: 100%;
 
   video#bgvideo {
-    background: url(/themes/elucid/components/hero/images/video-placeholder.jpg) no-repeat;
-    background-size: cover;
-    width: 100%;
+    min-height: 105%;
+    min-width: 105%;
   }
   .nolij-hero-component {
+    background-color: rgba(0,0,0,0.7);
     height: $hero-height;
+    @include at-breakpoint($header-menu-breakpoint, height, $hero-tablet-height);
     position: absolute;
     width: 100%;
 
     .nolij-hero-component-content {
-      @include padded-content-block(42px 42px 0);
+      @include padded-content-block(0 42px);
       height: 100%;
       position: relative;
 
       .nolij-hero-component-overlay {
         color: white;
+        position: relative;
+        top: 20%;
         width: 645px;
 
         .nolij-hero-component-overlay-header {
           h2.nolij-hero-component-overlay-title {
+            @include strip-margins;
             font-family: $second-font-family;
             font-size: 44px;
             font-weight: 600;
@@ -43,18 +50,22 @@
           }
         }
         .nolij-hero-component-overlay-footer {
-          .nolij-hero-component-overlay-button {
-            background-color: $red-light;
-            display: inline-block;
-            font-family: $second-font-family;
-            font-weight: bold;
-            margin-right: 15px;
-            padding: 15px 30px;
-            text-transform: uppercase;
+          a {
+            color: white;
 
-            &:hover {
-              background-color: $red;
-              cursor: pointer;
+            .nolij-hero-component-overlay-button {
+              background-color: $red-light;
+              display: inline-block;
+              font-family: $second-font-family;
+              font-weight: bold;
+              margin-right: 15px;
+              padding: 15px 30px;
+              text-transform: uppercase;
+
+              &:hover {
+                background-color: $red;
+                cursor: pointer;
+              }
             }
           }
         }
