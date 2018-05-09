@@ -23,7 +23,7 @@ function ApplyBlockComponent() {
 
   return React.createElement(
     'div',
-    { 'class': 'nolij-apply-container' },
+    { 'data-nolij-id': 'apply', 'class': 'nolij-apply-container' },
     React.createElement(
       'div',
       { 'class': 'nolij-apply-component' },

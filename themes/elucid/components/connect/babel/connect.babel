@@ -113,7 +113,7 @@ class ConnectFormComponent extends React.Component {
   Connect block.
 */
 function ConnectBlockComponent () {
-  return <div class="nolij-connect-container">
+  return <div data-nolij-id="connect" class="nolij-connect-container">
       <div class="nolij-connect-component">
         <div class="nolij-connect-left">
           <div class="nolij-connect-left-header">

@@ -12,7 +12,7 @@ header {
   position: relative; // needed for the shadow effect to cast over subsequent elements.
   width: 100%;
   z-index: 10; // needed to cast shadow over the subsequent element.
-  .layout-content {
+  .layout-padded-content {
     display: table;
     width: 100%;
     .region-header-content {

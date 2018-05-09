@@ -72,7 +72,7 @@ function ClientsBlockComponent () {
       'acronym': 'CDC'
     }
   ];
-  return <div class="nolij-clients-container">
+  return <div data-nolij-id="clients" class="nolij-clients-container">
       <div class="nolij-clients-component">
         <div class="nolij-clients-header">
           <h2 class="nolij-clients-title">Our <strong>Clients</strong></h2>

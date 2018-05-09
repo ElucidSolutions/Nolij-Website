@@ -3,7 +3,7 @@
   for the homepage hero block.
 */
 .nolij-hero-container {
-  $hero-height: 80vh;
+  $hero-height: 70vh;
 
   @include styleguide;
   height: $hero-height;
@@ -21,7 +21,7 @@
     width: 100%;
 
     .nolij-hero-component-content {
-      @include padded-content-block(122px 42px 0);
+      @include padded-content-block(42px 42px 0);
       height: 100%;
       position: relative;
 
@@ -44,8 +44,7 @@
         }
         .nolij-hero-component-overlay-footer {
           .nolij-hero-component-overlay-button {
-            background-color: $red;
-            border-color: $red;
+            background-color: $red-light;
             display: inline-block;
             font-family: $second-font-family;
             font-weight: bold;
@@ -54,8 +53,7 @@
             text-transform: uppercase;
 
             &:hover {
-              background-color: transparent;
-              border: white solid 1px;
+              background-color: $red;
               cursor: pointer;
             }
           }

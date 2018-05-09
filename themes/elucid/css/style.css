@@ -2495,18 +2495,18 @@ header {
       header .elucid-select:hover .elucid-select-label {
         color: #03A9F3;
         font-size: 12px; }
-  header .layout-content {
+  header .layout-padded-content, header #block-ourclients .clients_component, #block-ourclients header .clients_component, header #block-credentials-block .credentials, #block-credentials-block header .credentials, header #block-template-our-partners .partners_component, #block-template-our-partners header .partners_component {
     display: table;
     width: 100%; }
-    header .layout-content .region-header-content {
+    header .layout-padded-content .region-header-content, header #block-ourclients .clients_component .region-header-content, #block-ourclients header .clients_component .region-header-content, header #block-credentials-block .credentials .region-header-content, #block-credentials-block header .credentials .region-header-content, header #block-template-our-partners .partners_component .region-header-content, #block-template-our-partners header .partners_component .region-header-content {
       display: table-row; }
-      header .layout-content .region-header-content .region-header-left {
+      header .layout-padded-content .region-header-content .region-header-left, header #block-ourclients .clients_component .region-header-content .region-header-left, #block-ourclients header .clients_component .region-header-content .region-header-left, header #block-credentials-block .credentials .region-header-content .region-header-left, #block-credentials-block header .credentials .region-header-content .region-header-left, header #block-template-our-partners .partners_component .region-header-content .region-header-left, #block-template-our-partners header .partners_component .region-header-content .region-header-left {
         display: table-cell;
         padding: 0 12px 0 0;
         position: relative;
         vertical-align: middle;
         width: 100px; }
-        header .layout-content .region-header-content .region-header-left:before {
+        header .layout-padded-content .region-header-content .region-header-left:before, header #block-ourclients .clients_component .region-header-content .region-header-left:before, #block-ourclients header .clients_component .region-header-content .region-header-left:before, header #block-credentials-block .credentials .region-header-content .region-header-left:before, #block-credentials-block header .credentials .region-header-content .region-header-left:before, header #block-template-our-partners .partners_component .region-header-content .region-header-left:before, #block-template-our-partners header .partners_component .region-header-content .region-header-left:before {
           clear: both;
           content: "";
           background-image: url("../images/logo-mask.svg");
@@ -2519,53 +2519,53 @@ header {
           top: 0;
           width: 26px;
           z-index: 100; }
-        header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
+        header .layout-padded-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header #block-ourclients .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], #block-ourclients header .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header #block-credentials-block .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], #block-credentials-block header .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header #block-template-our-partners .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], #block-template-our-partners header .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
           padding: 10px 0;
           text-align: center; }
           @media screen and (max-width: 950px) {
-            header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
+            header .layout-padded-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header #block-ourclients .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], #block-ourclients header .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header #block-credentials-block .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], #block-credentials-block header .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], header #block-template-our-partners .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"], #block-template-our-partners header .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] {
               padding-left: 0; } }
-          header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
+          header .layout-padded-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header #block-ourclients .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, #block-ourclients header .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header #block-credentials-block .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, #block-credentials-block header .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header #block-template-our-partners .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, #block-template-our-partners header .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
             display: block; }
             @media screen and (max-width: 950px) {
-              header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
+              header .layout-padded-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header #block-ourclients .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, #block-ourclients header .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header #block-credentials-block .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, #block-credentials-block header .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, header #block-template-our-partners .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a, #block-template-our-partners header .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a {
                 display: inline; } }
-            header .layout-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img {
+            header .layout-padded-content .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, header #block-ourclients .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, #block-ourclients header .clients_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, header #block-credentials-block .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, #block-credentials-block header .credentials .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, header #block-template-our-partners .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img, #block-template-our-partners header .partners_component .region-header-content .region-header-left [data-elucid-plugin-id="system_branding_block"] a img {
               line-height: 0;
               vertical-align: middle; }
-      header .layout-content .region-header-content .region-header-right {
+      header .layout-padded-content .region-header-content .region-header-right, header #block-ourclients .clients_component .region-header-content .region-header-right, #block-ourclients header .clients_component .region-header-content .region-header-right, header #block-credentials-block .credentials .region-header-content .region-header-right, #block-credentials-block header .credentials .region-header-content .region-header-right, header #block-template-our-partners .partners_component .region-header-content .region-header-right, #block-template-our-partners header .partners_component .region-header-content .region-header-right {
         color: #535253;
         display: table-cell;
         padding: 0px;
         position: relative; }
         @media screen and (max-width: 950px) {
-          header .layout-content .region-header-content .region-header-right {
+          header .layout-padded-content .region-header-content .region-header-right, header #block-ourclients .clients_component .region-header-content .region-header-right, #block-ourclients header .clients_component .region-header-content .region-header-right, header #block-credentials-block .credentials .region-header-content .region-header-right, #block-credentials-block header .credentials .region-header-content .region-header-right, header #block-template-our-partners .partners_component .region-header-content .region-header-right, #block-template-our-partners header .partners_component .region-header-content .region-header-right {
             display: none; } }
-        header .layout-content .region-header-content .region-header-right #region-header-right-background {
+        header .layout-padded-content .region-header-content .region-header-right #region-header-right-background, header #block-ourclients .clients_component .region-header-content .region-header-right #region-header-right-background, #block-ourclients header .clients_component .region-header-content .region-header-right #region-header-right-background, header #block-credentials-block .credentials .region-header-content .region-header-right #region-header-right-background, #block-credentials-block header .credentials .region-header-content .region-header-right #region-header-right-background, header #block-template-our-partners .partners_component .region-header-content .region-header-right #region-header-right-background, #block-template-our-partners header .partners_component .region-header-content .region-header-right #region-header-right-background {
           background-color: #fcfcfc;
           height: 100%;
           position: absolute;
           width: 100vw;
           z-index: -2; }
-        header .layout-content .region-header-content .region-header-right #region-header-right-top-background {
+        header .layout-padded-content .region-header-content .region-header-right #region-header-right-top-background, header #block-ourclients .clients_component .region-header-content .region-header-right #region-header-right-top-background, #block-ourclients header .clients_component .region-header-content .region-header-right #region-header-right-top-background, header #block-credentials-block .credentials .region-header-content .region-header-right #region-header-right-top-background, #block-credentials-block header .credentials .region-header-content .region-header-right #region-header-right-top-background, header #block-template-our-partners .partners_component .region-header-content .region-header-right #region-header-right-top-background, #block-template-our-partners header .partners_component .region-header-content .region-header-right #region-header-right-top-background {
           background-color: #ebfcff;
           height: 50px;
           position: absolute;
           width: 100vw;
           z-index: -1; }
-        header .layout-content .region-header-content .region-header-right .region-header-right-top {
+        header .layout-padded-content .region-header-content .region-header-right .region-header-right-top, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top {
           background-color: transparent;
           height: 49px; }
-          header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in {
+          header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in {
             float: right;
             margin: 10px 0; }
-            header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link {
+            header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link {
               color: #1c7294;
               font-size: 12px;
               padding-left: 20px;
               position: relative;
               text-transform: uppercase; }
-              header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon {
+              header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon {
                 color: #1c7294;
                 display: inline-block;
                 left: 0;
@@ -2573,29 +2573,29 @@ header {
                 margin-right: 5px;
                 top: 5px;
                 vertical-align: middle; }
-              header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover {
+              header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover {
                 color: #03A9F3;
                 text-decoration: none; }
-                header .layout-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path {
+                header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path {
                   fill: #03A9F3; }
-          header .layout-content .region-header-content .region-header-right .region-header-right-top:after {
+          header .layout-padded-content .region-header-content .region-header-right .region-header-right-top:after, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top:after, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top:after, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top:after, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top:after, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top:after, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top:after {
             clear: both;
             content: "";
             display: block; }
-        header .layout-content .region-header-content .region-header-right .region-header-right-bottom {
+        header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom {
           background-color: transparent;
           font-size: 14px;
           padding-left: 60px; }
-          header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] {
+          header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"], #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] {
             padding-top: 30px;
             text-transform: uppercase; }
-            header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a {
+            header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a {
               color: #535253;
               cursor: pointer; }
-              header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover {
+              header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover {
                 color: #03A9F3;
                 text-decoration: none; }
-            header .layout-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a {
+            header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a {
               color: #03A9F3; }
   header #header_search_toggle_button {
     background: url("../images/search-icon.svg") no-repeat 50% 50%;
@@ -3655,7 +3655,7 @@ header {
 .nolij-hero-container {
   font-family: "Roboto";
   font-size: 16px;
-  height: 80vh;
+  height: 70vh;
   overflow: hidden;
   width: 100%; }
   @media screen and (max-width: 650px) {
@@ -3687,13 +3687,13 @@ header {
     background-size: cover;
     width: 100%; }
   .nolij-hero-container .nolij-hero-component {
-    height: 80vh;
+    height: 70vh;
     position: absolute;
     width: 100%; }
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-content {
       margin: 0 auto;
       max-width: 1024px;
-      padding: 122px 42px 0;
+      padding: 42px 42px 0;
       height: 100%;
       position: relative; }
       .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay {
@@ -3707,8 +3707,7 @@ header {
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-body .nolij-hero-component-overlay-lead {
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button {
-          background-color: #a00405;
-          border-color: #a00405;
+          background-color: #e30a0c;
           display: inline-block;
           font-family: "Raleway";
           font-weight: bold;
@@ -3716,8 +3715,7 @@ header {
           padding: 15px 30px;
           text-transform: uppercase; }
           .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer .nolij-hero-component-overlay-button:hover {
-            background-color: transparent;
-            border: white solid 1px;
+            background-color: #a00405;
             cursor: pointer; }
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay {
       position: absolute;

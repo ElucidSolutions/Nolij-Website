@@ -220,7 +220,7 @@ class ServicesComponent extends React.Component {
   }
 
   render () {
-    return <div class="nolij-services-container">
+    return <div data-nolij-id="services" class="nolij-services-container">
         <div class="nolij-services-component">
           <div class="nolij-services-header">
             <h2 class="nolij-services-title">Our Services</h2>

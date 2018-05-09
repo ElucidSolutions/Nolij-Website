@@ -201,7 +201,7 @@ var ConnectFormComponent = function (_React$Component) {
 function ConnectBlockComponent() {
   return React.createElement(
     "div",
-    { "class": "nolij-connect-container" },
+    { "data-nolij-id": "connect", "class": "nolij-connect-container" },
     React.createElement(
       "div",
       { "class": "nolij-connect-component" },

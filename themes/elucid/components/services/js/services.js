@@ -329,7 +329,7 @@ var ServicesComponent = function (_React$Component3) {
     value: function render() {
       return React.createElement(
         'div',
-        { 'class': 'nolij-services-container' },
+        { 'data-nolij-id': 'services', 'class': 'nolij-services-container' },
         React.createElement(
           'div',
           { 'class': 'nolij-services-component' },

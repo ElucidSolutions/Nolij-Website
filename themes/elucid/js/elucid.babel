@@ -45,4 +45,41 @@
         <ConnectBlockComponent/>
       </div>;
   }
+
 }) (jQuery);
+
+jQuery(window).bind('hashchange', function () {
+  var url = location.hash;
+  page_scroll (url);
+});
+
+/*
+  Accepts one argument: url, a URI object that
+  represents the current page URL; and scrolls
+  the viewport to either the top of the page or
+  the element referenced by the nested fragment
+  identifier (if any).
+*/
+function page_scroll (url) {
+  var fragmentId = getFragmentFromURL (url) || 'top';
+  var fragmentElement = jQuery('[data-nolij-id=' + fragmentId + ']');
+
+  if (fragmentElement.length > 0) {
+    jQuery('html, body').animate ({
+      scrollTop: fragmentElement.offset ().top
+    });
+  }
+}
+
+/*
+  Accepts a Content URL as a URI object and
+  returns the nested fragment identifier as
+  a string.
+
+  Note: ID's may contain nested fragment
+  identifiers which can be used to create
+  fragment links within pages.
+*/
+function getFragmentFromURL (url) {
+  return (url.split ('#'))[1];
+}

@@ -19,7 +19,7 @@ function ApplyBlockComponent () {
     }
   });  
 
-  return <div class="nolij-apply-container">
+  return <div data-nolij-id="apply" class="nolij-apply-container">
       <div class="nolij-apply-component">
         <div class="nolij-apply-component-header">
           <h2 class="nolij-apply-component-title">Join the <strong>Team</strong></h2>

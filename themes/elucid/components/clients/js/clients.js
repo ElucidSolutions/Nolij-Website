@@ -83,7 +83,7 @@ function ClientsBlockComponent() {
   }];
   return React.createElement(
     "div",
-    { "class": "nolij-clients-container" },
+    { "data-nolij-id": "clients", "class": "nolij-clients-container" },
     React.createElement(
       "div",
       { "class": "nolij-clients-component" },

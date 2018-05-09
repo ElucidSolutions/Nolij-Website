@@ -10,7 +10,7 @@
   contract vehicles block.
 */
 function VehiclesComponent () {
-  return <div class="nolij-vehicles-container">
+  return <div data-nolij-id="vehicles" class="nolij-vehicles-container">
       <div class="nolij-vehicles-component">
         <div class="nolij-vehicles-component-header">
           <h2 class="nolij-vehicles-component-title">Let&apos;s Work <strong>Together</strong></h2>
