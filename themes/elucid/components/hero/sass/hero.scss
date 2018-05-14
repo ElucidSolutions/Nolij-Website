@@ -13,7 +13,9 @@
   height: $hero-height;
   @include at-breakpoint($header-menu-breakpoint, height, $hero-tablet-height);
   min-height: $hero-min-height;
+  @include at-breakpoint($xsmall-breakpoint, min-height, 530px);
   overflow: hidden;
+  position: relative;
   width: 100%;
 
   video#bgvideo {
@@ -30,9 +32,10 @@
     height: $hero-height;
     @include at-breakpoint($header-menu-breakpoint, height, $hero-tablet-height);
     min-height: $hero-min-height;
+    @include at-breakpoint($xsmall-breakpoint, min-height, 530px);
     position: absolute;
+    top: 0;
     width: 100%;
-    z-index: 1;
 
     .nolij-hero-component-content {
       @include padded-content-block(0 $hero-padding);
@@ -44,6 +47,7 @@
         max-width: 645px;
         position: relative;
         top: 20%;
+        @include mobile(top, 20px);
         width: 100%;
 
         .nolij-hero-component-overlay-header {
@@ -51,12 +55,15 @@
             @include strip-margins;
             font-family: $second-font-family;
             font-size: 44px;
+            @include tablet(font-size, 30px);            
             font-weight: 600;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
           }
         }
         .nolij-hero-component-overlay-body {
           .nolij-hero-component-overlay-lead {
+            font-size: 18px;
+            line-height: 1.4;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
           }
         }
@@ -86,6 +93,7 @@
       position: absolute;
       bottom: 0px;
       width: calc(100% - #{2 * $hero-padding});
+      @include tablet(width, calc(100% - 20px));
 
       .nolij-hero-component-scroll-overlay-tab {
         background: no-repeat url('../images/scroll-down-icon.svg');

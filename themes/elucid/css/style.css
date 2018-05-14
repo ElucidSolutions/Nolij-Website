@@ -258,6 +258,9 @@ html {
   @media screen and (max-width: 650px) {
     .layout-padded-content, #block-ourclients .clients_component, #block-credentials-block .credentials, #block-template-our-partners .partners_component {
       padding: 0 10px; } }
+  @media screen and (max-width: 650px) {
+    .layout-padded-content, #block-ourclients .clients_component, #block-credentials-block .credentials, #block-template-our-partners .partners_component {
+      padding: 0 10px; } }
 
 html, body {
   max-width: 100%;
@@ -292,7 +295,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     [data-elucid-page-path-alias="/benefits"],
     [data-elucid-page-path-alias="/careers/benefits"],
     [data-elucid-page-path-alias="/careers/employee-benefits"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/benefits"] select,
   [data-elucid-page-path-alias="/careers/benefits"] select,
   [data-elucid-page-path-alias="/careers/employee-benefits"] select {
@@ -378,7 +381,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   @media screen and (max-width: 650px) {
     [data-elucid-page-node-id="20475"],
     [data-elucid-page-path-alias="/capabilities"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-node-id="20475"] select,
   [data-elucid-page-path-alias="/capabilities"] select {
     appearance: none;
@@ -492,7 +495,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/careers"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/careers"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -563,7 +566,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/feedback"],
     [data-elucid-page-path-alias="/contact/feedback"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/feedback"] select,
   [data-elucid-page-path-alias="/contact/feedback"] select {
     appearance: none;
@@ -758,7 +761,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   color: #1e1e1e; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -863,7 +866,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   @media screen and (max-width: 650px) {
     [data-elucid-page-view-id="frontpage"],
     [data-elucid-page-path-alias="/capabilities"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-view-id="frontpage"] select,
   [data-elucid-page-path-alias="/capabilities"] select {
     appearance: none;
@@ -957,7 +960,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles/gsa-8a"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1040,7 +1043,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles/gsa-schedule-70"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1162,7 +1165,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/leadership"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/leadership"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -1231,7 +1234,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] {
-      font-size: 14px; } }
+      font-size: 18px; } }
   [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] select {
     appearance: none;
     -webkit-appearance: none;
@@ -2377,8 +2380,6 @@ footer {
         @media screen and (max-width: 650px) {
           footer .footer_content .footer_med .footer_med_left .company_info .elucid_bold {
             padding-top: 15px; } }
-      footer .footer_content .footer_med .footer_med_left .company_info .elucid_address {
-        margin-left: 40px; }
       @media screen and (max-width: 768px) {
         footer .footer_content .footer_med .footer_med_left .company_info .elucid_phone {
           display: inline-block;
@@ -2476,7 +2477,7 @@ header {
   z-index: 10; }
   @media screen and (max-width: 650px) {
     header {
-      font-size: 14px; } }
+      font-size: 18px; } }
   header select {
     appearance: none;
     -webkit-appearance: none;
@@ -2563,13 +2564,13 @@ header {
             float: right;
             margin: 10px 0; }
             header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link {
-              color: #1c7294;
+              color: #e30a0c;
               font-size: 12px;
               padding-left: 20px;
               position: relative;
               text-transform: uppercase; }
               header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link .elucid-sign-in-icon {
-                color: #1c7294;
+                color: #e30a0c;
                 display: inline-block;
                 left: 0;
                 line-height: 0px;
@@ -2577,10 +2578,10 @@ header {
                 top: 5px;
                 vertical-align: middle; }
               header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover {
-                color: #03A9F3;
+                color: #a00405;
                 text-decoration: none; }
                 header .layout-padded-content .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top .elucid-sign-in .elucid-sign-in-link:hover path {
-                  fill: #03A9F3; }
+                  fill: #a00405; }
           header .layout-padded-content .region-header-content .region-header-right .region-header-right-top:after, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-top:after, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-top:after, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-top:after, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-top:after, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-top:after, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-top:after {
             clear: both;
             content: "";
@@ -2817,10 +2818,10 @@ header {
       position: absolute;
       width: 12px; }
   .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_close_button {
-    color: #03A9F3;
+    color: #e30a0c;
     margin-bottom: 5px; }
     .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_close_button:hover {
-      color: #043b62; }
+      color: #a00405; }
 
 /*
   This stylesheet defines custom styling for
@@ -2936,7 +2937,7 @@ header {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15); }
   @media screen and (max-width: 650px) {
     .rate_table {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .rate_table select {
     appearance: none;
     -webkit-appearance: none;
@@ -3399,7 +3400,7 @@ header {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     .nolij-apply-container {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .nolij-apply-container select {
     appearance: none;
     -webkit-appearance: none;
@@ -3425,12 +3426,19 @@ header {
     margin: 0 auto;
     max-width: 1024px;
     padding: 40px 42px; }
+    @media screen and (max-width: 650px) {
+      .nolij-apply-container .nolij-apply-component {
+        padding: 30px 10px; } }
     .nolij-apply-container .nolij-apply-component .nolij-apply-component-header:after {
       background-color: #a00405;
       display: block;
       height: 5px;
+      margin-top: 10px;
       width: 80px;
       content: ""; }
+      @media screen and (max-width: 768px) {
+        .nolij-apply-container .nolij-apply-component .nolij-apply-component-header:after {
+          height: 3px; } }
     .nolij-apply-container .nolij-apply-component .nolij-apply-component-header .nolij-apply-component-title {
       margin: 0;
       padding: 0;
@@ -3439,6 +3447,9 @@ header {
       font-size: 55px;
       font-weight: 300;
       text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .nolij-apply-container .nolij-apply-component .nolij-apply-component-header .nolij-apply-component-title {
+          font-size: 30px; } }
     .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-lead {
       color: #1e1e1e;
       line-height: 28px;
@@ -3447,6 +3458,9 @@ header {
       border-radius: 2px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
       display: flex; }
+      @media screen and (max-width: 768px) {
+        .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card {
+          flex-direction: column; } }
       .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-left {
         background-image: url("../components/apply_block/images/apply.jpg");
         background-position: center;
@@ -3454,6 +3468,15 @@ header {
         display: inline-block;
         vertical-align: top;
         width: 379px; }
+        @media screen and (max-width: 768px) {
+          .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-left {
+            display: block; } }
+        @media screen and (max-width: 768px) {
+          .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-left {
+            height: 200px; } }
+        @media screen and (max-width: 768px) {
+          .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-left {
+            width: 100%; } }
       .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-right {
         display: inline-block;
         padding: 25px 40px;
@@ -3496,7 +3519,7 @@ header {
   background-color: #f6f6f6; }
   @media screen and (max-width: 650px) {
     .nolij-clients-container {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .nolij-clients-container select {
     appearance: none;
     -webkit-appearance: none;
@@ -3522,12 +3545,19 @@ header {
     margin: 0 auto;
     max-width: 1024px;
     padding: 40px 42px; }
+    @media screen and (max-width: 650px) {
+      .nolij-clients-container .nolij-clients-component {
+        padding: 40px 10px; } }
     .nolij-clients-container .nolij-clients-component .nolij-clients-header:after {
       background-color: #a00405;
       display: block;
       height: 5px;
+      margin-top: 10px;
       width: 80px;
       content: ""; }
+      @media screen and (max-width: 768px) {
+        .nolij-clients-container .nolij-clients-component .nolij-clients-header:after {
+          height: 3px; } }
     .nolij-clients-container .nolij-clients-component .nolij-clients-header h2.nolij-clients-title {
       margin: 0;
       padding: 0;
@@ -3536,6 +3566,9 @@ header {
       font-size: 55px;
       font-weight: 300;
       text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .nolij-clients-container .nolij-clients-component .nolij-clients-header h2.nolij-clients-title {
+          font-size: 30px; } }
     .nolij-clients-container .nolij-clients-component .nolij-clients-body p.nolij-clients-lead {
       color: #1e1e1e;
       line-height: 28px;
@@ -3572,7 +3605,7 @@ header {
   background-size: 26px; }
   @media screen and (max-width: 650px) {
     .nolij-connect-container {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .nolij-connect-container select {
     appearance: none;
     -webkit-appearance: none;
@@ -3600,9 +3633,21 @@ header {
     margin: 0 auto;
     max-width: 1024px;
     padding: 40px 42px; }
+    @media screen and (max-width: 768px) {
+      .nolij-connect-container .nolij-connect-component {
+        flex-direction: column; } }
+    @media screen and (max-width: 768px) {
+      .nolij-connect-container .nolij-connect-component {
+        height: auto; } }
+    @media screen and (max-width: 650px) {
+      .nolij-connect-container .nolij-connect-component {
+        padding: 30px 10px; } }
     .nolij-connect-container .nolij-connect-component .nolij-connect-left {
       margin-top: 73px;
       width: 300px; }
+      @media screen and (max-width: 768px) {
+        .nolij-connect-container .nolij-connect-component .nolij-connect-left {
+          margin-top: 0; } }
       .nolij-connect-container .nolij-connect-component .nolij-connect-left .nolij-connect-left-header h2.nolij-connect-left-title {
         margin: 0;
         padding: 0;
@@ -3611,6 +3656,9 @@ header {
         font-size: 40px;
         font-weight: 300;
         text-transform: uppercase; }
+        @media screen and (max-width: 768px) {
+          .nolij-connect-container .nolij-connect-component .nolij-connect-left .nolij-connect-left-header h2.nolij-connect-left-title {
+            font-size: 26px; } }
       .nolij-connect-container .nolij-connect-component .nolij-connect-left .nolij-connect-left-body p.nolij-connect-left-lead {
         margin: 0;
         padding: 0;
@@ -3628,6 +3676,9 @@ header {
         padding: 40px;
         position: absolute;
         width: 100%; }
+        @media screen and (max-width: 768px) {
+          .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container {
+            position: static; } }
         .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container input,
         .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container textarea {
           max-width: 100%; }
@@ -3664,10 +3715,11 @@ header {
   height: calc(100vh - 80px);
   min-height: 370px;
   overflow: hidden;
+  position: relative;
   width: 100%; }
   @media screen and (max-width: 650px) {
     .nolij-hero-container {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .nolij-hero-container select {
     appearance: none;
     -webkit-appearance: none;
@@ -3692,6 +3744,9 @@ header {
   @media screen and (max-width: 950px) {
     .nolij-hero-container {
       height: calc(100vh - 131px); } }
+  @media screen and (max-width: 400px) {
+    .nolij-hero-container {
+      min-height: 530px; } }
   .nolij-hero-container video#bgvideo {
     min-height: 105%;
     min-width: 105%;
@@ -3705,23 +3760,32 @@ header {
     height: calc(100vh - 80px);
     min-height: 370px;
     position: absolute;
-    width: 100%;
-    z-index: 1; }
+    top: 0;
+    width: 100%; }
     @media screen and (max-width: 950px) {
       .nolij-hero-container .nolij-hero-component {
         height: calc(100vh - 131px); } }
+    @media screen and (max-width: 400px) {
+      .nolij-hero-container .nolij-hero-component {
+        min-height: 530px; } }
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-content {
       margin: 0 auto;
       max-width: 1024px;
       padding: 0 42px;
       height: 100%;
       position: relative; }
+      @media screen and (max-width: 650px) {
+        .nolij-hero-container .nolij-hero-component .nolij-hero-component-content {
+          padding: 0 10px; } }
       .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay {
         color: white;
         max-width: 645px;
         position: relative;
         top: 20%;
         width: 100%; }
+        @media screen and (max-width: 650px) {
+          .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay {
+            top: 20px; } }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-header h2.nolij-hero-component-overlay-title {
           margin: 0;
           padding: 0;
@@ -3729,7 +3793,12 @@ header {
           font-size: 44px;
           font-weight: 600;
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+          @media screen and (max-width: 768px) {
+            .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-header h2.nolij-hero-component-overlay-title {
+              font-size: 30px; } }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-body .nolij-hero-component-overlay-lead {
+          font-size: 18px;
+          line-height: 1.4;
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a {
           color: white; }
@@ -3748,6 +3817,9 @@ header {
       position: absolute;
       bottom: 0px;
       width: calc(100% - 84px); }
+      @media screen and (max-width: 768px) {
+        .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay {
+          width: calc(100% - 20px); } }
       .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay .nolij-hero-component-scroll-overlay-tab {
         background: no-repeat url("../images/scroll-down-icon.svg");
         background-position: bottom 10px center;
@@ -3771,7 +3843,7 @@ header {
   background-size: 26px; }
   @media screen and (max-width: 650px) {
     .nolij-services-container {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .nolij-services-container select {
     appearance: none;
     -webkit-appearance: none;
@@ -3797,12 +3869,19 @@ header {
     margin: 0 auto;
     max-width: 1024px;
     padding: 40px 42px; }
+    @media screen and (max-width: 650px) {
+      .nolij-services-container .nolij-services-component {
+        padding: 30px 10px; } }
     .nolij-services-container .nolij-services-component .nolij-services-header:after {
       background-color: #a00405;
       display: block;
       height: 5px;
+      margin-top: 10px;
       width: 80px;
       content: ""; }
+      @media screen and (max-width: 768px) {
+        .nolij-services-container .nolij-services-component .nolij-services-header:after {
+          height: 3px; } }
     .nolij-services-container .nolij-services-component .nolij-services-header h2.nolij-services-title {
       margin: 0;
       padding: 0;
@@ -3811,6 +3890,9 @@ header {
       font-size: 55px;
       font-weight: 300;
       text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .nolij-services-container .nolij-services-component .nolij-services-header h2.nolij-services-title {
+          font-size: 30px; } }
     .nolij-services-container .nolij-services-component .nolij-services-body p.nolij-services-lead {
       color: #1e1e1e;
       line-height: 28px; }
@@ -3850,6 +3932,8 @@ header {
             width: 30px; }
           .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item .nolij-services-menu-item-label {
             display: inline-block; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left .nolij-services-menu-component .nolij-services-menu-item .nolij-services-menu-item-toggle-icon {
+            display: none; }
       .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right {
         background-color: white;
         padding: 10px 30px; }
@@ -3926,7 +4010,7 @@ header {
   font-size: 16px; }
   @media screen and (max-width: 650px) {
     .nolij-vehicles-container {
-      font-size: 14px; } }
+      font-size: 18px; } }
   .nolij-vehicles-container select {
     appearance: none;
     -webkit-appearance: none;
@@ -3954,12 +4038,19 @@ header {
     padding: 45px 25px 30px;
     background-color: white;
     border: solid 18px #437ca5; }
+    @media screen and (max-width: 650px) {
+      .nolij-vehicles-container .nolij-vehicles-component {
+        padding: 25px 10px; } }
     .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header:after {
       background-color: #a00405;
       display: block;
       height: 5px;
+      margin-top: 10px;
       width: 80px;
       content: ""; }
+      @media screen and (max-width: 768px) {
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header:after {
+          height: 3px; } }
     .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header h2.nolij-vehicles-component-title {
       margin: 0;
       padding: 0;
@@ -3968,11 +4059,17 @@ header {
       font-size: 55px;
       font-weight: 300;
       text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header h2.nolij-vehicles-component-title {
+          font-size: 30px; } }
     .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-lead {
       color: #1e1e1e;
       line-height: 28px; }
     .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details {
       display: flex; }
+      @media screen and (max-width: 768px) {
+        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details {
+          flex-direction: column; } }
       .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-card-title {
         margin: 0;
         padding: 0;
@@ -3989,6 +4086,9 @@ header {
         @media screen and (max-width: 768px) {
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
             margin-right: 0; } }
+        @media screen and (max-width: 768px) {
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
+            margin-bottom: 25px; } }
         @media screen and (max-width: 768px) {
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
             width: 100%; } }

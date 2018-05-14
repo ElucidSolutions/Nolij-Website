@@ -46,11 +46,11 @@
   background-color: white;
   display: none; }
   .header_menu_mobile_view .header_menu_mobile_view_header {
-    background-color: #00adee;
+    background-color: #e30a0c;
     cursor: pointer;
     width: 100%; }
     .header_menu_mobile_view .header_menu_mobile_view_header:hover {
-      background-color: #3571a1; }
+      background-color: #a00405; }
     .header_menu_mobile_view .header_menu_mobile_view_header .header_menu_mobile_view_title {
       color: white;
       text-align: center; }

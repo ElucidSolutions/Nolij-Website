@@ -35,11 +35,13 @@
         menu.init ();
 
         // BLM-specific
-        copySearchIntoDropdown (menu);
+        // copySearchIntoDropdown (menu);
 
+        /*
         $('#header_search_toggle_button', widescreenViewContainerElement).click (function (e) {
           toggleSearch ();
         });
+        */
     });
   });
 

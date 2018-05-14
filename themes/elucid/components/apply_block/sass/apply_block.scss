@@ -6,7 +6,7 @@
   @include styleguide;
 
   .nolij-apply-component {
-    @include padded-content-block(40px 42px);
+    @include padded-content-block(40px 42px, 30px 10px);
 
     .nolij-apply-component-header {
       @include short-hrule-after;
@@ -16,6 +16,7 @@
         color: $blue-dark;
         font-family: $second-font-family;
         font-size: 55px;
+        @include tablet(font-size, 30px);
         font-weight: 300;
         text-transform: uppercase;
       }
@@ -29,14 +30,18 @@
       .nolij-apply-component-card {
         @include card;
         display: flex;
+        @include tablet(flex-direction, column);
 
         .nolij-apply-component-card-left {
           background-image: url("../components/apply_block/images/apply.jpg");
           background-position: center;
           background-size: cover;
           display: inline-block;
+          @include tablet(display, block);
+          @include tablet(height, 200px);
           vertical-align: top;
           width: 379px;
+          @include tablet(width, 100%);
         }
         .nolij-apply-component-card-right {
           display: inline-block;

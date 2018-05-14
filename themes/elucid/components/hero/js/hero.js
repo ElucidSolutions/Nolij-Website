@@ -58,6 +58,11 @@ var HomepageHeroComponent = function (_React$Component) {
         "div",
         { "class": "nolij-hero-container" },
         React.createElement(
+          "video",
+          { ref: this.videoElement, playsinline: "true", autoplay: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
+          React.createElement("source", { src: "/themes/elucid/components/hero/video/banner-video.mp4", type: "video/mp4" })
+        ),
+        React.createElement(
           "div",
           { "class": "nolij-hero-component" },
           React.createElement(
@@ -115,11 +120,6 @@ var HomepageHeroComponent = function (_React$Component) {
               )
             )
           )
-        ),
-        React.createElement(
-          "video",
-          { ref: this.videoElement, playsinline: "true", autoplay: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
-          React.createElement("source", { src: "/themes/elucid/components/hero/video/banner-video.mp4", type: "video/mp4" })
         )
       );
     }

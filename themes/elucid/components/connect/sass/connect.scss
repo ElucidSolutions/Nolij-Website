@@ -9,11 +9,14 @@
 
   .nolij-connect-component {
     display: flex;
+    @include tablet(flex-direction, column);
     height: 400px;
-    @include padded-content-block(40px 42px);
+    @include tablet(height, auto);
+    @include padded-content-block(40px 42px, 30px 10px);
 
     .nolij-connect-left {
       margin-top: 73px;
+      @include tablet(margin-top, 0);
       width: 300px;
 
       .nolij-connect-left-header {
@@ -22,6 +25,7 @@
           color: $blue-dark;
           font-family: $second-font-family;
           font-size: 40px;
+          @include tablet(font-size, 26px);
           font-weight: 300;
           text-transform: uppercase;
         }
@@ -45,6 +49,7 @@
         border-top: solid 4px $red;
         padding: 40px;
         position: absolute;
+        @include tablet(position, static);
         width: 100%;
 
         input,

@@ -8,7 +8,7 @@
   background-size: 26px;
 
   .nolij-services-component {
-    @include padded-content-block(40px 42px);
+    @include padded-content-block(40px 42px, 30px 10px);
 
     .nolij-services-header {
       @include short-hrule-after;
@@ -18,6 +18,7 @@
         color: $blue-dark;
         font-family: $second-font-family;
         font-size: 55px;
+        @include tablet(font-size, 30px);
         font-weight: 300;
         text-transform: uppercase;
       }
@@ -73,6 +74,9 @@
               }
               .nolij-services-menu-item-label {
                 display: inline-block;
+              }
+              .nolij-services-menu-item-toggle-icon {
+                display: none;
               }
             }
           }

@@ -242,6 +242,8 @@ $max-padded-content-width: 940px;
   background-color: if($color, $color, $red);
   display: block;
   height: if($height, $height, 5px);
+  @include tablet(height, 3px);
+  margin-top: 10px;
   width: if($width, $width, 80px);
 }
 
@@ -388,9 +390,10 @@ $default-ribbon-tablet-height: ($default-ribbon-height - $default-ribbon-mobile-
   max-width: $max-content-width;
 }
 
-@mixin padded-content-block($padding: null) {
+@mixin padded-content-block($padding: null, $mobile-padding: null) {
   @include content-block;
   padding: if($padding, $padding, 0 42px);
+  @include mobile(padding, if($mobile-padding, $mobile-padding, 0 10px));
 }
 
 /*
@@ -634,7 +637,7 @@ $default-ribbon-tablet-height: ($default-ribbon-height - $default-ribbon-mobile-
 @mixin styleguide {
   font-family: $default-font-family;
   font-size: $default-body-font-size;
-  @include mobile(font-size, 14px);
+  @include mobile(font-size, 18px);
 
   select {
     @include select;

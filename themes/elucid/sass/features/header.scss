@@ -68,13 +68,13 @@ header {
             float: right;
             margin: $margin-small 0;
             .elucid-sign-in-link {
-              color: #1c7294;
+              color: $red-light;
               font-size: 12px;
               padding-left: $margin-med;
               position: relative;
               text-transform: uppercase;
               .elucid-sign-in-icon {
-                color: #1c7294;
+                color: $red-light;
                 display: inline-block;
                 left: 0;
                 line-height: 0px;
@@ -83,10 +83,10 @@ header {
                 vertical-align: middle;
               }
               &:hover {
-                color: $blue;
+                color: $red;
                 text-decoration: none;
                 path {
-                  fill: $blue;
+                  fill: $red;
                 }
               }
             }
@@ -337,10 +337,10 @@ header {
         }
       }
       .header_menu_mobile_view_close_button {
-        color: $blue;
+        color: $red-light;
         margin-bottom: $margin-xsmall;
         &:hover {
-          color: $blue-dark;
+          color: $red;
         }
       }
     }

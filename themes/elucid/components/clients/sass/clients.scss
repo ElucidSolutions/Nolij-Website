@@ -7,7 +7,7 @@
   background-color: #f6f6f6;
 
   .nolij-clients-component {
-    @include padded-content-block(40px 42px);
+    @include padded-content-block(40px 42px, 40px 10px);
 
     .nolij-clients-header {
       @include short-hrule-after;
@@ -17,6 +17,7 @@
         color: $blue-dark;
         font-family: $second-font-family;
         font-size: 55px;
+        @include tablet(font-size, 30px);
         font-weight: 300;
         text-transform: uppercase;
       }
