@@ -39,6 +39,7 @@ var ServicesMenuItemComponent = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (ServicesMenuItemComponent.__proto__ || Object.getPrototypeOf(ServicesMenuItemComponent)).call(this, props));
 
     _this.select = _this.select.bind(_this);
+    _this.isSelected = _this.isSelected.bind(_this);
     return _this;
   }
 
@@ -46,6 +47,11 @@ var ServicesMenuItemComponent = function (_React$Component) {
     key: 'select',
     value: function select() {
       this.props.onSelect(this.props.serviceId);
+    }
+  }, {
+    key: 'isSelected',
+    value: function isSelected() {
+      return this.props.selected === this.props.serviceId;
     }
   }, {
     key: 'render',
@@ -63,13 +69,22 @@ var ServicesMenuItemComponent = function (_React$Component) {
           React.createElement('img', {
             'class': 'nolij-services-menu-item-icon-img',
             alt: 'Service icon',
-            src: this.props.selected === this.props.serviceId ? this.props.activeIcon : this.props.inactiveIcon
+            src: this.isSelected() ? this.props.activeIcon : this.props.inactiveIcon
           })
         ),
         React.createElement(
           'div',
           { 'class': 'nolij-services-menu-item-label' },
           this.props.label
+        ),
+        React.createElement(
+          'div',
+          { 'class': 'nolij-services-menu-item-toggle-icon' },
+          React.createElement('img', {
+            'class': 'nolij-services-menu-item-toggle-icon-img',
+            alt: 'Service toggle icon',
+            src: this.isSelected() ? "/themes/elucid/components/services/images/close-icon.svg" : "/themes/elucid/components/services/images/expand-icon.svg"
+          })
         )
       );
     }
@@ -77,6 +92,86 @@ var ServicesMenuItemComponent = function (_React$Component) {
 
   return ServicesMenuItemComponent;
 }(React.Component);
+
+/*
+*/
+
+
+function OperationsServicesMenuItemComponent(props) {
+  return React.createElement(ServicesMenuItemComponent, {
+    selected: props.selected,
+    serviceId: 'it-operations',
+    label: 'IT Operations',
+    activeIcon: '/themes/elucid/components/services/images/it-operations-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/it-operations-icon-inactive.svg',
+    onSelect: props.onSelect
+  });
+}
+
+/*
+*/
+function DevelopmentServicesMenuItemComponent(props) {
+  return React.createElement(ServicesMenuItemComponent, {
+    selected: props.selected,
+    serviceId: 'software-development',
+    label: 'Software Development',
+    activeIcon: '/themes/elucid/components/services/images/software-development-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/software-development-icon-inactive.svg',
+    onSelect: props.onSelect
+  });
+}
+
+/*
+*/
+function ManagementServicesMenuItemComponent(props) {
+  return React.createElement(ServicesMenuItemComponent, {
+    selected: props.selected,
+    serviceId: 'program-management',
+    label: 'Program Management',
+    activeIcon: '/themes/elucid/components/services/images/program-management-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/program-management-icon-inactive.svg',
+    onSelect: props.onSelect
+  });
+}
+
+/*
+*/
+function SupportServicesMenuItemComponent(props) {
+  return React.createElement(ServicesMenuItemComponent, {
+    selected: props.selected,
+    serviceId: 'acquisition-support',
+    label: 'Acquisition Support',
+    activeIcon: '/themes/elucid/components/services/images/acquisition-support-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg',
+    onSelect: props.onSelect
+  });
+}
+
+/*
+*/
+function TrainingServicesMenuItemComponent(props) {
+  return React.createElement(ServicesMenuItemComponent, {
+    selected: props.selected,
+    serviceId: 'training',
+    label: 'Training',
+    activeIcon: '/themes/elucid/components/services/images/training-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/training-icon-inactive.svg',
+    onSelect: props.onSelect
+  });
+}
+
+/*
+*/
+function ResourcesServicesMenuItemComponent(props) {
+  return React.createElement(ServicesMenuItemComponent, {
+    selected: props.selected,
+    serviceId: 'human-resources',
+    label: 'Human Capital and Human Resources',
+    activeIcon: '/themes/elucid/components/services/images/human-capital-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/human-capital-icon-inactive.svg',
+    onSelect: props.onSelect
+  });
+}
 
 /*
   A React component that accepts two properties:
@@ -88,7 +183,6 @@ var ServicesMenuItemComponent = function (_React$Component) {
   and returns a JSX element that represents the
   services menu component.
 */
-
 
 var ServicesMenuComponent = function (_React$Component2) {
   _inherits(ServicesMenuComponent, _React$Component2);
@@ -105,52 +199,28 @@ var ServicesMenuComponent = function (_React$Component2) {
       return React.createElement(
         'div',
         { 'class': 'nolij-services-menu-component' },
-        React.createElement(ServicesMenuItemComponent, {
+        React.createElement(OperationsServicesMenuItemComponent, {
           selected: this.props.selected,
-          serviceId: 'it-operations',
-          label: 'IT Operations',
-          activeIcon: '/themes/elucid/components/services/images/it-operations-icon-active.svg',
-          inactiveIcon: '/themes/elucid/components/services/images/it-operations-icon-inactive.svg',
           onSelect: this.props.onSelect
         }),
-        React.createElement(ServicesMenuItemComponent, {
+        React.createElement(DevelopmentServicesMenuItemComponent, {
           selected: this.props.selected,
-          serviceId: 'software-development',
-          label: 'Software Development',
-          activeIcon: '/themes/elucid/components/services/images/software-development-icon-active.svg',
-          inactiveIcon: '/themes/elucid/components/services/images/software-development-icon-inactive.svg',
           onSelect: this.props.onSelect
         }),
-        React.createElement(ServicesMenuItemComponent, {
+        React.createElement(ManagementServicesMenuItemComponent, {
           selected: this.props.selected,
-          serviceId: 'program-management',
-          label: 'Program Management',
-          activeIcon: '/themes/elucid/components/services/images/program-management-icon-active.svg',
-          inactiveIcon: '/themes/elucid/components/services/images/program-management-icon-inactive.svg',
           onSelect: this.props.onSelect
         }),
-        React.createElement(ServicesMenuItemComponent, {
+        React.createElement(SupportServicesMenuItemComponent, {
           selected: this.props.selected,
-          serviceId: 'acquisition-support',
-          label: 'Acquisition Support',
-          activeIcon: '/themes/elucid/components/services/images/acquisition-support-icon-active.svg',
-          inactiveIcon: '/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg',
           onSelect: this.props.onSelect
         }),
-        React.createElement(ServicesMenuItemComponent, {
+        React.createElement(TrainingServicesMenuItemComponent, {
           selected: this.props.selected,
-          serviceId: 'training',
-          label: 'Training',
-          activeIcon: '/themes/elucid/components/services/images/training-icon-active.svg',
-          inactiveIcon: '/themes/elucid/components/services/images/training-icon-inactive.svg',
           onSelect: this.props.onSelect
         }),
-        React.createElement(ServicesMenuItemComponent, {
+        React.createElement(ResourcesServicesMenuItemComponent, {
           selected: this.props.selected,
-          serviceId: 'human-resources',
-          label: 'Human Capital and Human Resources',
-          activeIcon: '/themes/elucid/components/services/images/human-capital-icon-active.svg',
-          inactiveIcon: '/themes/elucid/components/services/images/human-capital-icon-inactive.svg',
           onSelect: this.props.onSelect
         })
       );
@@ -196,6 +266,111 @@ function ServicesDetailComponent(props) {
   );
 }
 
+function OperationsServicesDetailComponent(props) {
+  return React.createElement(
+    ServicesDetailComponent,
+    {
+      selected: props.selected,
+      serviceId: 'it-operations',
+      label: 'IT Operations'
+    },
+    React.createElement(
+      'p',
+      { 'class': 'nolij-services-detail-lead' },
+      'This is a placeholder for IT operations.'
+    ),
+    React.createElement(
+      'ul',
+      { 'class': 'nolij-services-detail-list' },
+      React.createElement(
+        'li',
+        { 'class': 'nolij-services-detail-list-item' },
+        'IV&V'
+      )
+    )
+  );
+}
+
+function DevelopmentServicesDetailComponent(props) {
+  return React.createElement(
+    ServicesDetailComponent,
+    {
+      selected: props.selected,
+      serviceId: 'software-development',
+      label: 'Software Development'
+    },
+    React.createElement(
+      'p',
+      { 'class': 'nolij-services-detail-lead' },
+      'This is a placeholder for Software Development.'
+    )
+  );
+}
+
+function ManagementServicesDetailComponent(props) {
+  return React.createElement(
+    ServicesDetailComponent,
+    {
+      selected: props.selected,
+      serviceId: 'program-management',
+      label: 'Program Management'
+    },
+    React.createElement(
+      'p',
+      { 'class': 'nolij-services-detail-lead' },
+      'This is a placeholder for Program Management.'
+    )
+  );
+}
+
+function SupportServicesDetailComponent(props) {
+  return React.createElement(
+    ServicesDetailComponent,
+    {
+      selected: props.selected,
+      serviceId: 'acquisition-support',
+      label: 'Acquisition Support'
+    },
+    React.createElement(
+      'p',
+      { 'class': 'nolij-services-detail-lead' },
+      'This is a placeholder for Acquisition Support.'
+    )
+  );
+}
+
+function TrainingServicesDetailComponent(props) {
+  return React.createElement(
+    ServicesDetailComponent,
+    {
+      selected: props.selected,
+      serviceId: 'training',
+      label: 'Training'
+    },
+    React.createElement(
+      'p',
+      { 'class': 'nolij-services-detail-lead' },
+      'This is a placeholder for Training.'
+    )
+  );
+}
+
+function ResourcesServicesDetailComponent(props) {
+  return React.createElement(
+    ServicesDetailComponent,
+    {
+      selected: props.selected,
+      serviceId: 'human-resources',
+      label: 'Human Capital and Human Resources'
+    },
+    React.createElement(
+      'p',
+      { 'class': 'nolij-services-detail-lead' },
+      'This is a placeholder for Human Capital and Human Resources.'
+    )
+  );
+}
+
 /*
   A React component accepts one property:
   selected, a service ID string; and returns
@@ -206,95 +381,127 @@ function ServicesDetailsComponent(props) {
   return React.createElement(
     'div',
     { 'class': 'nolij-services-details' },
-    React.createElement(
-      ServicesDetailComponent,
-      {
-        selected: props.selected,
-        serviceId: 'it-operations',
-        label: 'IT Operations'
-      },
-      React.createElement(
-        'p',
-        { 'class': 'nolij-services-detail-lead' },
-        'This is a placeholder for IT operations.'
-      ),
-      React.createElement(
-        'ul',
-        { 'class': 'nolij-services-detail-list' },
-        React.createElement(
-          'li',
-          { 'class': 'nolij-services-detail-list-item' },
-          'IV&V'
-        )
-      )
-    ),
-    React.createElement(
-      ServicesDetailComponent,
-      {
-        selected: props.selected,
-        serviceId: 'software-development',
-        label: 'Software Development'
-      },
-      React.createElement(
-        'p',
-        { 'class': 'nolij-services-detail-lead' },
-        'This is a placeholder for Software Development.'
-      )
-    ),
-    React.createElement(
-      ServicesDetailComponent,
-      {
-        selected: props.selected,
-        serviceId: 'program-management',
-        label: 'Program Management'
-      },
-      React.createElement(
-        'p',
-        { 'class': 'nolij-services-detail-lead' },
-        'This is a placeholder for Program Management.'
-      )
-    ),
-    React.createElement(
-      ServicesDetailComponent,
-      {
-        selected: props.selected,
-        serviceId: 'acquisition-support',
-        label: 'Acquisition Support'
-      },
-      React.createElement(
-        'p',
-        { 'class': 'nolij-services-detail-lead' },
-        'This is a placeholder for Acquisition Support.'
-      )
-    ),
-    React.createElement(
-      ServicesDetailComponent,
-      {
-        selected: props.selected,
-        serviceId: 'training',
-        label: 'Training'
-      },
-      React.createElement(
-        'p',
-        { 'class': 'nolij-services-detail-lead' },
-        'This is a placeholder for Training.'
-      )
-    ),
-    React.createElement(
-      ServicesDetailComponent,
-      {
-        selected: props.selected,
-        serviceId: 'human-resources',
-        label: 'Human Capital and Human Resources'
-      },
-      React.createElement(
-        'p',
-        { 'class': 'nolij-services-detail-lead' },
-        'This is a placeholder for Human Capital and Human Resources.'
-      )
-    )
+    React.createElement(OperationsServicesDetailComponent, {
+      selected: props.selected }),
+    React.createElement(DevelopmentServicesDetailComponent, {
+      selected: props.selected }),
+    React.createElement(ManagementServicesDetailComponent, {
+      selected: props.selected }),
+    React.createElement(SupportServicesDetailComponent, {
+      selected: props.selected }),
+    React.createElement(TrainingServicesDetailComponent, {
+      selected: props.selected }),
+    React.createElement(ResourcesServicesDetailComponent, {
+      selected: props.selected })
   );
 }
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  mobile (accordion) homepage services block.
+*/
+
+var ServicesMobileComponent = function (_React$Component3) {
+  _inherits(ServicesMobileComponent, _React$Component3);
+
+  function ServicesMobileComponent(props) {
+    _classCallCheck(this, ServicesMobileComponent);
+
+    var _this3 = _possibleConstructorReturn(this, (ServicesMobileComponent.__proto__ || Object.getPrototypeOf(ServicesMobileComponent)).call(this, props));
+
+    _this3.componentElement = React.createRef();
+    _this3.getDetailElement = _this3.getDetailElement.bind(_this3);
+    _this3.expand = _this3.expand.bind(_this3);
+    _this3.select = _this3.select.bind(_this3);
+    return _this3;
+  }
+
+  _createClass(ServicesMobileComponent, [{
+    key: 'getDetailElements',
+    value: function getDetailElements() {
+      return jQuery('.nolij-services-detail', this.componentElement.current);
+    }
+  }, {
+    key: 'getDetailElement',
+    value: function getDetailElement(serviceId) {
+      return jQuery('.nolij-services-detail[data-service-id="' + serviceId + '"]', this.componentElement.current);
+    }
+  }, {
+    key: 'closeAll',
+    value: function closeAll() {
+      this.getDetailElements().slideUp();
+    }
+  }, {
+    key: 'expand',
+    value: function expand(serviceId) {
+      this.getDetailElement(serviceId).slideDown();
+    }
+  }, {
+    key: 'select',
+    value: function select(serviceId) {
+      this.props.onSelect(serviceId);
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.closeAll();
+      this.expand(this.props.selected);
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps) {
+      if (prevProps.selected === this.props.selected) {
+        return;
+      }
+      this.closeAll();
+      this.expand(this.props.selected);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return React.createElement(
+        'div',
+        {
+          'class': 'nolij-services-mobile-component',
+          ref: this.componentElement
+        },
+        React.createElement(OperationsServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(OperationsServicesDetailComponent, {
+          selected: this.props.selected }),
+        React.createElement(DevelopmentServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(DevelopmentServicesDetailComponent, {
+          selected: this.props.selected }),
+        React.createElement(ManagementServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(ManagementServicesDetailComponent, {
+          selected: this.props.selected }),
+        React.createElement(SupportServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(SupportServicesDetailComponent, {
+          selected: this.props.selected }),
+        React.createElement(TrainingServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(TrainingServicesDetailComponent, {
+          selected: this.props.selected }),
+        React.createElement(ResourcesServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(ResourcesServicesDetailComponent, {
+          selected: this.props.selected })
+      );
+    }
+  }]);
+
+  return ServicesMobileComponent;
+}(React.Component);
 
 /*
   A React component that accepts no properties
@@ -302,19 +509,20 @@ function ServicesDetailsComponent(props) {
   homepage services block.
 */
 
-var ServicesComponent = function (_React$Component3) {
-  _inherits(ServicesComponent, _React$Component3);
+
+var ServicesComponent = function (_React$Component4) {
+  _inherits(ServicesComponent, _React$Component4);
 
   function ServicesComponent(props) {
     _classCallCheck(this, ServicesComponent);
 
-    var _this3 = _possibleConstructorReturn(this, (ServicesComponent.__proto__ || Object.getPrototypeOf(ServicesComponent)).call(this, props));
+    var _this4 = _possibleConstructorReturn(this, (ServicesComponent.__proto__ || Object.getPrototypeOf(ServicesComponent)).call(this, props));
 
-    _this3.state = {
+    _this4.state = {
       'selected': 'it-operations'
     };
-    _this3.select = _this3.select.bind(_this3);
-    return _this3;
+    _this4.select = _this4.select.bind(_this4);
+    return _this4;
   }
 
   _createClass(ServicesComponent, [{
@@ -374,7 +582,11 @@ var ServicesComponent = function (_React$Component3) {
                   selected: this.state.selected
                 })
               )
-            )
+            ),
+            React.createElement(ServicesMobileComponent, {
+              selected: this.state.selected,
+              onSelect: this.select
+            })
           )
         )
       );

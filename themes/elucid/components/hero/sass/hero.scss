@@ -5,35 +5,46 @@
 .nolij-hero-container {
   $hero-height: calc(100vh - 80px);
   $hero-tablet-height: calc(100vh - 131px);
+  $hero-min-height: 370px;
+  $hero-padding: 42px;
 
   @include styleguide;
   background-color: black;
   height: $hero-height;
   @include at-breakpoint($header-menu-breakpoint, height, $hero-tablet-height);
+  min-height: $hero-min-height;
   overflow: hidden;
   width: 100%;
 
   video#bgvideo {
     min-height: 105%;
     min-width: 105%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
   .nolij-hero-component {
-    background-color: rgba(0,0,0,0.7);
+    background-image: url('/themes/elucid/components/hero/images/video-overlay.svg');
+    background-size: 26px;
     height: $hero-height;
     @include at-breakpoint($header-menu-breakpoint, height, $hero-tablet-height);
+    min-height: $hero-min-height;
     position: absolute;
     width: 100%;
+    z-index: 1;
 
     .nolij-hero-component-content {
-      @include padded-content-block(0 42px);
+      @include padded-content-block(0 $hero-padding);
       height: 100%;
       position: relative;
 
       .nolij-hero-component-overlay {
         color: white;
+        max-width: 645px;
         position: relative;
         top: 20%;
-        width: 645px;
+        width: 100%;
 
         .nolij-hero-component-overlay-header {
           h2.nolij-hero-component-overlay-title {
@@ -74,7 +85,7 @@
     .nolij-hero-component-scroll-overlay {
       position: absolute;
       bottom: 0px;
-      width: 100%;
+      width: calc(100% - #{2 * $hero-padding});
 
       .nolij-hero-component-scroll-overlay-tab {
         background: no-repeat url('../images/scroll-down-icon.svg');

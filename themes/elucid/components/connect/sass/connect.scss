@@ -4,6 +4,8 @@
 */
 .nolij-connect-container {
   @include styleguide;
+  background-image: url('/themes/elucid/components/connect/images/grid-light-bg.svg');
+  background-size: 26px;
 
   .nolij-connect-component {
     display: flex;

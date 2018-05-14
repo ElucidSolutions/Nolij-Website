@@ -23,14 +23,13 @@
       }
     }
     .nolij-vehicles-component-body {
-      padding-bottom: 92px;
-      @include tablet(padding-bottom, 0);
-
       .nolij-vehicles-component-lead {
         color: $gray-text;
         line-height: 28px;
       }
       .nolij-vehicles-component-details {
+        display: flex;
+
         .nolij-vehicles-component-card-title {
           @include strip-margins;
           color: $red;
@@ -40,11 +39,9 @@
         }
         .nolij-vehicles-component-left-card {
           @include card;
-          display: inline-block;
-          @include tablet(margin-bottom, 20px);
+          flex-grow: 1;
           margin-right: 25px;
           @include tablet(margin-right, 0);
-          vertical-align: top;
           width: 602px;
           @include tablet(width, 100%);
 
@@ -58,8 +55,9 @@
           .nolij-vehicles-component-left-card-body {
             padding: 0 25px 0;
 
-            .nolij-vehicles-component-vehicles-list {
+            ul.nolij-vehicles-component-vehicles-list {
               @include strip-margins;
+              list-style: none;
               margin-left: 20px;
 
               .nolij-vehicles-component-vehicles-list-item {
@@ -67,8 +65,15 @@
                 font-family: $second-font-family;
                 line-height: 1.7;
                 margin-bottom: 30px;
+                padding-left: 10px;
+                position: relative;
                 text-transform: uppercase;
 
+                &:before {
+                  @include icon('/themes/elucid/components/vehicles/images/vehicle-icon.svg', 17px, 21px, block);
+                  left: -10px;
+                  top: 5px;
+                }
                 a.nolij-vehicles-component-vehicles-link {
                   color: $red;
                   padding-right: 30px;
@@ -77,8 +82,11 @@
 
                   &:after {
                     @include icon("../images/read-more-icon.svg", 11px, 19px, span);
-                    top: 5px;
-                    right: 0px;
+                    position: relative;
+                    display: inline-block;
+                    height: 10px;
+                    margin-left: 10px;
+                    width: 30px;
                   }
                 }
               }
@@ -97,9 +105,7 @@
         }
         .nolij-vehicles-component-right-card {
           @include card;
-          display: inline-block;
           padding: 25px 15px 20px;
-          vertical-align: top;
           width: 219px;
           @include tablet(width, 100%);
 
@@ -129,7 +135,7 @@
               }
               .nolij-vehicles-component-cert-desc {
                 color: $gray-light;
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: bold;
               }
             }

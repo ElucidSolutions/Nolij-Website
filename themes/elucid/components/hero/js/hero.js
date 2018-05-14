@@ -26,7 +26,10 @@ var HomepageHeroComponent = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (HomepageHeroComponent.__proto__ || Object.getPrototypeOf(HomepageHeroComponent)).call(this, props));
 
+    _this.videoElement = React.createRef();
+
     _this.scroll = _this.scroll.bind(_this);
+    _this.slowVideo = _this.slowVideo.bind(_this);
     return _this;
   }
 
@@ -37,6 +40,16 @@ var HomepageHeroComponent = function (_React$Component) {
       jQuery('html, body').animate({
         scrollTop: targetElement.offset().top - 100
       });
+    }
+  }, {
+    key: "slowVideo",
+    value: function slowVideo() {
+      this.videoElement.current.playbackRate = 0.5;
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.slowVideo();
     }
   }, {
     key: "render",
@@ -105,7 +118,7 @@ var HomepageHeroComponent = function (_React$Component) {
         ),
         React.createElement(
           "video",
-          { playsinline: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
+          { ref: this.videoElement, playsinline: "true", autoplay: "true", muted: "true", loop: "true", poster: "/themes/elucid/components/hero/images/video-placeholder.jpg", id: "bgvideo", width: "x", height: "y" },
           React.createElement("source", { src: "/themes/elucid/components/hero/video/banner-video.mp4", type: "video/mp4" })
         )
       );

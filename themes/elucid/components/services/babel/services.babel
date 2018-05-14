@@ -24,10 +24,15 @@ class ServicesMenuItemComponent extends React.Component {
   constructor (props) {
     super (props);
     this.select = this.select.bind (this);
+    this.isSelected = this.isSelected.bind (this);
   }
 
   select () {
     this.props.onSelect (this.props.serviceId);
+  }
+
+  isSelected () {
+    return this.props.selected === this.props.serviceId;
   }
 
   render () {
@@ -40,14 +45,101 @@ class ServicesMenuItemComponent extends React.Component {
           <img
             class="nolij-services-menu-item-icon-img"
             alt="Service icon"
-            src={this.props.selected === this.props.serviceId ? this.props.activeIcon : this.props.inactiveIcon}
+            src={this.isSelected () ? this.props.activeIcon : this.props.inactiveIcon}
           />
         </div>
         <div class="nolij-services-menu-item-label">
           {this.props.label}
         </div>
+        <div class="nolij-services-menu-item-toggle-icon">
+          <img
+            class="nolij-services-menu-item-toggle-icon-img"
+            alt="Service toggle icon"
+            src={this.isSelected () ?
+              "/themes/elucid/components/services/images/close-icon.svg" :
+              "/themes/elucid/components/services/images/expand-icon.svg"}
+          />
+        </div>
       </div>;
   }
+}
+
+/*
+*/
+function OperationsServicesMenuItemComponent (props) {
+  return <ServicesMenuItemComponent
+    selected={props.selected}
+    serviceId="it-operations"
+    label="IT Operations"
+    activeIcon="/themes/elucid/components/services/images/it-operations-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/it-operations-icon-inactive.svg"
+    onSelect={props.onSelect}
+  />;
+}
+
+/*
+*/
+function DevelopmentServicesMenuItemComponent (props) {
+  return <ServicesMenuItemComponent
+    selected={props.selected}
+    serviceId="software-development"
+    label="Software Development"
+    activeIcon="/themes/elucid/components/services/images/software-development-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/software-development-icon-inactive.svg"
+    onSelect={props.onSelect}
+  />;
+}
+
+/*
+*/
+function ManagementServicesMenuItemComponent (props) {
+  return <ServicesMenuItemComponent
+    selected={props.selected}
+    serviceId="program-management"
+    label="Program Management"
+    activeIcon="/themes/elucid/components/services/images/program-management-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/program-management-icon-inactive.svg"
+    onSelect={props.onSelect}
+  />;
+}
+
+/*
+*/
+function SupportServicesMenuItemComponent (props) {
+  return <ServicesMenuItemComponent
+    selected={props.selected}
+    serviceId="acquisition-support"
+    label="Acquisition Support"
+    activeIcon="/themes/elucid/components/services/images/acquisition-support-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg"
+    onSelect={props.onSelect}
+  />;
+}
+
+/*
+*/
+function TrainingServicesMenuItemComponent (props) {
+  return <ServicesMenuItemComponent
+    selected={props.selected}
+    serviceId="training"
+    label="Training"
+    activeIcon="/themes/elucid/components/services/images/training-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/training-icon-inactive.svg"
+    onSelect={props.onSelect}
+  />;
+}
+
+/*
+*/
+function ResourcesServicesMenuItemComponent (props) {
+  return <ServicesMenuItemComponent
+    selected={props.selected}
+    serviceId="human-resources"
+    label="Human Capital and Human Resources"
+    activeIcon="/themes/elucid/components/services/images/human-capital-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/human-capital-icon-inactive.svg"
+    onSelect={props.onSelect}
+  />;
 }
 
 /*
@@ -67,52 +159,28 @@ class ServicesMenuComponent extends React.Component {
 
   render () {
     return <div class="nolij-services-menu-component">
-        <ServicesMenuItemComponent
+        <OperationsServicesMenuItemComponent
           selected={this.props.selected}
-          serviceId="it-operations"
-          label="IT Operations"
-          activeIcon="/themes/elucid/components/services/images/it-operations-icon-active.svg"
-          inactiveIcon="/themes/elucid/components/services/images/it-operations-icon-inactive.svg"
           onSelect={this.props.onSelect}
         />
-        <ServicesMenuItemComponent
+        <DevelopmentServicesMenuItemComponent
           selected={this.props.selected}
-          serviceId="software-development"
-          label="Software Development"
-          activeIcon="/themes/elucid/components/services/images/software-development-icon-active.svg"
-          inactiveIcon="/themes/elucid/components/services/images/software-development-icon-inactive.svg"
           onSelect={this.props.onSelect}
         />
-        <ServicesMenuItemComponent
+        <ManagementServicesMenuItemComponent
           selected={this.props.selected}
-          serviceId="program-management"
-          label="Program Management"
-          activeIcon="/themes/elucid/components/services/images/program-management-icon-active.svg"
-          inactiveIcon="/themes/elucid/components/services/images/program-management-icon-inactive.svg"
           onSelect={this.props.onSelect}
         />
-        <ServicesMenuItemComponent
+        <SupportServicesMenuItemComponent
           selected={this.props.selected}
-          serviceId="acquisition-support"
-          label="Acquisition Support"
-          activeIcon="/themes/elucid/components/services/images/acquisition-support-icon-active.svg"
-          inactiveIcon="/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg"
           onSelect={this.props.onSelect}
         />
-        <ServicesMenuItemComponent
+        <TrainingServicesMenuItemComponent
           selected={this.props.selected}
-          serviceId="training"
-          label="Training"
-          activeIcon="/themes/elucid/components/services/images/training-icon-active.svg"
-          inactiveIcon="/themes/elucid/components/services/images/training-icon-inactive.svg"
           onSelect={this.props.onSelect}
         />
-        <ServicesMenuItemComponent
+        <ResourcesServicesMenuItemComponent
           selected={this.props.selected}
-          serviceId="human-resources"
-          label="Human Capital and Human Resources"
-          activeIcon="/themes/elucid/components/services/images/human-capital-icon-active.svg"
-          inactiveIcon="/themes/elucid/components/services/images/human-capital-icon-inactive.svg"
           onSelect={this.props.onSelect}
         />
       </div>;
@@ -143,6 +211,69 @@ function ServicesDetailComponent (props) {
     </div>;
 }
 
+function OperationsServicesDetailComponent (props) {
+  return <ServicesDetailComponent
+      selected={props.selected}
+      serviceId="it-operations"
+      label="IT Operations"
+    >
+      <p class="nolij-services-detail-lead">This is a placeholder for IT operations.</p>
+      <ul class="nolij-services-detail-list">
+        <li class="nolij-services-detail-list-item">IV&amp;V</li>
+      </ul>
+    </ServicesDetailComponent>;
+}
+
+function DevelopmentServicesDetailComponent (props) {
+  return <ServicesDetailComponent
+      selected={props.selected}
+      serviceId="software-development"
+      label="Software Development"
+    >
+      <p class="nolij-services-detail-lead">This is a placeholder for Software Development.</p>
+    </ServicesDetailComponent>;
+}
+
+function ManagementServicesDetailComponent (props) {
+  return <ServicesDetailComponent
+      selected={props.selected}
+      serviceId="program-management"
+      label="Program Management"
+    >
+      <p class="nolij-services-detail-lead">This is a placeholder for Program Management.</p>
+    </ServicesDetailComponent>;
+}
+
+function SupportServicesDetailComponent (props) {
+  return <ServicesDetailComponent
+      selected={props.selected}
+      serviceId="acquisition-support"
+      label="Acquisition Support"
+    >
+      <p class="nolij-services-detail-lead">This is a placeholder for Acquisition Support.</p>
+    </ServicesDetailComponent>;
+}
+
+function TrainingServicesDetailComponent (props) {
+  return <ServicesDetailComponent
+      selected={props.selected}
+      serviceId="training"
+      label="Training"
+    >
+      <p class="nolij-services-detail-lead">This is a placeholder for Training.</p>
+    </ServicesDetailComponent>;
+}
+
+function ResourcesServicesDetailComponent (props) {
+  return <ServicesDetailComponent
+      selected={props.selected}
+      serviceId="human-resources"
+      label="Human Capital and Human Resources"
+    >
+      <p class="nolij-services-detail-lead">This is a placeholder for Human Capital and Human Resources.</p>
+    </ServicesDetailComponent>;
+}
+
 /*
   A React component accepts one property:
   selected, a service ID string; and returns
@@ -151,52 +282,106 @@ function ServicesDetailComponent (props) {
 */
 function ServicesDetailsComponent (props) {
   return <div class="nolij-services-details">
-      <ServicesDetailComponent
-        selected={props.selected}
-        serviceId="it-operations"
-        label="IT Operations"
-      >
-        <p class="nolij-services-detail-lead">This is a placeholder for IT operations.</p>
-        <ul class="nolij-services-detail-list">
-          <li class="nolij-services-detail-list-item">IV&amp;V</li>
-        </ul>
-      </ServicesDetailComponent>
-      <ServicesDetailComponent
-        selected={props.selected}
-        serviceId="software-development"
-        label="Software Development"
-      >
-        <p class="nolij-services-detail-lead">This is a placeholder for Software Development.</p>
-      </ServicesDetailComponent>
-      <ServicesDetailComponent
-        selected={props.selected}
-        serviceId="program-management"
-        label="Program Management"
-      >
-        <p class="nolij-services-detail-lead">This is a placeholder for Program Management.</p>
-      </ServicesDetailComponent>
-      <ServicesDetailComponent
-        selected={props.selected}
-        serviceId="acquisition-support"
-        label="Acquisition Support"
-      >
-        <p class="nolij-services-detail-lead">This is a placeholder for Acquisition Support.</p>
-      </ServicesDetailComponent>
-      <ServicesDetailComponent
-        selected={props.selected}
-        serviceId="training"
-        label="Training"
-      >
-        <p class="nolij-services-detail-lead">This is a placeholder for Training.</p>
-      </ServicesDetailComponent>
-      <ServicesDetailComponent
-        selected={props.selected}
-        serviceId="human-resources"
-        label="Human Capital and Human Resources"
-      >
-        <p class="nolij-services-detail-lead">This is a placeholder for Human Capital and Human Resources.</p>
-      </ServicesDetailComponent>
+      <OperationsServicesDetailComponent
+        selected={props.selected}/>
+      <DevelopmentServicesDetailComponent
+        selected={props.selected}/>
+      <ManagementServicesDetailComponent
+        selected={props.selected}/>
+      <SupportServicesDetailComponent
+        selected={props.selected}/>
+      <TrainingServicesDetailComponent
+        selected={props.selected}/>
+      <ResourcesServicesDetailComponent
+        selected={props.selected}/>
     </div>;
+}
+
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  mobile (accordion) homepage services block.
+*/
+class ServicesMobileComponent extends React.Component {
+  constructor (props) {
+    super (props);
+    this.componentElement = React.createRef ();
+    this.getDetailElement = this.getDetailElement.bind (this);
+    this.expand = this.expand.bind (this);
+    this.select = this.select.bind (this);
+  }
+
+  getDetailElements () {
+    return jQuery('.nolij-services-detail', this.componentElement.current);
+  }
+
+  getDetailElement (serviceId) {
+    return jQuery('.nolij-services-detail[data-service-id="' + serviceId + '"]', this.componentElement.current);
+  }
+
+  closeAll () {
+    this.getDetailElements ().slideUp ();
+  }
+
+  expand (serviceId) {
+    this.getDetailElement (serviceId).slideDown ();
+  }
+
+  select (serviceId) {
+    this.props.onSelect (serviceId);
+  }
+
+  componentDidMount () {
+    this.closeAll ();
+    this.expand (this.props.selected);
+  }
+
+  componentDidUpdate (prevProps) {
+    if (prevProps.selected === this.props.selected) {
+      return;
+    }
+    this.closeAll ();
+    this.expand (this.props.selected);
+  }
+
+  render () {
+    return <div
+      class="nolij-services-mobile-component"
+      ref={this.componentElement}
+    >
+      <OperationsServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <OperationsServicesDetailComponent
+        selected={this.props.selected}/>
+      <DevelopmentServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <DevelopmentServicesDetailComponent
+        selected={this.props.selected}/>
+      <ManagementServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <ManagementServicesDetailComponent
+        selected={this.props.selected}/>
+      <SupportServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <SupportServicesDetailComponent
+        selected={this.props.selected}/>
+      <TrainingServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <TrainingServicesDetailComponent
+        selected={this.props.selected}/>
+      <ResourcesServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <ResourcesServicesDetailComponent
+        selected={this.props.selected}/>
+    </div>;
+  }
 }
 
 /*
@@ -240,6 +425,10 @@ class ServicesComponent extends React.Component {
                 />
               </div>
             </div>
+            <ServicesMobileComponent
+              selected={this.state.selected}
+              onSelect={this.select}
+            />
           </div>
         </div>
       </div>;

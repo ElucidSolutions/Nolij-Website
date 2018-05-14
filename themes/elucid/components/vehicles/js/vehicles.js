@@ -183,7 +183,7 @@ function VehiclesComponent() {
                 React.createElement(
                   "div",
                   { "class": "nolij-vehicles-component-cert-logo" },
-                  React.createElement("img", { "class": "nolij-vehicles-component-cert-logo-img nolij-cmmi-logo", alt: "CMMI Logo", src: "/themes/elucid/components/vehicles/images/cmmi-dev-icon.png" })
+                  React.createElement("img", { "class": "nolij-vehicles-component-cert-logo-img nolij-cmmi-logo", alt: "CMMI Logo", src: "/themes/elucid/components/vehicles/images/cmmi-svc-icon.png" })
                 ),
                 React.createElement(
                   "div",

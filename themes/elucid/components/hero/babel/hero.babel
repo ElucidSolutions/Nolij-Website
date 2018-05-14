@@ -12,7 +12,10 @@ class HomepageHeroComponent extends React.Component {
   constructor (props) {
     super(props);
 
+    this.videoElement = React.createRef ();
+
     this.scroll = this.scroll.bind (this);
+    this.slowVideo = this.slowVideo.bind (this);
   }
 
   scroll () {
@@ -20,6 +23,14 @@ class HomepageHeroComponent extends React.Component {
     jQuery('html, body').animate ({
       scrollTop: (targetElement.offset ().top - 100)
     });
+  }
+
+  slowVideo () {
+    this.videoElement.current.playbackRate = 0.5;
+  }
+
+  componentDidMount () {
+    this.slowVideo ();
   }
 
   render () {
@@ -49,7 +60,7 @@ class HomepageHeroComponent extends React.Component {
             </div>
           </div>
         </div>
-        <video playsinline="true" muted="true" loop="true" poster="/themes/elucid/components/hero/images/video-placeholder.jpg" id="bgvideo" width="x" height="y">
+        <video ref={this.videoElement} playsinline="true" autoplay="true" muted="true" loop="true" poster="/themes/elucid/components/hero/images/video-placeholder.jpg" id="bgvideo" width="x" height="y">
           <source src="/themes/elucid/components/hero/video/banner-video.mp4" type="video/mp4"/>
         </video>
       </div>;

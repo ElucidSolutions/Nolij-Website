@@ -4,6 +4,8 @@
 */
 .nolij-services-container {
   @include styleguide;
+  background-image: url('/themes/elucid/components/services/images/grid-light-bg.svg');
+  background-size: 26px;
 
   .nolij-services-component {
     @include padded-content-block(40px 42px);
@@ -27,7 +29,10 @@
       }
       .nolij-services-table {
         @include card;
+        background-color: white;
         display: flex;
+        @include tablet(display, none);
+
 
         .nolij-services-table-left {
           background-color: #FFF7F7;
@@ -77,6 +82,8 @@
           padding: 10px 30px;
 
           .nolij-services-details {
+            display: flex;
+
             .nolij-services-detail {
               display: none;
 
@@ -96,6 +103,68 @@
                 display: block;
               }
             }
+          }
+        }
+      }
+      .nolij-services-mobile-component {
+        @include tablet(display, block);
+        @include card;
+        background-color: white;
+        display: none;
+        font-family: $second-font-family;
+
+        &:hover {
+          cursor: pointer;
+        }
+        .nolij-services-menu-item {
+          border-left: solid $red 4px;
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 1px 0 rgba(0, 0, 0, 0.15); 
+          display: flex;
+          min-height: 75px;
+
+          .nolij-services-menu-item-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60px;
+
+            .nolij-services-menu-item-icon-img {
+            }
+          }
+          .nolij-services-menu-item-label {
+            color: #2d2d2d;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            font-family: $second-font-family;
+            font-size: 16px;
+            font-weight: bold;
+            justify-content: center;
+            letter-spacing: 0.9px;
+            text-align: left;
+          }
+          .nolij-services-menu-item-toggle-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60px;
+          }
+          &.nolij-services-menu-item-selected {
+            .nolij-services-menu-item-label {
+              color: $red;
+            }
+          }
+        }
+        .nolij-services-detail {
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 1px 0 rgba(0, 0, 0, 0.15); 
+          display: none;
+          padding: 20px 10px;
+
+          p {
+            @include strip-margins;
+          }
+          .nolij-services-detail-header {
+            display: none;
           }
         }
       }

@@ -1658,7 +1658,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     display: table;
     clear: both; }
   [data-elucid-page-path-alias="/portfolio"] a {
-    color: #7c7c7c;
+    color: #1e1e1e;
     font-family: "Open Sans";
     text-decoration: none; }
   [data-elucid-page-path-alias="/portfolio"] h1, [data-elucid-page-path-alias="/portfolio"] h2, [data-elucid-page-path-alias="/portfolio"] h3, [data-elucid-page-path-alias="/portfolio"] h4, [data-elucid-page-path-alias="/portfolio"] h5 {
@@ -2377,6 +2377,8 @@ footer {
         @media screen and (max-width: 650px) {
           footer .footer_content .footer_med .footer_med_left .company_info .elucid_bold {
             padding-top: 15px; } }
+      footer .footer_content .footer_med .footer_med_left .company_info .elucid_address {
+        margin-left: 40px; }
       @media screen and (max-width: 768px) {
         footer .footer_content .footer_med .footer_med_left .company_info .elucid_phone {
           display: inline-block;
@@ -2468,6 +2470,7 @@ header {
   font-size: 16px;
   background-color: white;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  font-family: "Raleway";
   position: relative;
   width: 100%;
   z-index: 10; }
@@ -2591,10 +2594,10 @@ header {
             text-transform: uppercase; }
             header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a {
               color: #535253;
-              cursor: pointer; }
+              cursor: pointer;
+              text-decoration: none; }
               header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item a:hover {
-                color: #03A9F3;
-                text-decoration: none; }
+                color: #03A9F3; }
             header .layout-padded-content .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header #block-ourclients .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, #block-ourclients header .clients_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header #block-credentials-block .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, #block-credentials-block header .credentials .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, header #block-template-our-partners .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a, #block-template-our-partners header .partners_component .region-header-content .region-header-right .region-header-right-bottom .header_menu_widescreen_view .header_menu_widescreen_view_menu_component .header_menu_menu_list[data-menu-level="0"] .header_menu_menu_item.elucid_active a {
               color: #03A9F3; }
   header #header_search_toggle_button {
@@ -3043,7 +3046,7 @@ header {
           padding: 0;
           border: none;
           border-bottom: 1px solid #979797;
-          color: #7c7c7c;
+          color: #1e1e1e;
           outline: none;
           box-shadow: none;
           width: 100%; }
@@ -3364,7 +3367,7 @@ header {
     padding: 0;
     border: none;
     border-bottom: 1px solid #979797;
-    color: #7c7c7c;
+    color: #1e1e1e;
     outline: none;
     box-shadow: none; }
     .elucid_textfield input:-moz-ui-invalid, .elucid_textfield textarea:-moz-ui-invalid {
@@ -3437,7 +3440,7 @@ header {
       font-weight: 300;
       text-transform: uppercase; }
     .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-lead {
-      color: #7c7c7c;
+      color: #1e1e1e;
       line-height: 28px;
       margin-bottom: 30px; }
     .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card {
@@ -3464,7 +3467,7 @@ header {
           font-weight: 400;
           text-transform: uppercase; }
         .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-right .nolij-apply-component-card-body {
-          color: #7c7c7c;
+          color: #1e1e1e;
           line-height: 28px; }
           .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-right .nolij-apply-component-card-body .nolij-apply-component-card-link {
             color: #a00405;
@@ -3490,7 +3493,7 @@ header {
 .nolij-clients-container {
   font-family: "Roboto";
   font-size: 16px;
-  background-color: #fcfbf7; }
+  background-color: #f6f6f6; }
   @media screen and (max-width: 650px) {
     .nolij-clients-container {
       font-size: 14px; } }
@@ -3534,7 +3537,7 @@ header {
       font-weight: 300;
       text-transform: uppercase; }
     .nolij-clients-container .nolij-clients-component .nolij-clients-body p.nolij-clients-lead {
-      color: #7c7c7c;
+      color: #1e1e1e;
       line-height: 28px;
       margin-bottom: 60px; }
     .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card {
@@ -3564,7 +3567,9 @@ header {
 */
 .nolij-connect-container {
   font-family: "Roboto";
-  font-size: 16px; }
+  font-size: 16px;
+  background-image: url("/themes/elucid/components/connect/images/grid-light-bg.svg");
+  background-size: 26px; }
   @media screen and (max-width: 650px) {
     .nolij-connect-container {
       font-size: 14px; } }
@@ -3657,6 +3662,7 @@ header {
   font-size: 16px;
   background-color: black;
   height: calc(100vh - 80px);
+  min-height: 370px;
   overflow: hidden;
   width: 100%; }
   @media screen and (max-width: 650px) {
@@ -3688,12 +3694,19 @@ header {
       height: calc(100vh - 131px); } }
   .nolij-hero-container video#bgvideo {
     min-height: 105%;
-    min-width: 105%; }
+    min-width: 105%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); }
   .nolij-hero-container .nolij-hero-component {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("/themes/elucid/components/hero/images/video-overlay.svg");
+    background-size: 26px;
     height: calc(100vh - 80px);
+    min-height: 370px;
     position: absolute;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
     @media screen and (max-width: 950px) {
       .nolij-hero-container .nolij-hero-component {
         height: calc(100vh - 131px); } }
@@ -3705,9 +3718,10 @@ header {
       position: relative; }
       .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay {
         color: white;
+        max-width: 645px;
         position: relative;
         top: 20%;
-        width: 645px; }
+        width: 100%; }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-header h2.nolij-hero-component-overlay-title {
           margin: 0;
           padding: 0;
@@ -3733,7 +3747,7 @@ header {
     .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay {
       position: absolute;
       bottom: 0px;
-      width: 100%; }
+      width: calc(100% - 84px); }
       .nolij-hero-container .nolij-hero-component .nolij-hero-component-scroll-overlay .nolij-hero-component-scroll-overlay-tab {
         background: no-repeat url("../images/scroll-down-icon.svg");
         background-position: bottom 10px center;
@@ -3752,7 +3766,9 @@ header {
 */
 .nolij-services-container {
   font-family: "Roboto";
-  font-size: 16px; }
+  font-size: 16px;
+  background-image: url("/themes/elucid/components/services/images/grid-light-bg.svg");
+  background-size: 26px; }
   @media screen and (max-width: 650px) {
     .nolij-services-container {
       font-size: 14px; } }
@@ -3796,12 +3812,16 @@ header {
       font-weight: 300;
       text-transform: uppercase; }
     .nolij-services-container .nolij-services-component .nolij-services-body p.nolij-services-lead {
-      color: #7c7c7c;
+      color: #1e1e1e;
       line-height: 28px; }
     .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table {
       border-radius: 2px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+      background-color: white;
       display: flex; }
+      @media screen and (max-width: 768px) {
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table {
+          display: none; } }
       .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-left {
         background-color: #FFF7F7;
         color: #313131;
@@ -3833,19 +3853,69 @@ header {
       .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right {
         background-color: white;
         padding: 10px 30px; }
-        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail {
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details {
+          display: flex; }
+          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail {
+            display: none; }
+            .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail .nolij-services-detail-header h2.nolij-services-detail-title {
+              margin: 0;
+              padding: 0;
+              color: #a00405;
+              font-family: "Raleway";
+              font-size: 26px;
+              text-transform: uppercase; }
+            .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail .nolij-services-detail-body {
+              color: #424242; }
+            .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail.nolij-services-detail-selected {
+              display: block; }
+    .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component {
+      border-radius: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+      background-color: white;
+      display: none;
+      font-family: "Raleway"; }
+      @media screen and (max-width: 768px) {
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component {
+          display: block; } }
+      .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component:hover {
+        cursor: pointer; }
+      .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-menu-item {
+        border-left: solid #a00405 4px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+        display: flex;
+        min-height: 75px; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-menu-item .nolij-services-menu-item-icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 60px; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-menu-item .nolij-services-menu-item-label {
+          color: #2d2d2d;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          font-family: "Raleway";
+          font-size: 16px;
+          font-weight: bold;
+          justify-content: center;
+          letter-spacing: 0.9px;
+          text-align: left; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-menu-item .nolij-services-menu-item-toggle-icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 60px; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-menu-item.nolij-services-menu-item-selected .nolij-services-menu-item-label {
+          color: #a00405; }
+      .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-detail {
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+        display: none;
+        padding: 20px 10px; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-detail p {
+          margin: 0;
+          padding: 0; }
+        .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-mobile-component .nolij-services-detail .nolij-services-detail-header {
           display: none; }
-          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail .nolij-services-detail-header h2.nolij-services-detail-title {
-            margin: 0;
-            padding: 0;
-            color: #a00405;
-            font-family: "Raleway";
-            font-size: 26px;
-            text-transform: uppercase; }
-          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail .nolij-services-detail-body {
-            color: #424242; }
-          .nolij-services-container .nolij-services-component .nolij-services-body .nolij-services-table .nolij-services-table-right .nolij-services-details .nolij-services-detail.nolij-services-detail-selected {
-            display: block; }
 
 /*
   This stylesheet defines the default styles
@@ -3898,14 +3968,11 @@ header {
       font-size: 55px;
       font-weight: 300;
       text-transform: uppercase; }
-    .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body {
-      padding-bottom: 92px; }
-      @media screen and (max-width: 768px) {
-        .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body {
-          padding-bottom: 0; } }
-      .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-lead {
-        color: #7c7c7c;
-        line-height: 28px; }
+    .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-lead {
+      color: #1e1e1e;
+      line-height: 28px; }
+    .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details {
+      display: flex; }
       .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-card-title {
         margin: 0;
         padding: 0;
@@ -3916,13 +3983,9 @@ header {
       .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
         border-radius: 2px;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-        display: inline-block;
+        flex-grow: 1;
         margin-right: 25px;
-        vertical-align: top;
         width: 602px; }
-        @media screen and (max-width: 768px) {
-          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
-            margin-bottom: 20px; } }
         @media screen and (max-width: 768px) {
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card {
             margin-right: 0; } }
@@ -3935,22 +3998,36 @@ header {
             font-weight: 300; }
         .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body {
           padding: 0 25px 0; }
-          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list {
+          .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list {
             margin: 0;
             padding: 0;
+            list-style: none;
             margin-left: 20px; }
-            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item {
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item {
               color: #043b62;
               font-family: "Raleway";
               line-height: 1.7;
               margin-bottom: 30px;
+              padding-left: 10px;
+              position: relative;
               text-transform: uppercase; }
-              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item a.nolij-vehicles-component-vehicles-link {
+              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item:before {
+                background-image: url("/themes/elucid/components/vehicles/images/vehicle-icon.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                content: "";
+                display: block;
+                height: 17px;
+                position: absolute;
+                width: 21px;
+                left: -10px;
+                top: 5px; }
+              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item a.nolij-vehicles-component-vehicles-link {
                 color: #a00405;
                 padding-right: 30px;
                 position: relative;
                 text-transform: none; }
-                .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body .nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item a.nolij-vehicles-component-vehicles-link:after {
+                .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item a.nolij-vehicles-component-vehicles-link:after {
                   background-image: url("../images/read-more-icon.svg");
                   background-size: contain;
                   background-repeat: no-repeat;
@@ -3959,11 +4036,14 @@ header {
                   height: 11px;
                   position: absolute;
                   width: 19px;
-                  top: 5px;
-                  right: 0px; }
+                  position: relative;
+                  display: inline-block;
+                  height: 10px;
+                  margin-left: 10px;
+                  width: 30px; }
         .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer {
           border-top: solid 1px #d0d0d0;
-          color: #7c7c7c;
+          color: #1e1e1e;
           font-size: 16px;
           padding: 15px 25px; }
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer .nolij-vehicles-component-duns {
@@ -3971,9 +4051,7 @@ header {
       .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card {
         border-radius: 2px;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-        display: inline-block;
         padding: 25px 15px 20px;
-        vertical-align: top;
         width: 219px; }
         @media screen and (max-width: 768px) {
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card {
@@ -3994,5 +4072,5 @@ header {
             height: 36px; }
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert .nolij-vehicles-component-cert-desc {
             color: #92a1ac;
-            font-size: 12px;
+            font-size: 16px;
             font-weight: bold; }

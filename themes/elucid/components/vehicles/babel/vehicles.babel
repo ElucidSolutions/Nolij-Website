@@ -47,7 +47,7 @@ function VehiclesComponent () {
               <div class="nolij-vehicles-component-right-card-body">
                 <div class="nolij-vehicles-component-cert">
                   <div class="nolij-vehicles-component-cert-logo">
-                    <img class="nolij-vehicles-component-cert-logo-img nolij-cmmi-logo" alt="CMMI Logo" src="/themes/elucid/components/vehicles/images/cmmi-dev-icon.png"/>
+                    <img class="nolij-vehicles-component-cert-logo-img nolij-cmmi-logo" alt="CMMI Logo" src="/themes/elucid/components/vehicles/images/cmmi-svc-icon.png"/>
                   </div>
                   <div class="nolij-vehicles-component-cert-desc">CMMI Level 3<br/>(Services)</div>
                 </div>
