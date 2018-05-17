@@ -38,7 +38,7 @@
           background-size: cover;
           display: inline-block;
           @include tablet(display, block);
-          @include tablet(height, 200px);
+          @include tablet(height, 210px);
           vertical-align: top;
           width: 379px;
           @include tablet(width, 100%);

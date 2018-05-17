@@ -2328,8 +2328,35 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   page footer.
 */
 footer {
-  background-color: #535253;
-  color: #d0d0d0; }
+  font-family: "Roboto";
+  font-size: 16px;
+  background-color: #2d2d2d;
+  color: #d0d0d0;
+  font-size: 16px; }
+  @media screen and (max-width: 650px) {
+    footer {
+      font-size: 18px; } }
+  footer select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none; }
+    footer select::-ms-expand {
+      display: none; }
+  footer .elucid-select {
+    border-bottom: 1px solid #7c7c7c;
+    display: inline-block; }
+    footer .elucid-select .elucid-select-select {
+      display: inline-block; }
+    footer .elucid-select .elucid-select-icon {
+      display: inline-block; }
+    footer .elucid-select:hover {
+      border-bottom: 2px solid #03A9F3;
+      font-size: 14px; }
+      footer .elucid-select:hover .elucid-select-label {
+        color: #03A9F3;
+        font-size: 12px; }
   footer .footer_content {
     padding-top: 34px;
     padding-bottom: 60px;
@@ -2337,9 +2364,6 @@ footer {
     @media screen and (max-width: 768px) {
       footer .footer_content {
         display: block; } }
-    @media screen and (max-width: 768px) {
-      footer .footer_content {
-        text-align: center; } }
     footer .footer_content ul {
       margin: 0;
       padding: 0; }
@@ -2375,20 +2399,63 @@ footer {
       footer .footer_content .footer_med .footer_med_left .company_info .elucid_bold {
         color: white;
         display: inline-block;
+        font-family: "Raleway";
+        font-size: 26px;
         padding-bottom: 15px;
         padding-top: 0px; }
         @media screen and (max-width: 650px) {
           footer .footer_content .footer_med .footer_med_left .company_info .elucid_bold {
             padding-top: 15px; } }
-      @media screen and (max-width: 768px) {
-        footer .footer_content .footer_med .footer_med_left .company_info .elucid_phone {
-          display: inline-block;
-          padding-bottom: 21px; } }
+      footer .footer_content .footer_med .footer_med_left .company_info .elucid_address {
+        display: block;
+        margin-left: 40px;
+        position: relative; }
+        footer .footer_content .footer_med .footer_med_left .company_info .elucid_address:before {
+          background-image: url("/themes/elucid/images/map-pin-icon.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          content: "";
+          display: block;
+          height: 20px;
+          position: absolute;
+          width: 20px;
+          left: -38px; }
+      footer .footer_content .footer_med .footer_med_left .company_info .elucid_phone {
+        display: block;
+        margin-left: 40px;
+        position: relative; }
+        @media screen and (max-width: 768px) {
+          footer .footer_content .footer_med .footer_med_left .company_info .elucid_phone {
+            display: inline-block; } }
+        footer .footer_content .footer_med .footer_med_left .company_info .elucid_phone:before {
+          background-image: url("/themes/elucid/images/phone-icon.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          content: "";
+          display: block;
+          height: 20px;
+          position: absolute;
+          width: 20px;
+          left: -38px; }
+      footer .footer_content .footer_med .footer_med_left .company_info a.elucid_email {
+        display: block;
+        margin-left: 40px;
+        position: relative; }
+        footer .footer_content .footer_med .footer_med_left .company_info a.elucid_email:before {
+          background-image: url("/themes/elucid/images/email-icon.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          content: "";
+          display: block;
+          height: 20px;
+          position: absolute;
+          width: 20px;
+          left: -38px; }
       footer .footer_content .footer_med .footer_med_left .company_info a {
-        color: #d0d0d0; }
+        color: #d0d0d0;
+        text-decoration: none; }
         footer .footer_content .footer_med .footer_med_left .company_info a:hover {
-          color: #03A9F3;
-          text-decoration: none; }
+          color: #03A9F3; }
     footer .footer_content .footer_med .footer_med_right {
       vertical-align: top; }
       @media screen and (max-width: 768px) {
@@ -2414,6 +2481,19 @@ footer {
         footer .footer_content .footer_bottom .footer_bottom_left a:hover {
           color: #03A9F3;
           text-decoration: none; }
+      footer .footer_content .footer_bottom .footer_bottom_left .elucid_linkedin {
+        margin-left: 40px;
+        position: relative; }
+        footer .footer_content .footer_bottom .footer_bottom_left .elucid_linkedin:before {
+          background-image: url("/themes/elucid/images/linked-in-icon.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          content: "";
+          display: block;
+          height: 20px;
+          position: absolute;
+          width: 20px;
+          left: -38px; }
     footer .footer_content .footer_bottom .footer_bottom_right {
       float: right; }
       @media screen and (max-width: 768px) {
@@ -2423,10 +2503,12 @@ footer {
         footer .footer_content .footer_bottom .footer_bottom_right {
           float: none; } }
       footer .footer_content .footer_bottom .footer_bottom_right .credits {
+        color: #d0d0d0;
+        font-size: 12px;
         text-align: right; }
         @media screen and (max-width: 768px) {
           footer .footer_content .footer_bottom .footer_bottom_right .credits {
-            text-align: center; } }
+            text-align: left; } }
 
 /*
   This stylesheet defines the default styles
@@ -2757,7 +2839,7 @@ header {
     .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_body .menu_slide_extra_item {
       border-bottom: 1px solid #d0d0d0;
       color: #535253;
-      padding: 5px 10px;
+      padding: 10px 10px;
       text-transform: uppercase; }
       .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_body .header_menu_mobile_view_slide_item a,
       .subheader .header_menu_mobile_view .header_menu_mobile_view_collapsible .header_menu_mobile_view_body .menu_slide_extra_item a {
@@ -3473,7 +3555,7 @@ header {
             display: block; } }
         @media screen and (max-width: 768px) {
           .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-left {
-            height: 200px; } }
+            height: 210px; } }
         @media screen and (max-width: 768px) {
           .nolij-apply-container .nolij-apply-component .nolij-apply-component-body .nolij-apply-component-card .nolij-apply-component-card-left {
             width: 100%; } }
@@ -3573,6 +3655,9 @@ header {
       color: #1e1e1e;
       line-height: 28px;
       margin-bottom: 60px; }
+      @media screen and (max-width: 650px) {
+        .nolij-clients-container .nolij-clients-component .nolij-clients-body p.nolij-clients-lead {
+          margin-bottom: 20px; } }
     .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card {
       border-radius: 2px;
       box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
@@ -3583,12 +3668,20 @@ header {
       justify-content: center;
       padding: 10px 20px; }
       .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client {
+        display: flex;
+        flex-direction: column;
         flex-shrink: 0;
         margin: 10px 20px;
         text-align: center;
         width: 170px; }
-        .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-logo .nolij-clients-client-logo-img {
-          max-width: 140px; }
+        .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-logo {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          justify-content: center; }
+          .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-logo .nolij-clients-client-logo-img {
+            max-width: 140px; }
         .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-label {
           color: #525152; }
           .nolij-clients-container .nolij-clients-component .nolij-clients-body .nolij-clients-card .nolij-clients-client .nolij-clients-client-label .nolij-clients-client-acronym {
@@ -3629,7 +3722,7 @@ header {
         font-size: 12px; }
   .nolij-connect-container .nolij-connect-component {
     display: flex;
-    height: 400px;
+    height: 450px;
     margin: 0 auto;
     max-width: 1024px;
     padding: 40px 42px; }
@@ -3648,6 +3741,9 @@ header {
       @media screen and (max-width: 768px) {
         .nolij-connect-container .nolij-connect-component .nolij-connect-left {
           margin-top: 0; } }
+      @media screen and (max-width: 768px) {
+        .nolij-connect-container .nolij-connect-component .nolij-connect-left {
+          margin-bottom: 20px; } }
       .nolij-connect-container .nolij-connect-component .nolij-connect-left .nolij-connect-left-header h2.nolij-connect-left-title {
         margin: 0;
         padding: 0;
@@ -3672,10 +3768,13 @@ header {
         border-radius: 2px;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
         background-color: white;
-        border-top: solid 4px #a00405;
+        border-top: solid 8px #a00405;
         padding: 40px;
         position: absolute;
         width: 100%; }
+        @media screen and (max-width: 650px) {
+          .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container {
+            padding: 20px 10px; } }
         @media screen and (max-width: 768px) {
           .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container {
             position: static; } }
@@ -3683,6 +3782,8 @@ header {
         .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container textarea {
           max-width: 100%; }
         .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .nolij-connect-right-header .nolij-connect-right-title {
+          margin: 0;
+          padding: 0;
           color: #a00405;
           font-family: "Raleway";
           font-size: 20px;
@@ -3691,18 +3792,21 @@ header {
         .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .form-textarea {
           height: 126px; }
         .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .js-form-submit {
-          background-color: #a00405;
+          background-color: #e30a0c;
           border: none;
-          border-color: #a00405;
+          border-color: #e30a0c;
           border-radius: 2px;
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.15);
           color: white;
           display: inline-block;
           font-family: "Raleway";
+          font-size: 16px;
           font-weight: bold;
           margin-right: 15px;
-          padding: 15px 30px;
+          padding: 10px 40px;
           text-transform: uppercase; }
+          .nolij-connect-container .nolij-connect-component .nolij-connect-right .nolij-connect-form-container .js-form-submit:hover {
+            background-color: #a00405; }
 
 /*
   This stylesheet defines the default styles
@@ -3800,6 +3904,9 @@ header {
           font-size: 18px;
           line-height: 1.4;
           text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
+        @media screen and (max-width: 650px) {
+          .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer {
+            text-align: center; } }
         .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a {
           color: white; }
           .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a .nolij-hero-component-overlay-button {
@@ -3807,7 +3914,6 @@ header {
             display: inline-block;
             font-family: "Raleway";
             font-weight: bold;
-            margin-right: 15px;
             padding: 15px 30px;
             text-transform: uppercase; }
             .nolij-hero-container .nolij-hero-component .nolij-hero-component-content .nolij-hero-component-overlay .nolij-hero-component-overlay-footer a .nolij-hero-component-overlay-button:hover {
@@ -4041,6 +4147,9 @@ header {
     @media screen and (max-width: 650px) {
       .nolij-vehicles-container .nolij-vehicles-component {
         padding: 25px 10px; } }
+    @media screen and (max-width: 650px) {
+      .nolij-vehicles-container .nolij-vehicles-component {
+        border-width: 5px; } }
     .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-header:after {
       background-color: #a00405;
       display: block;
@@ -4094,15 +4203,24 @@ header {
             width: 100%; } }
         .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-header {
           padding: 25px; }
+          @media screen and (max-width: 650px) {
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-header {
+              padding: 25px 10px; } }
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-header .nolij-vehicles-component-left-card-title {
             font-weight: 300; }
         .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body {
-          padding: 0 25px 0; }
+          padding: 0 25px; }
+          @media screen and (max-width: 650px) {
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body {
+              padding: 0 10px; } }
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list {
             margin: 0;
             padding: 0;
             list-style: none;
             margin-left: 20px; }
+            @media screen and (max-width: 650px) {
+              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list {
+                margin-left: 10px; } }
             .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-body ul.nolij-vehicles-component-vehicles-list .nolij-vehicles-component-vehicles-list-item {
               color: #043b62;
               font-family: "Raleway";
@@ -4146,8 +4264,20 @@ header {
           color: #1e1e1e;
           font-size: 16px;
           padding: 15px 25px; }
+          @media screen and (max-width: 650px) {
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer {
+              padding: 15px 10px; } }
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer .nolij-vehicles-component-duns {
             margin-right: 50px; }
+            @media screen and (max-width: 650px) {
+              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer .nolij-vehicles-component-duns {
+                display: block; } }
+            @media screen and (max-width: 650px) {
+              .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer .nolij-vehicles-component-duns {
+                margin-right: 0; } }
+          @media screen and (max-width: 650px) {
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-left-card .nolij-vehicles-component-left-card-footer .nolij-vehicles-component-cage {
+              display: block; } }
       .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card {
         border-radius: 2px;
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
@@ -4163,6 +4293,9 @@ header {
         .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert {
           margin-bottom: 20px;
           text-align: center; }
+          @media screen and (max-width: 650px) {
+            .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert {
+              text-align: left; } }
           .nolij-vehicles-container .nolij-vehicles-component .nolij-vehicles-component-body .nolij-vehicles-component-details .nolij-vehicles-component-right-card .nolij-vehicles-component-right-card-body .nolij-vehicles-component-cert .nolij-vehicles-component-cert-logo img {
             height: 100%;
             width: auto; }

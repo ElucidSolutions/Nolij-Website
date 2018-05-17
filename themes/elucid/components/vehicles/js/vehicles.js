@@ -130,7 +130,7 @@ function VehiclesComponent() {
                     null,
                     React.createElement(
                       "a",
-                      { "class": "nolij-vehicles-component-vehicles-link" },
+                      { "class": "nolij-vehicles-component-vehicles-link", href: "/contract-vehicles/ciosp3" },
                       "Learn more about our CIOSP3 contract vehicles"
                     )
                   )

@@ -68,6 +68,8 @@
           }
         }
         .nolij-hero-component-overlay-footer {
+          @include mobile(text-align, center);
+
           a {
             color: white;
 
@@ -76,7 +78,6 @@
               display: inline-block;
               font-family: $second-font-family;
               font-weight: bold;
-              margin-right: 15px;
               padding: 15px 30px;
               text-transform: uppercase;
 

@@ -44,9 +44,11 @@
         {% endif %}
       </li>
     {% endfor %}
-    {% if menu_level == 0 %}
-      <div id="header_search_toggle_button" {{ item.attributes }}></div>
-    {% endif %}
+    {#/*
+      {% if menu_level == 0 %}
+        <div id="header_search_toggle_button" {{ item.attributes }}></div>
+      {% endif %}
+    */#}
     </ul>
   {% endif %}
 {% endmacro %}

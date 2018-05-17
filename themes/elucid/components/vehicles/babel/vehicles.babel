@@ -31,7 +31,7 @@ function VehiclesComponent () {
                   <li class="nolij-vehicles-component-vehicles-list-item">GSA <strong>Professional Services Schedule</strong> <span class="nolij-light">(PSS)</span></li>
                   <li class="nolij-vehicles-component-vehicles-list-item">
                     <div>CIOSP3 <strong>Small Business</strong></div>
-                    <div><a class="nolij-vehicles-component-vehicles-link">Learn more about our CIOSP3 contract vehicles</a></div>
+                    <div><a class="nolij-vehicles-component-vehicles-link" href="/contract-vehicles/ciosp3">Learn more about our CIOSP3 contract vehicles</a></div>
                   </li>
                 </ul>
               </div>

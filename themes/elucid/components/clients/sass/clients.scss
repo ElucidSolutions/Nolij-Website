@@ -27,6 +27,7 @@
         color: $gray-text;
         line-height: 28px;
         margin-bottom: 60px;
+        @include mobile(margin-bottom, 20px);
       }
       .nolij-clients-card {
         @include card;
@@ -38,12 +39,20 @@
         padding: 10px 20px;
 
         .nolij-clients-client {
+          display: flex;
+          flex-direction: column;
           flex-shrink: 0;
           margin: 10px 20px;
           text-align: center;
           width: 170px;
 
           .nolij-clients-client-logo {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+
             .nolij-clients-client-logo-img {
               max-width: 140px;
             }

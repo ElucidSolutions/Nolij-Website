@@ -3,14 +3,17 @@
   page footer.
 */
 footer {
-  background-color: $gray-dark;
+  @include styleguide;
+  background-color: #2d2d2d;;
   color: #d0d0d0;
+  font-size: 16px;
+
   .footer_content {
     @include tablet(display, block);
     padding-top: 34px;
     padding-bottom: 60px;
-    @include tablet(text-align, center);
     width: 100%;
+
     ul {
       @include strip-margins;
       li {
@@ -36,12 +39,15 @@ footer {
     }
     .footer_med {
       @include tablet(display, block);
+
       .footer_med_left {
         @include tablet(display, block);
         vertical-align: top;
+
         .footer_med_left_mobile_nav {
           display: none;
           @include tablet(display, block);
+
           li {
             margin-bottom: 15px;
           }
@@ -51,20 +57,48 @@ footer {
             @include mobile(padding-top, 15px);
             color: white;
             display: inline-block;
+            font-family: $second-font-family;
+            font-size: 26px;
             padding-bottom: 15px;
             padding-top: 0px;
           }
-          @media screen and (max-width: $tablet-breakpoint) {
-            .elucid_phone {
-              display: inline-block;
-              padding-bottom: 21px;
+          .elucid_address {
+            display: block;
+            margin-left: 40px;
+            position: relative;
+
+            &:before {
+              @include icon('/themes/elucid/images/map-pin-icon.svg', 20px, 20px, block);
+              left: -38px;
+            }
+          }
+          .elucid_phone {
+            display: block;
+            @include tablet(display, inline-block);
+            margin-left: 40px;
+            position: relative;
+
+            &:before {
+              @include icon('/themes/elucid/images/phone-icon.svg', 20px, 20px, block);
+              left: -38px;
+            }
+          }
+          a.elucid_email {
+            display: block;
+            margin-left: 40px;
+            position: relative;
+
+            &:before {
+              @include icon('/themes/elucid/images/email-icon.svg', 20px, 20px, block);
+              left: -38px;
             }
           }
           a {
             color: #d0d0d0;
+            text-decoration: none;
+
             &:hover {
               color: $blue;
-              text-decoration: none;
             }
           }
         }
@@ -76,11 +110,13 @@ footer {
     }
     .footer_bottom {
       @include tablet(display, block);
+
       .footer_bottom_left {
         margin-bottom: 23px;
         @include tablet(display, block);
         float: left;
         @include tablet(float, none);
+
         img {
           max-width: 100%;
           width: 309px;
@@ -92,14 +128,26 @@ footer {
             text-decoration: none;
           }
         }
+        .elucid_linkedin {
+            margin-left: 40px;
+            position: relative;
+
+            &:before {
+              @include icon('/themes/elucid/images/linked-in-icon.svg', 20px, 20px, block);
+              left: -38px;
+            }
+        }
       }
       .footer_bottom_right {
         @include tablet(display, block);
         float: right;
         @include tablet(float, none);
+
         .credits {
+          color: #d0d0d0;
+          font-size: 12px;
           text-align: right;
-          @include tablet(text-align, center);
+          @include tablet(text-align, left);
         }
       }
     }

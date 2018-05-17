@@ -10,13 +10,14 @@
   .nolij-connect-component {
     display: flex;
     @include tablet(flex-direction, column);
-    height: 400px;
+    height: 450px;
     @include tablet(height, auto);
     @include padded-content-block(40px 42px, 30px 10px);
 
     .nolij-connect-left {
       margin-top: 73px;
       @include tablet(margin-top, 0);
+      @include tablet(margin-bottom, 20px);
       width: 300px;
 
       .nolij-connect-left-header {
@@ -46,8 +47,9 @@
       .nolij-connect-form-container {
         @include card;
         background-color: white;
-        border-top: solid 4px $red;
+        border-top: solid 8px $red;
         padding: 40px;
+        @include mobile(padding, 20px 10px);
         position: absolute;
         @include tablet(position, static);
         width: 100%;
@@ -58,6 +60,7 @@
         }
         .nolij-connect-right-header {
           .nolij-connect-right-title {
+            @include strip-margins;
             color: $red;
             font-family: $second-font-family;
             font-size: 20px;
@@ -69,18 +72,23 @@
           height: 126px;
         }
         .js-form-submit {
-          background-color: $red;
+          background-color: $red-light;
           border: none;
-          border-color: $red;
+          border-color: $red-light;
           border-radius: 2px;
           box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25), 0 2px 6px 0 rgba(0, 0, 0, 0.15);
           color: white;
           display: inline-block;
           font-family: $second-font-family;
+          font-size: 16px;
           font-weight: bold;
           margin-right: 15px;
-          padding: 15px 30px;
+          padding: 10px 40px;
           text-transform: uppercase;
+
+          &:hover {
+            background-color: $red;
+          }
         }
       }
     }
