@@ -101,7 +101,7 @@ function OperationsServicesMenuItemComponent(props) {
   return React.createElement(ServicesMenuItemComponent, {
     selected: props.selected,
     serviceId: 'it-operations',
-    label: 'IT Operations',
+    label: 'Information Technology Solutions',
     activeIcon: '/themes/elucid/components/services/images/it-operations-icon-active.svg',
     inactiveIcon: '/themes/elucid/components/services/images/it-operations-icon-inactive.svg',
     onSelect: props.onSelect
@@ -110,13 +110,13 @@ function OperationsServicesMenuItemComponent(props) {
 
 /*
 */
-function DevelopmentServicesMenuItemComponent(props) {
+function MarketingServicesMenuItemComponent(props) {
   return React.createElement(ServicesMenuItemComponent, {
     selected: props.selected,
     serviceId: 'software-development',
-    label: 'Software Development',
-    activeIcon: '/themes/elucid/components/services/images/software-development-icon-active.svg',
-    inactiveIcon: '/themes/elucid/components/services/images/software-development-icon-inactive.svg',
+    label: 'Marketing Strategies',
+    activeIcon: '/themes/elucid/components/services/images/program-management-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/program-management-icon-inactive.svg',
     onSelect: props.onSelect
   });
 }
@@ -127,9 +127,9 @@ function ManagementServicesMenuItemComponent(props) {
   return React.createElement(ServicesMenuItemComponent, {
     selected: props.selected,
     serviceId: 'program-management',
-    label: 'Program Management',
-    activeIcon: '/themes/elucid/components/services/images/program-management-icon-active.svg',
-    inactiveIcon: '/themes/elucid/components/services/images/program-management-icon-inactive.svg',
+    label: 'Management Consulting',
+    activeIcon: '/themes/elucid/components/services/images/acquisition-support-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg',
     onSelect: props.onSelect
   });
 }
@@ -140,9 +140,9 @@ function SupportServicesMenuItemComponent(props) {
   return React.createElement(ServicesMenuItemComponent, {
     selected: props.selected,
     serviceId: 'acquisition-support',
-    label: 'Acquisition Support',
-    activeIcon: '/themes/elucid/components/services/images/acquisition-support-icon-active.svg',
-    inactiveIcon: '/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg',
+    label: 'Human Resource Management',
+    activeIcon: '/themes/elucid/components/services/images/human-capital-icon-active.svg',
+    inactiveIcon: '/themes/elucid/components/services/images/human-capital-icon-inactive.svg',
     onSelect: props.onSelect
   });
 }
@@ -153,22 +153,9 @@ function TrainingServicesMenuItemComponent(props) {
   return React.createElement(ServicesMenuItemComponent, {
     selected: props.selected,
     serviceId: 'training',
-    label: 'Training',
+    label: 'Training and Course Development',
     activeIcon: '/themes/elucid/components/services/images/training-icon-active.svg',
     inactiveIcon: '/themes/elucid/components/services/images/training-icon-inactive.svg',
-    onSelect: props.onSelect
-  });
-}
-
-/*
-*/
-function ResourcesServicesMenuItemComponent(props) {
-  return React.createElement(ServicesMenuItemComponent, {
-    selected: props.selected,
-    serviceId: 'human-resources',
-    label: 'Human Capital and Human Resources',
-    activeIcon: '/themes/elucid/components/services/images/human-capital-icon-active.svg',
-    inactiveIcon: '/themes/elucid/components/services/images/human-capital-icon-inactive.svg',
     onSelect: props.onSelect
   });
 }
@@ -199,19 +186,11 @@ var ServicesMenuComponent = function (_React$Component2) {
       return React.createElement(
         'div',
         { 'class': 'nolij-services-menu-component' },
-        React.createElement(OperationsServicesMenuItemComponent, {
-          selected: this.props.selected,
-          onSelect: this.props.onSelect
-        }),
-        React.createElement(DevelopmentServicesMenuItemComponent, {
-          selected: this.props.selected,
-          onSelect: this.props.onSelect
-        }),
         React.createElement(ManagementServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.props.onSelect
         }),
-        React.createElement(SupportServicesMenuItemComponent, {
+        React.createElement(OperationsServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.props.onSelect
         }),
@@ -219,7 +198,11 @@ var ServicesMenuComponent = function (_React$Component2) {
           selected: this.props.selected,
           onSelect: this.props.onSelect
         }),
-        React.createElement(ResourcesServicesMenuItemComponent, {
+        React.createElement(MarketingServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.props.onSelect
+        }),
+        React.createElement(SupportServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.props.onSelect
         })
@@ -272,37 +255,84 @@ function OperationsServicesDetailComponent(props) {
     {
       selected: props.selected,
       serviceId: 'it-operations',
-      label: 'IT Operations'
+      label: 'Information Technology Solutions'
     },
     React.createElement(
       'p',
       { 'class': 'nolij-services-detail-lead' },
-      'This is a placeholder for IT operations.'
-    ),
-    React.createElement(
-      'ul',
-      { 'class': 'nolij-services-detail-list' },
       React.createElement(
-        'li',
-        { 'class': 'nolij-services-detail-list-item' },
-        'IV&V'
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'System Design and Integration'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Software Development'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Systems Engineering'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Systems Architecture'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Software Testing'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Configuration Management'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Data Warehousing'
+        )
       )
     )
   );
 }
 
-function DevelopmentServicesDetailComponent(props) {
+function MarketingServicesDetailComponent(props) {
   return React.createElement(
     ServicesDetailComponent,
     {
       selected: props.selected,
       serviceId: 'software-development',
-      label: 'Software Development'
+      label: 'Marketing Strategies'
     },
     React.createElement(
       'p',
       { 'class': 'nolij-services-detail-lead' },
-      'This is a placeholder for Software Development.'
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'Branding & Messaging'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Strategic Communications'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Marketing Materials'
+        )
+      )
     )
   );
 }
@@ -313,12 +343,50 @@ function ManagementServicesDetailComponent(props) {
     {
       selected: props.selected,
       serviceId: 'program-management',
-      label: 'Program Management'
+      label: 'Management Consulting'
     },
     React.createElement(
       'p',
       { 'class': 'nolij-services-detail-lead' },
-      'This is a placeholder for Program Management.'
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'Project / Program Management'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Knowledge Management'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Change Management'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Process Analysis / Continuous Process Improvement'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Business Requirements'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Administrative and Logistics Support'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Governance Development & Support'
+        )
+      )
     )
   );
 }
@@ -329,12 +397,50 @@ function SupportServicesDetailComponent(props) {
     {
       selected: props.selected,
       serviceId: 'acquisition-support',
-      label: 'Acquisition Support'
+      label: 'Human Resource Management'
     },
     React.createElement(
       'p',
       { 'class': 'nolij-services-detail-lead' },
-      'This is a placeholder for Acquisition Support.'
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'Employee Relations'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Employee Recognition'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Performance Management'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Job Classification'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Payroll'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Benefits'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Workforce Planning'
+        )
+      )
     )
   );
 }
@@ -345,28 +451,35 @@ function TrainingServicesDetailComponent(props) {
     {
       selected: props.selected,
       serviceId: 'training',
-      label: 'Training'
+      label: 'Training and Course Development'
     },
     React.createElement(
       'p',
       { 'class': 'nolij-services-detail-lead' },
-      'This is a placeholder for Training.'
-    )
-  );
-}
-
-function ResourcesServicesDetailComponent(props) {
-  return React.createElement(
-    ServicesDetailComponent,
-    {
-      selected: props.selected,
-      serviceId: 'human-resources',
-      label: 'Human Capital and Human Resources'
-    },
-    React.createElement(
-      'p',
-      { 'class': 'nolij-services-detail-lead' },
-      'This is a placeholder for Human Capital and Human Resources.'
+      React.createElement(
+        'ul',
+        null,
+        React.createElement(
+          'li',
+          null,
+          'E-learning / Virtual Training'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Instructor Led Training'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Course & Training Materials Development'
+        ),
+        React.createElement(
+          'li',
+          null,
+          'Training Management'
+        )
+      )
     )
   );
 }
@@ -381,17 +494,15 @@ function ServicesDetailsComponent(props) {
   return React.createElement(
     'div',
     { 'class': 'nolij-services-details' },
-    React.createElement(OperationsServicesDetailComponent, {
-      selected: props.selected }),
-    React.createElement(DevelopmentServicesDetailComponent, {
-      selected: props.selected }),
     React.createElement(ManagementServicesDetailComponent, {
       selected: props.selected }),
-    React.createElement(SupportServicesDetailComponent, {
+    React.createElement(OperationsServicesDetailComponent, {
       selected: props.selected }),
     React.createElement(TrainingServicesDetailComponent, {
       selected: props.selected }),
-    React.createElement(ResourcesServicesDetailComponent, {
+    React.createElement(MarketingServicesDetailComponent, {
+      selected: props.selected }),
+    React.createElement(SupportServicesDetailComponent, {
       selected: props.selected })
   );
 }
@@ -466,35 +577,30 @@ var ServicesMobileComponent = function (_React$Component3) {
           'class': 'nolij-services-mobile-component',
           ref: this.componentElement
         },
-        React.createElement(OperationsServicesMenuItemComponent, {
-          selected: this.props.selected,
-          onSelect: this.select }),
-        React.createElement(OperationsServicesDetailComponent, {
-          selected: this.props.selected }),
-        React.createElement(DevelopmentServicesMenuItemComponent, {
-          selected: this.props.selected,
-          onSelect: this.select }),
-        React.createElement(DevelopmentServicesDetailComponent, {
-          selected: this.props.selected }),
         React.createElement(ManagementServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.select }),
         React.createElement(ManagementServicesDetailComponent, {
           selected: this.props.selected }),
-        React.createElement(SupportServicesMenuItemComponent, {
+        React.createElement(OperationsServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.select }),
-        React.createElement(SupportServicesDetailComponent, {
+        React.createElement(OperationsServicesDetailComponent, {
           selected: this.props.selected }),
         React.createElement(TrainingServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.select }),
         React.createElement(TrainingServicesDetailComponent, {
           selected: this.props.selected }),
-        React.createElement(ResourcesServicesMenuItemComponent, {
+        React.createElement(MarketingServicesMenuItemComponent, {
           selected: this.props.selected,
           onSelect: this.select }),
-        React.createElement(ResourcesServicesDetailComponent, {
+        React.createElement(MarketingServicesDetailComponent, {
+          selected: this.props.selected }),
+        React.createElement(SupportServicesMenuItemComponent, {
+          selected: this.props.selected,
+          onSelect: this.select }),
+        React.createElement(SupportServicesDetailComponent, {
           selected: this.props.selected })
       );
     }
@@ -519,7 +625,7 @@ var ServicesComponent = function (_React$Component4) {
     var _this4 = _possibleConstructorReturn(this, (ServicesComponent.__proto__ || Object.getPrototypeOf(ServicesComponent)).call(this, props));
 
     _this4.state = {
-      'selected': 'it-operations'
+      'selected': 'program-management'
     };
     _this4.select = _this4.select.bind(_this4);
     return _this4;
@@ -537,7 +643,7 @@ var ServicesComponent = function (_React$Component4) {
     value: function render() {
       return React.createElement(
         'div',
-        { 'data-nolij-id': 'services', 'class': 'nolij-services-container' },
+        { id: 'services', 'data-nolij-id': 'services', 'class': 'nolij-services-container' },
         React.createElement(
           'div',
           { 'class': 'nolij-services-component' },
@@ -562,7 +668,7 @@ var ServicesComponent = function (_React$Component4) {
                 null,
                 'Economically Disadvantaged Woman Owned Small Business (EDWOSB)'
               ),
-              ' with a focus on health care, technology, training, and marketing. We work closely with our clients to achieve project success.'
+              ' located in Northern Virginia. We have capabilities in strategy, technology, and human capital projects. We are focused on providing competitive rates and quality services to our clients in the federal healthcare marketplace. Our mission is to understand the challenges and goals of our clients, address them with innovative business solutions, and work closely together to achieve project success.'
             ),
             React.createElement(
               'div',

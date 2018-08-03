@@ -14,17 +14,26 @@
   $input-width: 260px;
   $footer-font-size: 12px;
 
+  max-width: 940px;
+  margin: 0 auto;
+
   @include styleguide;
   font-size: $default-font-size;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.15);
 
   &:before {
-    background-image: linear-gradient(270deg, #73CAF1 2%, #03A9F3 100%); 
+    background-color: $red;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     content: "";
     display: block;
     height: 8px;
+    width: 100%;
+  }
+  .th, td {
+    padding: .75rem;
+  }
+  .table {
     width: 100%;
   }
   .rate_table_header {
@@ -40,17 +49,20 @@
           display: none;
         }
         &.mdc-tab--active {
-          border-bottom: 3px solid $blue;
-          color: $blue;
+          border-bottom: 3px solid $red;
+          color: $red;
         }
       }
     }
     .rate_table_title {
       @include mobile(font-size, $tab-font-size);
-      color: $red;
+      color: $blue-dark;
       font-size: $default-h4-font-size;
       font-weight: normal;
-      margin-bottom: $margin-large;
+      text-transform: uppercase;
+      margin-top: 0;
+      font-family: $second-font-family;
+      margin-bottom: 1em;
     }
     .rate_table_header_tab_section {
       font-size: $tab-font-size;
@@ -208,14 +220,25 @@
         }
         .rate_table_table_header_year {
           border-bottom: 1px solid $blue-light;
-          text-align: center;
+          text-align: left;
         }
         .rate_table_table_header_category {
           @include mobile(padding-left, $margin-med);
+          text-align: left;
+          font-weight: normal;
           padding-left: $padding;
         }
         .rate_table_column_header {
-          text-align: center;
+          text-align: left;
+          font-family: $default-font-family;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.4;
+          letter-spacing: normal;
+          padding: 0.75rem;
+          color: #333333;
           &.rate_table_column_header_radius_5 {
             @include at-breakpoint(1100px, display, none);
           }
@@ -244,7 +267,7 @@
               background-color: $blue-lightest;
             }
             td {
-              text-align: center;
+              text-align: left;
               &:first-of-type {
                 @include mobile(padding-left, $margin-med);
                 @include mobile(min-width, 0);
@@ -322,6 +345,8 @@
         .rate_table_pagination_link {
           @include pagination-item();
           border-right: 1px solid $gray-light;
+          min-width: 2.5em;
+          text-align: center;
           &.rate_table_pagination_link_radius_3 {
             display: none;
           }

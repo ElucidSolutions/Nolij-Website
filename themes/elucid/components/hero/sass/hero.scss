@@ -92,7 +92,7 @@
     }
     .nolij-hero-component-scroll-overlay {
       position: absolute;
-      bottom: 0px;
+      bottom: 15px;
       width: calc(100% - #{2 * $hero-padding});
       @include tablet(width, calc(100% - 20px));
 

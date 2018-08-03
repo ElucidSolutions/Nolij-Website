@@ -40,7 +40,7 @@
           @include tablet(display, block);
           @include tablet(height, 210px);
           vertical-align: top;
-          width: 379px;
+          min-width: 33%;
           @include tablet(width, 100%);
         }
         .nolij-apply-component-card-right {

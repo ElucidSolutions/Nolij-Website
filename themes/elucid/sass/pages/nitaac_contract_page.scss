@@ -5,16 +5,39 @@
 [data-elucid-page-path-alias="/contract-vehicles/ciosp3"] {
   @include styleguide;
 
+  .page-header{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/themes/elucid/images/independence-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
   .elucid-page-content {
-    padding-bottom: 80px;
     .nitaac {
+
+      font-size: 18px;
+      line-height: 1.49;
+
       a {
-        @include a;
+        color: $red;
+        text-decoration: none;
+        outline: none;
+
+        &:hover {
+          color: $red;
+          text-decoration: underline;
+        }
       }
       h2 {
-        color: $red;
-        font-size: 22px;
-        font-weight: 400;
+        font-family: $second-font-family;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.18;
+        letter-spacing: normal;
+        text-align: left;
+        color: $blue-dark;
       }
       ul {
         @include strip-margins;
@@ -53,8 +76,6 @@
             }
           }
           a:hover {
-            color: $blue-dark;
-            text-decoration: none;
             &:before {
               @include icon("../images/download-icon-active.svg", 14px, 17px, inline-block);
             }
@@ -77,8 +98,6 @@
             }
           }
           a:hover {
-            color: $blue-dark;
-            text-decoration: none;
             &:before {
               @include icon("../images/download-icon-active.svg", 14px, 17px, inline-block);
             }

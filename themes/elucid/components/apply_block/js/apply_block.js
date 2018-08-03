@@ -23,7 +23,7 @@ function ApplyBlockComponent() {
 
   return React.createElement(
     'div',
-    { 'data-nolij-id': 'apply', 'class': 'nolij-apply-container' },
+    { id: 'apply', 'data-nolij-id': 'apply', 'class': 'nolij-apply-container' },
     React.createElement(
       'div',
       { 'class': 'nolij-apply-component' },
@@ -92,7 +92,7 @@ function ApplyBlockComponent() {
                 null,
                 React.createElement(
                   'a',
-                  { 'class': 'nolij-apply-component-card-link' },
+                  { href: '/careers', 'class': 'nolij-apply-component-card-link' },
                   'View jobs and apply'
                 )
               )

@@ -63,8 +63,8 @@ $purple-light: rgb(199, 184, 237);
 
 // III.A. Font Family
 
-$default-font-family: "Roboto";
-$second-font-family: "Raleway";
+$default-font-family: 'Roboto', sans-serif;
+$second-font-family: 'Raleway', sans-serif;
 
 // III.B. Font Size
 
@@ -73,7 +73,7 @@ $default-body-font-size: 16px;
 $default-h1-font-size: 36px;
 $default-h2-font-size: 32px;
 $default-h3-font-size: 28px;
-$default-h4-font-size: 22px;
+$default-h4-font-size: 26px;
 
 $default-mobile-h1-font-size: 26px;
 $default-mobile-h2-font-size: 22px;
@@ -694,3 +694,56 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 @import "pages";
 @import "features";
 @import "../components";
+
+// Site wide Sass
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: $red-light;
+}
+
+.elucid_linkedin a {
+  color: inherit;
+}
+
+.page-header {
+  color: #ffffff;
+  min-height: 390px;
+  background-color: #222;
+  line-height: 360px;
+  text-align: center;
+
+  .header-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 940px;
+
+    h2 {
+      font-family: $second-font-family;
+      font-size: 44px;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 2.2px;
+      text-align: left;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+  
+    .subtitle {
+      font-family: $default-font-family;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-align: left;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+}

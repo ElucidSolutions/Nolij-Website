@@ -4,8 +4,18 @@
 */
 .nolij-services-container {
   @include styleguide;
-  background-image: url('/themes/elucid/components/services/images/grid-light-bg.svg');
-  background-size: 26px;
+
+  ul {
+    list-style-image: url('/themes/elucid/images/check-list-li-icon.svg');
+
+    li {
+      font-family: Roboto;
+      font-size: 18px;
+      padding-left: 0.5em;
+      margin-bottom: 0.5em;
+      color: #525152;
+    }
+  }
 
   .nolij-services-component {
     @include padded-content-block(40px 42px, 30px 10px);
@@ -33,13 +43,13 @@
         background-color: white;
         display: flex;
         @include tablet(display, none);
+        height: 19em;
 
 
         .nolij-services-table-left {
           background-color: #FFF7F7;
           color: #313131;
           flex-shrink: 0;
-          width: 300px;
 
           .nolij-services-menu-component {
             .nolij-services-menu-item {
@@ -48,7 +58,7 @@
               font-family: $second-font-family;
               font-size: 12px;
               font-weight: bold;
-              padding: 10px;
+              padding: 1em 1.25em 1em 1em;
 
               &:hover {
                 cursor: pointer;
@@ -74,6 +84,10 @@
               }
               .nolij-services-menu-item-label {
                 display: inline-block;
+                font-family: Raleway;
+                font-size: 15px;
+                font-weight: bold;
+                color: #2d2d2d;
               }
               .nolij-services-menu-item-toggle-icon {
                 display: none;

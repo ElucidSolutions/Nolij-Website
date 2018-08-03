@@ -70,7 +70,7 @@ function OperationsServicesMenuItemComponent (props) {
   return <ServicesMenuItemComponent
     selected={props.selected}
     serviceId="it-operations"
-    label="IT Operations"
+    label="Information Technology Solutions"
     activeIcon="/themes/elucid/components/services/images/it-operations-icon-active.svg"
     inactiveIcon="/themes/elucid/components/services/images/it-operations-icon-inactive.svg"
     onSelect={props.onSelect}
@@ -79,13 +79,13 @@ function OperationsServicesMenuItemComponent (props) {
 
 /*
 */
-function DevelopmentServicesMenuItemComponent (props) {
+function MarketingServicesMenuItemComponent (props) {
   return <ServicesMenuItemComponent
     selected={props.selected}
     serviceId="software-development"
-    label="Software Development"
-    activeIcon="/themes/elucid/components/services/images/software-development-icon-active.svg"
-    inactiveIcon="/themes/elucid/components/services/images/software-development-icon-inactive.svg"
+    label="Marketing Strategies"
+    activeIcon="/themes/elucid/components/services/images/program-management-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/program-management-icon-inactive.svg"
     onSelect={props.onSelect}
   />;
 }
@@ -96,9 +96,9 @@ function ManagementServicesMenuItemComponent (props) {
   return <ServicesMenuItemComponent
     selected={props.selected}
     serviceId="program-management"
-    label="Program Management"
-    activeIcon="/themes/elucid/components/services/images/program-management-icon-active.svg"
-    inactiveIcon="/themes/elucid/components/services/images/program-management-icon-inactive.svg"
+    label="Management Consulting"
+    activeIcon="/themes/elucid/components/services/images/acquisition-support-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg"
     onSelect={props.onSelect}
   />;
 }
@@ -109,9 +109,9 @@ function SupportServicesMenuItemComponent (props) {
   return <ServicesMenuItemComponent
     selected={props.selected}
     serviceId="acquisition-support"
-    label="Acquisition Support"
-    activeIcon="/themes/elucid/components/services/images/acquisition-support-icon-active.svg"
-    inactiveIcon="/themes/elucid/components/services/images/acquisition-support-icon-inactive.svg"
+    label="Human Resource Management"
+    activeIcon="/themes/elucid/components/services/images/human-capital-icon-active.svg"
+    inactiveIcon="/themes/elucid/components/services/images/human-capital-icon-inactive.svg"
     onSelect={props.onSelect}
   />;
 }
@@ -122,22 +122,9 @@ function TrainingServicesMenuItemComponent (props) {
   return <ServicesMenuItemComponent
     selected={props.selected}
     serviceId="training"
-    label="Training"
+    label="Training and Course Development"
     activeIcon="/themes/elucid/components/services/images/training-icon-active.svg"
     inactiveIcon="/themes/elucid/components/services/images/training-icon-inactive.svg"
-    onSelect={props.onSelect}
-  />;
-}
-
-/*
-*/
-function ResourcesServicesMenuItemComponent (props) {
-  return <ServicesMenuItemComponent
-    selected={props.selected}
-    serviceId="human-resources"
-    label="Human Capital and Human Resources"
-    activeIcon="/themes/elucid/components/services/images/human-capital-icon-active.svg"
-    inactiveIcon="/themes/elucid/components/services/images/human-capital-icon-inactive.svg"
     onSelect={props.onSelect}
   />;
 }
@@ -159,19 +146,11 @@ class ServicesMenuComponent extends React.Component {
 
   render () {
     return <div class="nolij-services-menu-component">
-        <OperationsServicesMenuItemComponent
-          selected={this.props.selected}
-          onSelect={this.props.onSelect}
-        />
-        <DevelopmentServicesMenuItemComponent
-          selected={this.props.selected}
-          onSelect={this.props.onSelect}
-        />
         <ManagementServicesMenuItemComponent
           selected={this.props.selected}
           onSelect={this.props.onSelect}
         />
-        <SupportServicesMenuItemComponent
+        <OperationsServicesMenuItemComponent
           selected={this.props.selected}
           onSelect={this.props.onSelect}
         />
@@ -179,7 +158,11 @@ class ServicesMenuComponent extends React.Component {
           selected={this.props.selected}
           onSelect={this.props.onSelect}
         />
-        <ResourcesServicesMenuItemComponent
+        <MarketingServicesMenuItemComponent
+          selected={this.props.selected}
+          onSelect={this.props.onSelect}
+        />
+        <SupportServicesMenuItemComponent
           selected={this.props.selected}
           onSelect={this.props.onSelect}
         />
@@ -215,22 +198,35 @@ function OperationsServicesDetailComponent (props) {
   return <ServicesDetailComponent
       selected={props.selected}
       serviceId="it-operations"
-      label="IT Operations"
+      label="Information Technology Solutions"
     >
-      <p class="nolij-services-detail-lead">This is a placeholder for IT operations.</p>
-      <ul class="nolij-services-detail-list">
-        <li class="nolij-services-detail-list-item">IV&amp;V</li>
-      </ul>
+      <p class="nolij-services-detail-lead">
+        <ul>
+          <li>System Design and Integration</li>
+          <li>Software Development</li>
+          <li>Systems Engineering</li>
+          <li>Systems Architecture</li>
+          <li>Software Testing</li>
+          <li>Configuration Management</li>
+          <li>Data Warehousing</li>
+        </ul>
+      </p>
     </ServicesDetailComponent>;
 }
 
-function DevelopmentServicesDetailComponent (props) {
+function MarketingServicesDetailComponent (props) {
   return <ServicesDetailComponent
       selected={props.selected}
       serviceId="software-development"
-      label="Software Development"
+      label="Marketing Strategies"
     >
-      <p class="nolij-services-detail-lead">This is a placeholder for Software Development.</p>
+      <p class="nolij-services-detail-lead">
+        <ul>
+          <li>Branding & Messaging</li>
+          <li>Strategic Communications</li>
+          <li>Marketing Materials</li>
+        </ul>
+      </p>
     </ServicesDetailComponent>;
 }
 
@@ -238,9 +234,19 @@ function ManagementServicesDetailComponent (props) {
   return <ServicesDetailComponent
       selected={props.selected}
       serviceId="program-management"
-      label="Program Management"
+      label="Management Consulting"
     >
-      <p class="nolij-services-detail-lead">This is a placeholder for Program Management.</p>
+      <p class="nolij-services-detail-lead">
+        <ul>
+          <li>Project / Program Management</li>
+          <li>Knowledge Management</li>
+          <li>Change Management</li>
+          <li>Process Analysis / Continuous Process Improvement</li>
+          <li>Business Requirements</li>
+          <li>Administrative and Logistics Support</li>
+          <li>Governance Development & Support</li>
+        </ul>
+      </p>
     </ServicesDetailComponent>;
 }
 
@@ -248,9 +254,19 @@ function SupportServicesDetailComponent (props) {
   return <ServicesDetailComponent
       selected={props.selected}
       serviceId="acquisition-support"
-      label="Acquisition Support"
+      label="Human Resource Management"
     >
-      <p class="nolij-services-detail-lead">This is a placeholder for Acquisition Support.</p>
+      <p class="nolij-services-detail-lead">
+        <ul>
+          <li>Employee Relations</li>
+          <li>Employee Recognition</li>
+          <li>Performance Management</li>
+          <li>Job Classification</li>
+          <li>Payroll</li>
+          <li>Benefits</li>
+          <li>Workforce Planning</li>
+        </ul>
+      </p>
     </ServicesDetailComponent>;
 }
 
@@ -258,19 +274,16 @@ function TrainingServicesDetailComponent (props) {
   return <ServicesDetailComponent
       selected={props.selected}
       serviceId="training"
-      label="Training"
+      label="Training and Course Development"
     >
-      <p class="nolij-services-detail-lead">This is a placeholder for Training.</p>
-    </ServicesDetailComponent>;
-}
-
-function ResourcesServicesDetailComponent (props) {
-  return <ServicesDetailComponent
-      selected={props.selected}
-      serviceId="human-resources"
-      label="Human Capital and Human Resources"
-    >
-      <p class="nolij-services-detail-lead">This is a placeholder for Human Capital and Human Resources.</p>
+      <p class="nolij-services-detail-lead">
+        <ul>
+          <li>E-learning / Virtual Training</li>
+          <li>Instructor Led Training</li>
+          <li>Course & Training Materials Development</li>
+          <li>Training Management</li>
+        </ul>
+      </p>
     </ServicesDetailComponent>;
 }
 
@@ -282,17 +295,15 @@ function ResourcesServicesDetailComponent (props) {
 */
 function ServicesDetailsComponent (props) {
   return <div class="nolij-services-details">
-      <OperationsServicesDetailComponent
-        selected={props.selected}/>
-      <DevelopmentServicesDetailComponent
-        selected={props.selected}/>
       <ManagementServicesDetailComponent
         selected={props.selected}/>
-      <SupportServicesDetailComponent
+      <OperationsServicesDetailComponent
         selected={props.selected}/>
       <TrainingServicesDetailComponent
         selected={props.selected}/>
-      <ResourcesServicesDetailComponent
+      <MarketingServicesDetailComponent
+        selected={props.selected}/>
+      <SupportServicesDetailComponent
         selected={props.selected}/>
     </div>;
 }
@@ -350,35 +361,30 @@ class ServicesMobileComponent extends React.Component {
       class="nolij-services-mobile-component"
       ref={this.componentElement}
     >
-      <OperationsServicesMenuItemComponent
-        selected={this.props.selected}
-        onSelect={this.select}/>
-      <OperationsServicesDetailComponent
-        selected={this.props.selected}/>
-      <DevelopmentServicesMenuItemComponent
-        selected={this.props.selected}
-        onSelect={this.select}/>
-      <DevelopmentServicesDetailComponent
-        selected={this.props.selected}/>
       <ManagementServicesMenuItemComponent
         selected={this.props.selected}
         onSelect={this.select}/>
       <ManagementServicesDetailComponent
         selected={this.props.selected}/>
-      <SupportServicesMenuItemComponent
+      <OperationsServicesMenuItemComponent
         selected={this.props.selected}
         onSelect={this.select}/>
-      <SupportServicesDetailComponent
+      <OperationsServicesDetailComponent
         selected={this.props.selected}/>
       <TrainingServicesMenuItemComponent
         selected={this.props.selected}
         onSelect={this.select}/>
       <TrainingServicesDetailComponent
         selected={this.props.selected}/>
-      <ResourcesServicesMenuItemComponent
+      <MarketingServicesMenuItemComponent
         selected={this.props.selected}
         onSelect={this.select}/>
-      <ResourcesServicesDetailComponent
+      <MarketingServicesDetailComponent
+        selected={this.props.selected}/>
+      <SupportServicesMenuItemComponent
+        selected={this.props.selected}
+        onSelect={this.select}/>
+      <SupportServicesDetailComponent
         selected={this.props.selected}/>
     </div>;
   }
@@ -393,7 +399,7 @@ class ServicesComponent extends React.Component {
   constructor (props) {
     super (props);
     this.state = {
-      'selected': 'it-operations'
+      'selected': 'program-management'
     };
     this.select = this.select.bind (this);
   }
@@ -405,13 +411,13 @@ class ServicesComponent extends React.Component {
   }
 
   render () {
-    return <div data-nolij-id="services" class="nolij-services-container">
+    return <div id="services" data-nolij-id="services" class="nolij-services-container">
         <div class="nolij-services-component">
           <div class="nolij-services-header">
             <h2 class="nolij-services-title">Our Services</h2>
           </div>
           <div class="nolij-services-body">
-            <p class="nolij-services-lead">Nolij Consulting LLC is an <strong>Economically Disadvantaged Woman Owned Small Business (EDWOSB)</strong> with a focus on health care, technology, training, and marketing. We work closely with our clients to achieve project success.</p>
+            <p class="nolij-services-lead">Nolij Consulting LLC is an <strong>Economically Disadvantaged Woman Owned Small Business (EDWOSB)</strong> located in Northern Virginia. We have capabilities in strategy, technology, and human capital projects. We are focused on providing competitive rates and quality services to our clients in the federal healthcare marketplace. Our mission is to understand the challenges and goals of our clients, address them with innovative business solutions, and work closely together to achieve project success.</p>
             <div class="nolij-services-table">
               <div class="nolij-services-table-left">
                 <ServicesMenuComponent

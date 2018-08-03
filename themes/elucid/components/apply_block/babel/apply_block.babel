@@ -19,7 +19,7 @@ function ApplyBlockComponent () {
     }
   });  
 
-  return <div data-nolij-id="apply" class="nolij-apply-container">
+  return <div id="apply" data-nolij-id="apply" class="nolij-apply-container">
       <div class="nolij-apply-component">
         <div class="nolij-apply-component-header">
           <h2 class="nolij-apply-component-title">Join the <strong>Team</strong></h2>
@@ -38,7 +38,7 @@ function ApplyBlockComponent () {
               <div class="nolij-apply-component-card-body">
                 <p>Do you like the idea of being a driver on a team of distinction? Do you want to contribute to a growing company which serves our nation’s government and other clients?</p>
                 <p>If so, we want to hear from you.</p>
-                <div><a class="nolij-apply-component-card-link">View jobs and apply</a></div>
+                <div><a href="/careers" class="nolij-apply-component-card-link">View jobs and apply</a></div>
               </div>
             </div>
           </div>

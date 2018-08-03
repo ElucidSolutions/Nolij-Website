@@ -14,7 +14,7 @@
 function VehiclesComponent() {
   return React.createElement(
     "div",
-    { "data-nolij-id": "vehicles", "class": "nolij-vehicles-container" },
+    { id: "vehicles", "data-nolij-id": "vehicles", "class": "nolij-vehicles-container" },
     React.createElement(
       "div",
       { "class": "nolij-vehicles-component" },

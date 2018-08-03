@@ -4,7 +4,7 @@
 */
 .nolij-clients-container {
   @include styleguide;
-  background-color: #f6f6f6;
+  background-color: #f6fcff;
 
   .nolij-clients-component {
     @include padded-content-block(40px 42px, 40px 10px);

@@ -20,7 +20,7 @@
 function ClientComponent(props) {
   return React.createElement(
     "div",
-    { "class": "nolij-clients-client" },
+    { id: "clients", "class": "nolij-clients-client" },
     React.createElement(
       "div",
       { "class": "nolij-clients-client-logo" },

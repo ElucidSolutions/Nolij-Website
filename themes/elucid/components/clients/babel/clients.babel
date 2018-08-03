@@ -16,7 +16,7 @@
   client entry.
 */
 function ClientComponent (props) {
-  return <div class="nolij-clients-client">
+  return <div id="clients" class="nolij-clients-client">
       <div class="nolij-clients-client-logo">
         <img class="nolij-clients-client-logo-img" src={props.image}/>
       </div>

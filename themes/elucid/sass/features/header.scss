@@ -113,12 +113,12 @@ header {
                     cursor: pointer;
                     text-decoration: none;
                     &:hover {
-                      color: $blue;
+                      color: $red;
                     }
                   }
                   &.elucid_active {
                     a {
-                      color: $blue;
+                      color: $red;
                     }
                   }
                 }

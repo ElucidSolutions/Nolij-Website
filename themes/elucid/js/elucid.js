@@ -8,16 +8,57 @@
     init();
   });
 
+  var renderCount = 0;
+  var expectedCount = 0;
+  function renderComplete() {
+    // Hacky way to scroll to proper element if there is a # in the address bar
+    renderCount++;
+    if (renderCount == expectedCount) {
+      var id = location.hash.substr(1);
+      console.log(id, document.getElementById(id));
+      if (id && document.getElementById(id)) {
+        jQuery('html, body').animate({
+          scrollTop: $('#' + id).offset().top
+        });
+      }
+    }
+  }
+
   function init() {
     loadFonts();
 
     // Render the Nolij website app.
-    ReactDOM.render(React.createElement(App, null), document.getElementById('nolij-react-app-container'));
+    var appContainer = document.getElementById('nolij-react-app-container');
+    if (appContainer) {
+      expectedCount++;
+    }
+
+    var connectContainer = document.getElementById('nolij-connect-container');
+    if (connectContainer) {
+      expectedCount++;
+    }
+
+    var ratetableContainer = document.getElementById('nolij-ratetable-container');
+    if (ratetableContainer) {
+      expectedCount++;
+    }
+
+    if (appContainer) {
+      ReactDOM.render(React.createElement(App, null), appContainer, renderComplete);
+    }
+
+    if (connectContainer) {
+      ReactDOM.render(React.createElement(ConnectBlockComponent, null), connectContainer, renderComplete);
+    }
+
+    if (ratetableContainer) {
+      ReactDOM.render(React.createElement(RatetableBlockComponent, null), ratetableContainer, renderComplete);
+    }
   }
 
   /*
     Loads the fonts used by this theme.
-     Note: this function relies on the theme library including
+      Note: this function relies on the theme library including
     https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js
   */
   function loadFonts() {
@@ -41,8 +82,7 @@
       React.createElement(ServicesComponent, null),
       React.createElement(VehiclesComponent, null),
       React.createElement(ClientsBlockComponent, null),
-      React.createElement(ApplyBlockComponent, null),
-      React.createElement(ConnectBlockComponent, null)
+      React.createElement(ApplyBlockComponent, null)
     );
   }
 })(jQuery);

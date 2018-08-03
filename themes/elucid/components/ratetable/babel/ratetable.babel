@@ -1,0 +1,40 @@
+/*
+  This module defines the React component that
+  represents the homepage Connect block.
+
+  Note: this module relies on the Contact
+  Message REST module.
+*/
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  Connect Form component.
+*/
+class RatetableComponent extends React.Component {
+  constructor (props) {
+    super (props);
+  }
+
+  /*
+    Accepts no arguments and uses the Contact
+    Message REST module to submit the Connect
+    form.
+  */
+  submit () {
+  }
+
+  render () {
+    return <div>TODO: Ratetable</div>;
+  }
+}
+
+
+/*
+  A React component that accepts no properties
+  and returns a JSX element that represents the
+  Connect block.
+*/
+function RatetableBlockComponent () {
+  return <div><RatetableComponent/></div>;
+}

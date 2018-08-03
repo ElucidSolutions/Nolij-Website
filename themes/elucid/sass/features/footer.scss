@@ -21,7 +21,6 @@ footer {
         a {
           color: white;
           &:hover {
-            color: $blue;
             text-decoration: none;
           }
         }
@@ -96,10 +95,6 @@ footer {
           a {
             color: #d0d0d0;
             text-decoration: none;
-
-            &:hover {
-              color: $blue;
-            }
           }
         }
       }
@@ -124,7 +119,6 @@ footer {
         a {
           color: #d0d0d0;
           &:hover {
-            color: $blue;
             text-decoration: none;
           }
         }

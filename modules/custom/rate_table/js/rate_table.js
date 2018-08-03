@@ -248,6 +248,9 @@
 
     // VIII. Initialize the index element.
     this.updateIndexElement ();
+
+    // Set default number filter
+    this.setNum (DefaultNum);
   }
 
   /*

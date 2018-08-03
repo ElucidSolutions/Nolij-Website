@@ -5,6 +5,27 @@
 [data-elucid-page-path-alias="/careers"] {
   @include styleguide;
 
+  .page-header{
+    background: url('/themes/elucid/components/hero/images/video-overlay.svg');
+    background-size: 26px;
+    background-repeat: repeat;
+    display: block;
+    position: relative;
+  }
+  
+  .page-header::after{
+    content: "";
+    background: url('/themes/elucid/images/independence-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
   .banner_block_banner {
     .banner_block_banner_overlay {
       .elucid_banner_header {
@@ -25,13 +46,6 @@
       &:hover {
         font-style: underline;
       }
-    }
-    h2 {
-      color: #e74131;
-      font-family: $default-font-family;
-      font-size: 32px;
-      font-weight: 400;
-      margin-bottom: 20px;
     }
     .jobs-button {
       background-color: #03a9f3;

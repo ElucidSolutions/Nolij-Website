@@ -73,7 +73,7 @@ var ConnectFormComponent = function (_React$Component) {
     value: function render() {
       return React.createElement(
         "div",
-        { "class": "nolij-connect-form-container" },
+        { id: "connect", "class": "nolij-connect-form-container" },
         React.createElement(
           "div",
           { "class": "nolij-connect-right-header" },

@@ -50,7 +50,7 @@ class ConnectFormComponent extends React.Component {
   }
 
   render () {
-    return <div class="nolij-connect-form-container">
+    return <div id="connect" class="nolij-connect-form-container">
         <div class="nolij-connect-right-header">
           <h2 class="nolij-connect-right-title">Your Message to <strong>Nolij Consulting</strong></h2>
         </div>
